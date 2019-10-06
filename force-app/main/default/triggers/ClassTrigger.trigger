@@ -3,7 +3,7 @@ trigger ClassTrigger on Class__c (before insert) {
         if (Trigger.isInsert) {
             if (Schema.sObjectType.Class__c.isCreateable()) {
                 for (Class__c a: Trigger.new) {
-                    ClassTriggerHelper.preventDoubleRoomBooking(a);
+                    // ClassTriggerHelper.preventDoubleRoomBooking(a);
                 }
             } else {
                 for (Class__c a: Trigger.new) {

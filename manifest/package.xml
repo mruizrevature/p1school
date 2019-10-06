@@ -24,7 +24,7 @@
         <name>ApexTrigger</name>
     </types>
     <types>
-        <members>*</members>
+        <members>School</members>
         <name>CustomApplication</name>
     </types>
     <types>
