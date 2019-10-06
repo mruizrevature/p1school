@@ -23,5 +23,4 @@
     <tabs>Student__c</tabs>
     <tabs>Topic__c</tabs>
     <uiType>Lightning</uiType>
-    <utilityBar>School_UtilityBar</utilityBar>
 </CustomApplication>
