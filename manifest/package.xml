@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        
+        <members>AssessmentCreator</members>
+        <members>AssessmentTriggerHelper</members>
+        <members>AssessmentTriggerTests</members>
+        <members>ClassCreator</members>
+        <members>ClassTriggerHelper</members>
+        <members>DepartmentCreator</members>
+        <members>RoomCreator</members>
+        <members>RoomOccupiedException</members>
         <members>SchoolDataCreator</members>
+        <members>TopicCreator</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -9,12 +19,21 @@
         <name>ApexTestSuite</name>
     </types>
     <types>
-        <members>*</members>
+        <members>AssessmentTrigger</members>
+        <members>ClassTrigger</members>
         <name>ApexTrigger</name>
     </types>
     <types>
         <members>*</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
     </types>
     <types>
         <members>Admin</members>
