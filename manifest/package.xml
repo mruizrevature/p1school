@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        
-        <members>AssessmentCreator</members>
+        <!-- Trigger Helper classes -->
         <members>AssessmentTriggerHelper</members>
-        <members>AssessmentTriggerTests</members>
-        <members>ClassCreator</members>
         <members>ClassTriggerHelper</members>
+        <members>RoomUtilityClass</members>
+
+        <!-- Exceptions -->
+        <members>RoomOccupiedException</members>
+
+        <!-- Org Data Creation Classes -->
+        <members>SchoolDataCreator</members>
+
+        <!-- Test Classes -->
+        <members>AssessmentTriggerTests</members>
+        <members>ClassTriggerTests</members>
+
+        <!-- Test Utility Classes -->
+        <members>AssessmentCreator</members>
+        <members>ClassCreator</members>
         <members>DepartmentCreator</members>
         <members>RoomCreator</members>
-        <members>RoomOccupiedException</members>
-        <members>SchoolDataCreator</members>
         <members>TopicCreator</members>
+
+        <members>GPAController</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -28,6 +40,10 @@
         <name>CustomApplication</name>
     </types>
     <types>
+        <members>Student__c-Student Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
         <members>*</members>
         <name>CustomObject</name>
     </types>
@@ -38,6 +54,10 @@
     <types>
         <members>Admin</members>
         <name>Profile</name>
+    </types>
+    <types>
+        <!--<members>Student__c.CalculateGPA</members>-->
+        <name>QuickAction</name>
     </types>
     <version>46.0</version>
 </Package>
