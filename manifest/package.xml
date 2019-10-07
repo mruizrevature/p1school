@@ -24,6 +24,7 @@
         <members>TopicCreator</members>
 
         <members>GPAController</members>
+        <members>MyTestClass</members>
         <name>ApexClass</name>
     </types>
     <types>
