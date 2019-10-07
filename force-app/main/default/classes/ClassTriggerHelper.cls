@@ -1,32 +1,28 @@
 public with sharing class ClassTriggerHelper {
-    // /**
-    //     Given an Assessment, check if there is a Class or Assessment using that room at the specified time.
-    //  */
-    // public static void preventDoubleRoomBooking(Class__c assessmentBeingInserted) {
-    //     // Get existing assessment
-    //     List<Assessment__c> existingAssessments;
-         
-    //     if (Schema.sObjectType.Assessment__c.isAccessible()) {
-    //         existingAssessments = [SELECT Id FROM Assessment__c WHERE Date__c =: assessmentBeingInserted.Date__c AND Time__c =: assessmentBeingInserted.Time__c];
-    //     }
 
-    //     if (existingAssessments != null && existingAssessments.size() > 0) {
-    //         assessmentBeingInserted.addError('This room will be occupied during that time. Please choose another.');
-    //     }
+    public static void preventDoubleRoomBooking(Class__c classBeingInserted) {
+        checkIfAssessmentIsUsingRoom(classBeingInserted);
+        checkIfClassIsUsingRoom(classBeingInserted);
+    }
 
-    //     checkIfClassIsScheduledDuringAssessment(assessmentBeingInserted);
+    static void checkIfAssessmentIsUsingRoom(Class__c classBeingInserted) {
+        List<Assessment__c> existingAssessments;
 
-    // }
+        if (Schema.sObjectType.Assessment__c.isAccessible()) {
+            existingAssessments = [SELECT Id FROM Assessment__c WHERE (Date__c >=: classBeingInserted.StartDate__c) AND (Date__c <=: classBeingInserted.EndDate__c) AND (Time__c =: classBeingInserted.ScheduledTime__c)];
+        }
 
+        RoomUtilityClass.checkIfRoomIsBeingUsed(existingAssessments,classBeingInserted);
+    }
 
-    // static void checkIfClassIsScheduledDuringAssessment(Assessment__c assessmentBeingInserted) {
-    //     List<Class__c> existingClasses;
+    static void checkIfClassIsUsingRoom(Class__C classBeingInserted) {
+        List<Class__c> existingClasses;
 
-    //     if (Schema.sObjectType.Class__c.isAccessible()) {
-    //         existingClasses = [SELECT Id FROM Class__c WHERE (StartDate__c <: assessmentBeingInserted.Date__c) AND (EndDate__c >: assessmentBeingInserted.Date__c) AND (ScheduledTime__c =: assessmentBeingInserted.Time__c)];
-    //     }
-    //     if (existingClasses != null && existingClasses.size() > 0) {
-    //         assessmentBeingInserted.addError('This room will be occupied during that time. Please choose another.');
-    //     }
-    // } 
+        if (Schema.sObjectType.Class__c.isAccessible()) {
+            existingClasses = [SELECT Id FROM Class__c WHERE (StartDate__c <=: classBeingInserted.StartDate__c) AND (EndDate__c >=: classBeingInserted.StartDate__c) AND (ScheduledTime__c =: classBeingInserted.ScheduledTime__c)];
+        }
+        RoomUtilityClass.checkIfRoomIsBeingUsed(existingClasses,classBeingInserted);
+    }
+
+    // SchoolDataCreator.createData();
 }
