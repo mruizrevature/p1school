@@ -85,22 +85,4 @@ public class P1
         List<Account> acc = [SELECT Name FROM Account WHERE BillingState =: s.name() AND Id IN (SELECT AccountId FROM Contact WHERE MailingState =: s.name())];
         return acc;
     }
-
-    
-    
-    /**
-     * For each student, get the grade for each of their classes.
-     * */
-    public static Map<Id, Map<Id, Double>> getClassGrades() 
-    {
-        
-        return new Map<Id, Map<Id, Double>>();
-    }
-
-
-    public static Map<Id, Double> getClassGrades(Class__c class)
-    {
-
-        return new Map<Id, Double>;
-    }
 }

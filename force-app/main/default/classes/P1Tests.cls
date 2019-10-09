@@ -40,15 +40,6 @@ public class P1Tests
         c.accountId = a.Id;
         c.MailingState = 'CO';
         insert c;
-
-
-        Department__c d = new Department__c();
-        
-        Class__c cl = new Class__c();
-        cl.name = 'MAT200';
-        cl.daysPerWeek__c = 2;
-        cl.department__c = 
-        insert cl;
     }
 
     @isTest
