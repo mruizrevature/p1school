@@ -102,9 +102,27 @@ public with sharing class ToDelete {
          * For each student, get the grade for each of their classes.
          * */
         public static Map<Id, Map<Id, Double>> getClassGrades() {
-            // To Do: SOQL queries required.
-            //[SELECT Id, Name FROM Account WHERE grade=???]
-            return new Map<Id, Map<Id, Double>>();
+            List<Student__c> students = [ SELECT Id,
+            (SELECT Id, Class__c FROM ClassEnrollments__r)
+            FROM Student__c];
+            List<Grade__c> grades = [SELECT Id, Class_Enrollment__c FROM Grade__c]; // also SELECT Grade__c
+            Map<Id, Map<Id, Double>> classGrades = new Map<Id, Map<Id, Double>>();
+            for (Student__c s : students) {
+                Map<Id, Double> classGrade = new Map<Id, Double>();
+                for (ClassEnrollment__c ce : s.ClassEnrollments__r) {
+                    Double sum = 0;
+                    Integer count = 0;
+                    for (Grade__c g : grades) {
+                        if(ce.Id == g.Class_Enrollment__c) {
+                            // sum += g.Grade__c;
+                            count ++;
+                        }
+                    }
+                    if (count > 0) classGrade.put(ce.Id, sum / count);
+                }
+                classGrades.put(s.Id, classGrade);
+            }
+            return classGrades;
         }
     }
 
