@@ -2,24 +2,39 @@
 public with sharing class Project1Tests {
     @TestSetup
     static void makeData(){
-        Account a = new Account(
+        Account acc = new Account(
             Name = 'test', 
             BillingState = 'CA');
-        insert a;
-        Contact c = new Contact(
+        insert acc;
+        Contact cc = new Contact(
             LastName = 'test', 
             MailingState = 'CA',
-            AccountId = a.id);
-        insert c;
-        Account a2 = new Account(Name = 'test');
-        insert a2;
-
+            AccountId = acc.id);
+        insert cc;
+        Account acc2 = new Account(Name = 'test');
+        insert acc2;
         
+        SchoolDataCreator.createData();
+        // Class Enrollment creator
+        ClassEnrollment__c ce = new ClassEnrollment__c(
+            Class__c = [SELECT Id FROM Class__c][0].Id, 
+            Student__c = [SELECT Id FROM Student__c][0].Id, 
+            Credits__c = 1, 
+            Status__c = 'Enrolled'
+            ); insert ce;
+        // Grade creator
+        for (Integer i = 0; i < 3; i++) {
+            Grade__c g = new Grade__c(
+                Assessment__c = [SELECT Id FROM Assessment__c][0].Id,
+                Class_Enrollment__c = [SELECT Id FROM ClassEnrollment__c][0].Id,
+                Grade__c = 70 + 10 * i
+            ); insert g;
+        }
     }
     @isTest static void testFibonacci() {
         Integer zeroth = Project1.fibonacci(0);
         Integer first = Project1.fibonacci(1);
-        Integer eighth = Project1.fibonacci(46);
+        Integer eighth = Project1.fibonacci(46); 
         Integer negative = Project1.fibonacci(-1);
 
         System.assertEquals(0, zeroth);
@@ -60,8 +75,8 @@ public with sharing class Project1Tests {
         List<Account> all = [SELECT Id, Name FROM Account];
         List<Account> accounts = Project1.getAccountsForAGivenState(State.CA);
 
-        System.assertEquals(2, all.size(), 'all accounts = 2');
-        System.assertEquals(1, accounts.size(), 'CA accounts = 1');
+        System.assertEquals(2, all.size(), 'all accounts');
+        System.assertEquals(1, accounts.size(), 'CA accounts');
     }
     @isTest static void testStudentClassGrades() {
         Map<Id, Map<Id, Double>> classGrades = Project1.getClassGrades();
