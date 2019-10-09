@@ -1,30 +1,38 @@
-public class P1 {
-    /**
-     * Return the nth fiboacci number in the fibonacci sequence.
-     * It should start 1,1,2,3...
-     * */
-    public static Integer fibonacci(Integer n) {
-        return 0;
-    }
+public with sharing class P1 {
+	/*** complete* */ 
+	public static Integer fibonacci(Integer n) {       
+        if(n<0){
+            return null;
+        }
+        Integer fib0=0,fib1=1,fib2=1;
+        for(Integer i=1;i<n;++i){    
+ 			fib2=fib0+fib1;        
+  			fib0=fib1;    
+  			fib1=fib2;    
+ 		}    
+  		return fib2; 
+	}
     
-    /**
-     * Given a string, return its backwards order.
-     * */
+    /*** complete* */ 
     public static String reverseString(String s) {
-        return '';
+    	return s.reverse();
     }
     
-    /**
-     * Use recursion to compute the factorial of a given number.
-     * */
+    /*** complete* */ 
     public static Integer factorial(Integer n) {
-        return 0;
+        if(n==0){
+            return 1;
+        }
+        else{
+        	return(n*factorial(n-1));
+    	}
     }
-    
-    /**
-     * Given a string, determine if it is a palindrome.
-     * */
+        
+    /*** complete**/
     public static Boolean isPalindrome(String s) {
+        if(s==s.reverse()){
+            return true;
+        }
         return false;
     }
     
@@ -32,7 +40,7 @@ public class P1 {
      *  Given a state, return the accounts in that state.
      *  I only want the accounts that have a contact who works at the same place as the account.
      * */
-    public static List<Account> getAccountsForAGivenState(State s) {
+    /** public static List<Account> getAccountsForAGivenState(State s) {
         return new List<Account>();
     }
     
@@ -42,4 +50,5 @@ public class P1 {
     public static Map<Id, Map<Id, Double>> getClassGrades() {
         return new Map<Id, Map<Id, Double>>();
     }
+    
 }
