@@ -3,13 +3,11 @@ trigger AssessmentTrigger on Assessment__c (before insert) {
         if (Trigger.isInsert) {
             if (Schema.sObjectType.Assessment__c.isCreateable()) {
                 AssessmentTriggerHelper.preventDoubleRoomBooking(Trigger.new);
-
-                // for (Assessment__c a: Trigger.new) {
-                //     AssessmentTriggerHelper.preventDoubleRoomBooking(a);
-                // }
+                // Assessment__c a = Trigger.new[0];
+                // AssessmentTriggerHelper.preventDoubleRoomBooking(a);
             } else {
                 for (Assessment__c a: Trigger.new) {
-                    a.addError('You do not have permission to create Assessments. Please contact System Administrator if this is unexpected.');
+                    a.addError(UserPermissionErrors.CANNOT_CREATE_ASSESSMENTS);
                 }
             }
         }
