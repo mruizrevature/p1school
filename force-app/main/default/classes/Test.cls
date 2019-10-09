@@ -1,0 +1,103 @@
+public class Test {
+    /**
+     * Return the nth fiboacci number in the fibonacci sequence.
+     * It should start 1,1,2,3...
+     * */
+    public static Integer fibonacci(Integer n) {
+        
+        if(n==0){
+            return 1;
+         } if (n<=2){
+            return 1;
+         } if (n < 0){
+             System.debug('Cant have negs');
+             return -1;
+         }
+  
+        return fibonacci(n-2) + fibonacci(n-1);
+    }
+    
+    /**
+     * Given a string, return its backwards order.
+     * */
+    public static String reverseString(String s) {
+
+        List<String> forward = new List<String>();
+        List<String> backward = new List<String>();
+      
+
+        for(Integer i = 0; i<s.length(); i++){
+            forward.add(s.subString(i,i+1));
+        }
+
+        String forwardWord = String.join(forward, '');
+
+        for(Integer i = forwardWord.length()-1; i>=0; i--){
+
+            backward.add(forwardword.subString(i, i+1));
+
+        }
+
+        String backWord = String.join(backward, '');
+
+        return backWord;
+    }
+    
+    /**
+     * Use recursion to compute the factorial of a given number.
+     * */
+    public static Integer factorial(Integer n) {
+
+
+        if(n == 0){
+            n = 1;
+            return n;
+        }if(n==1){
+            n=1;
+            return n;
+        }else{
+         return n*factorial(n-1);
+        }
+
+    }
+    
+    /**
+     * Given a string, determine if it is a palindrome.
+     * */
+    public static Boolean isPalindrome(String s) {
+
+        return reverseString(s).equals(s);
+    }
+    
+        /**
+     *  Given a state, return the accounts in that state.
+     *  I only want the accounts that have a contact who works at the same place as the account.
+     * */
+    public static List<Account> getAccountsForAGivenState(State s) {
+
+
+        //List<Account> stateContact = [SELECT Name FROM Account WHERE BillingState =: [SELECT MailingState FROM Contact WHERE MailingState =: BillingState(s.Name())]];
+
+       List<Account> stateContact = [SELECT Account.Name, (
+                                        SELECT Contact.Name
+                                        FROM Account.Contacts
+                                        WHERE MailingState =: s.Name()
+                                     )
+
+        FROM Account
+        WHERE BillingState =: s.Name()
+       ];
+
+        return stateContact;
+    }
+    
+    /**
+     * For each student, get the grade for each of their classes.
+     * */
+    public static Map<Id, Map<Id, Double>> getClassGrades() {
+        return new Map<Id, Map<Id, Double>>();
+    }
+
+   
+    
+}
