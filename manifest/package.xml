@@ -6,6 +6,12 @@
         <members>ClassTriggerHelper</members>
         <members>RoomUtilityClass</members>
 
+        <!-- new ones -->
+        <members>P1</members>
+        <members>P1Test</members>
+        <members>State</members>
+
+
         <!-- Exceptions -->
         <members>RoomOccupiedException</members>
 
