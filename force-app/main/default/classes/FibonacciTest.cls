@@ -4,7 +4,7 @@
 
 @IsTest
 private class FibonacciTest {
-    static testMethod void fibonacciTestForFive() {
+    @isTest static void fibonacciTestForFive() {
         // This is our value for testing
         Integer testInteger = 5;
         // set the value of our valid Test variable to be the results of our calculate function
@@ -13,7 +13,7 @@ private class FibonacciTest {
         System.assertEquals(5, validTest);
     }
 
-    static testMethod void fibonacciTestForTwentyFive() {
+    @isTest static void fibonacciTestForTwentyFive() {
         // This is our value for testing
         Integer testInteger = 25;
 
@@ -22,7 +22,7 @@ private class FibonacciTest {
         System.assertEquals(75025, validTest);
     }
 
-    static testMethod void fibonacciTestForZero() {
+    @isTest static void fibonacciTestForZero() {
         // This is our value for testing
         Integer testInteger = 0;
 
@@ -31,7 +31,7 @@ private class FibonacciTest {
         System.assertEquals(0, validTest);
     }
 
-    static testMethod void negativeFibonacciTestForOne() {
+    @isTest static void negativeFibonacciTestForOne() {
         // This is our value for testing
         Integer testInteger = 1;
 
@@ -40,7 +40,7 @@ private class FibonacciTest {
         System.assertNotEquals(0, validTest);
     }
 
-    static testMethod void negativeFibonacciTest() {
+    @isTest static void negativeFibonacciTest() {
         // This is our value for testing
         Integer testInteger = -5;
 
