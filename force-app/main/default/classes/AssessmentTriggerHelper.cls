@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-public with sharing class AssessmentTrigger {
-    public static void preventDoubleBooking(Assessment__c assessmentBeingInserted){
-        checkIfAssessmentIsUsingRoom(assessmentBeingInserted);
-        checkIfClassIsUsingRoom(assessmentBeingInserted);
-    }
-    static void checkIfAssessmentIsUsingRoom(Assessement__c assessmentBeingInserted){
-
-    }
-    static void checkIfClassIsUsingRoom(Assessement__c assessmentBeingInserted){
-    }
-
- }
-=======
 public with sharing class AssessmentTriggerHelper {
     /**
         Given a List<Assessment>, check if there is a Class or Assessment using that room at the specified time.
@@ -95,4 +81,3 @@ public with sharing class AssessmentTriggerHelper {
         }   
     }
 }
->>>>>>> f1e3d832311dbcd30065346f02090dc4218fab13
