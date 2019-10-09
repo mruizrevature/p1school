@@ -24,6 +24,8 @@
         <members>TopicCreator</members>
 
         <members>GPAController</members>
+        <members>UserPermissionErrors</members>
+        <members>RoomUtilityClass</members>
         <name>ApexClass</name>
     </types>
     <types>
