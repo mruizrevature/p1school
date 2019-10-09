@@ -11,6 +11,7 @@ public with sharing class AssessmentCreator {
         insert mockExistingAssessment;
         System.debug('mockExistingAssessment: ' + mockExistingAssessment);
     }
+<<<<<<< HEAD
 
     public static Assessment__c createAssessment(Date scheduledDate, Time scheduledTime) {
         Class__c mockExistingClass = [SELECT Id FROM Class__c LIMIT 1];
@@ -22,4 +23,6 @@ public with sharing class AssessmentCreator {
 
         return mockExistingAssessment;
     }
+=======
+>>>>>>> 2936ab50e73a91dcc6c160d619280731cc9ab13a
 }

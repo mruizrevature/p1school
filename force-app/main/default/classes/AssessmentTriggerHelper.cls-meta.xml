@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <ApexClass xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>46.0</apiVersion>
+=======
+<ApexClass xmlns="urn:metadata.tooling.soap.sforce.com" fqn="AssessmentTriggerHelper">
+    <apiVersion>45.0</apiVersion>
+>>>>>>> 2936ab50e73a91dcc6c160d619280731cc9ab13a
     <status>Active</status>
 </ApexClass>
