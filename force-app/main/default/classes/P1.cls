@@ -4,28 +4,60 @@ public class P1 {
      * It should start 1,1,2,3...
      * */
     public static Integer fibonacci(Integer n) {
-        return 0;
+        if(n == 0 || n == 1){
+            return n;
+        }
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
     
     /**
      * Given a string, return its backwards order.
      * */
     public static String reverseString(String s) {
-        return '';
+        String revStr = '';
+        for(Integer i = (s.length() - 1); i >= 0; i--){
+            revStr += s.substring(i, i+1);
+        }
+        return revStr;
     }
     
     /**
      * Use recursion to compute the factorial of a given number.
      * */
     public static Integer factorial(Integer n) {
-        return 0;
+          if(n < 0){
+           return null;
+       }
+       
+       if(n == 0){
+           return 1;
+       }
+       return n * factorial(n - 1);
     }
     
     /**
      * Given a string, determine if it is a palindrome.
      * */
     public static Boolean isPalindrome(String s) {
-        return false;
+         if(s.equals('')){
+            return true;
+        }
+        Integer forw = 0;
+        Integer backw = s.length() - 1;
+        // remove punctuation, convert to lowercase
+        Pattern nonAlphanumeric = Pattern.compile('[^a-zA-Z0-9]');
+        Matcher matcher = nonAlphanumeric.matcher(s);
+        s = matcher.replaceAll('').toLowerCase(); 
+        while (backw > forw && backw < s.length() && forw < s.length()) {
+            String fChar = s.substring(forw, forw + 1);
+            String bChar = s.substring(backw, backw + 1);
+            if (!fChar.equals(bChar)){
+                return false;
+            }
+            forw++;
+            backw--;
+        }
+        return true;
     }
     
     /**
@@ -33,7 +65,29 @@ public class P1 {
      *  I only want the accounts that have a contact who works at the same place as the account.
      * */
     public static List<Account> getAccountsForAGivenState(State s) {
-        return new List<Account>();
+         // select accounts for whose billig state is s
+        List<Account> accounts = [SELECT Id, Name, BillingState FROM Account WHERE BillingState = :s.name()];
+        // select all accounts
+        List<Contact> contacts = [SELECT Id, Name, AccountId, MailingState FROM Contact];
+        // create empty list of accounts
+        List<Account> newAccount = new List<Account>();
+       // for each contact c in contacts
+       for(Contact c : contacts){
+           // for each account acc in accounts
+           for (Account acc: accounts){
+               // if acc is related with c
+               // and acc's billing state matches
+               // c's mailing state
+               if(c.AccountId == acc.Id && 
+               acc.BillingState == c.MailingState){
+                   // add this account to list
+                   newAccount.add(acc);
+                   //System.debug('contact->' + c.Name + 'account->' + acc.Name);
+               }
+           }
+       }
+        // return list of accounts
+        return newAccount;
     }
     
     /**
