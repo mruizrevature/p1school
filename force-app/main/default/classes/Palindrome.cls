@@ -3,5 +3,18 @@
  */
 
 public with sharing class Palindrome {
+    public static Boolean isPalindrome(String s) {
+        String reverseString = '';
 
+        for (Integer i = s.length() - 1; i >= 0; i--) {
+            reverseString += s.substring(i, i + 1);
+        }
+
+        if (s == reverseString) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
