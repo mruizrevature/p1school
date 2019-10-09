@@ -1,0 +1,66 @@
+public with sharing class Part1 {
+    
+    public static Integer fibonacci(Integer n) {
+        Integer num1 = 0;
+        Integer num2 = 0;
+        Integer sum = 0;
+
+        for(Integer i = 0;i<n;i++){
+            //The 1st and 2nd numbers have unique situations.
+            if(i == 0){
+                sum = 1;     
+            }
+
+            else if(i == 1){
+                sum = 1;
+                num2 = 1;
+            }
+             
+            else{
+                num1 = num2;
+                num2 = sum;
+                sum = num2+num1;
+                }
+        }
+
+        System.debug(sum);
+        return sum;
+    }
+
+    public static String reverseString(String s) {
+
+        // List a stores input characters
+        //List b stores output chartacters
+        List<String> input = new List<String>();
+        List<String> output = new List<String>();
+        input = s.split('');
+
+        for(Integer i=input.size()-1; i>=0; i--){
+            String chars = input[i];
+            output.add(chars);
+        }
+
+        String revString = String.join(output,'');
+
+        System.debug(revString);
+        return '';
+    }
+
+
+    public static Boolean isPalindrome(String s) {
+        return false;
+    }
+
+    public static Integer factorial(Integer n) {
+        return 0;
+    }
+
+    public static List<Account> getAccountsForAGivenState(State s) {
+        return new List<Account>();
+    }
+
+
+
+
+
+}
