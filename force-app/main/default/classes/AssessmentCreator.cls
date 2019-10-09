@@ -11,4 +11,15 @@ public with sharing class AssessmentCreator {
         insert mockExistingAssessment;
         System.debug('mockExistingAssessment: ' + mockExistingAssessment);
     }
+
+    public static Assessment__c createAssessment(Date scheduledDate, Time scheduledTime) {
+        Class__c mockExistingClass = [SELECT Id FROM Class__c LIMIT 1];
+        Assessment__c mockExistingAssessment = new Assessment__c();
+        mockExistingAssessment.Name = 'MockExistingAssessment';
+        mockExistingAssessment.Class__c = mockExistingClass.Id;
+        mockExistingAssessment.Date__c = scheduledDate;
+        mockExistingAssessment.Time__c = scheduledTime;
+
+        return mockExistingAssessment;
+    }
 }
