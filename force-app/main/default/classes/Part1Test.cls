@@ -8,10 +8,15 @@ public with sharing class Part1Test {
     }
 
     @isTest static void reverseStringTest(){
-        System.assertEquals(34, Part1.reverseString(s));
-        System.assertEquals(34, Part1.fibonacci(9));
-        System.assertEquals(34, Part1.fibonacci(9));
+        System.assertEquals('olleH', Part1.reverseString('Hello'));
+        System.assertEquals('hsoJ', Part1.reverseString('Josh'));
+        System.assertEquals('tseb eht si tantiF', Part1.reverseString('Fitnat is the best'));
+        }
+
+    @isTest static void isPalindromeTest(){
+
+        System.assertEquals(false, Part1.isPalindrome('lol'));    
+
     }
 
-    
 }

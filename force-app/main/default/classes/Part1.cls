@@ -43,12 +43,20 @@ public with sharing class Part1 {
         String revString = String.join(output,'');
 
         System.debug(revString);
-        return '';
+        return revString;
     }
 
 
     public static Boolean isPalindrome(String s) {
-        return false;
+
+        String rev = reverseString(s);
+
+        if(s==rev){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public static Integer factorial(Integer n) {
