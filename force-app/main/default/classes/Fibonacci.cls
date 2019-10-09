@@ -12,6 +12,10 @@ public with sharing class Fibonacci {
         // result will be the final result after calculation.
         Integer seq1 = 0, seq2 = 1, result = 0;
 
+        if (n <= -1)
+        {
+            return -1;
+        }
         // if our value is 0, make sure to return 0
         if (n == 0) {
             return 0;
