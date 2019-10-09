@@ -19,12 +19,12 @@ public with sharing class Project1Tests {
     @isTest static void testFibonacci() {
         Integer zeroth = Project1.fibonacci(0);
         Integer first = Project1.fibonacci(1);
-        Integer eighth = Project1.fibonacci(8);
+        Integer eighth = Project1.fibonacci(46);
         Integer negative = Project1.fibonacci(-1);
 
         System.assertEquals(0, zeroth);
         System.assertEquals(1, first);
-        System.assertEquals(21, eighth);
+        System.assertEquals(1836311903, eighth);
         System.assertEquals(-1, negative);
     }
     @isTest static void testReverseString() {

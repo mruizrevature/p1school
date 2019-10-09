@@ -7,7 +7,15 @@ public class Project1 {
         if (n < 0) return -1; // error
         if (n == 0) return 0;
         if (n == 1) return 1;
-        return fibonacci(n - 1) + fibonacci(n - 2);
+        //return fibonacci(n - 1) + fibonacci(n - 2);
+
+        Integer first, second = 0, third = 1;
+        for (Integer i = 1; i < n; i++) {
+            first = second;
+            second = third;
+            third = first + second;
+        }
+        return third;
     }
     
     /**
@@ -58,7 +66,7 @@ public class Project1 {
         List<Student__c> students = [ SELECT Id,
             (SELECT Id, Class__c FROM ClassEnrollments__r) 
             FROM Student__c];
-        List<Grade__c> grades = [SELECT Id, Class_Enrollment__c FROM Grade__c]; // also SELECT Grade__c
+        List<Grade__c> grades = [SELECT Id, Grade__c, Class_Enrollment__c FROM Grade__c];
         Map<Id, Map<Id, Double>> classGrades = new Map<Id, Map<Id, Double>>();
         for (Student__c s : students) {
             Map<Id, Double> classGrade = new Map<Id, Double>();
@@ -67,7 +75,7 @@ public class Project1 {
                 Integer count = 0;
                 for (Grade__c g : grades) {
                     if(ce.Id == g.Class_Enrollment__c) {
-                        // sum += g.Grade__c; 
+                        sum += g.Grade__c; 
                         count ++;
                     }
                 }
