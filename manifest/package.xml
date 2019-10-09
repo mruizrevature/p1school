@@ -2,6 +2,9 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>SchoolDataCreator</members>
+        <members>accountsForAGivenState</members>
+        <members>accountsForAGivenStateTest</members>
+        <members>State</members>
         <name>ApexClass</name>
     </types>
     <types>
