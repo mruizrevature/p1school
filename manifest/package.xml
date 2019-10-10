@@ -10,6 +10,8 @@
         <members>RoomOccupiedException</members>
 
         <!-- Org Data Creation Classes -->
+        <members>MyMethods</members>
+        <members>MyMethodsTests</members>
         <members>SchoolDataCreator</members>
 
         <!-- Test Classes -->
