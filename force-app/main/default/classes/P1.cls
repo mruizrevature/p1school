@@ -101,23 +101,37 @@ public class P1 {
 		List<Student__c> students = [SELECT Id, Name, (SELECT Id, Class__c FROM ClassEnrollments__r) FROM Student__c LIMIT 2];
 		// myGrades: stores the grades of one student
 		Map<Id, Double> averageGradesPerClass;
-		// for each student in students list
-		for(Student__c st :students) {
-			System.debug('Student: ' + st.Id + ' - ' + st.Name);
-			System.debug('Class => Average Grade\n');
-			// class id and average grade
-			averageGradesPerClass = new Map<Id, Double>();
-			// Get all grades for this student and group it by class
-			List<AggregateResult> allGradesForThisStudent = [SELECT Class_Enrollment__r.Class__c Id, AVG(Grade__c) avggrade FROM Grade__c WHERE Class_Enrollment__c IN :st.ClassEnrollments__r GROUP BY Class_Enrollment__r.Class__c];
-			System.debug('=======');
-			for (AggregateResult gg :allGradesForThisStudent) {
-				System.debug(gg.get('Id') + '-' + gg.get('avggrade'));
-				averageGradesPerClass.put(gg.get('Id'), gg.get('avggrade'));
+
+		// get the grades without querying for each student
+		List<AggregateResult> everytin =
+	     [
+		SELECT
+	     	Class_Enrollment__r.Student__c sId, 
+	     	Class_Enrollment__r.Class__c cId, 
+	    	 AVG(Grade__c) average
+	    FROM
+	    	Grade__c
+	    GROUP BY
+	     Class_Enrollment__r.Student__c, 
+	     Class_Enrollment__r.Class__c
+		];
+
+		Id currentSId =(Id) everytin.get(0).get('sId');
+		averageGradesPerClass = new Map<Id, Double>();
+		for (AggregateResult result :everytin) {
+			if((Id) result.get('sId') != currentSId) {
+				// put previous student's average grades to outer map
+				allGrades.put(currentSId, averageGradesPerClass);
+				// reset inner map
+				averageGradesPerClass = new Map<Id, Double>();
+				// change currentSId
+				currentSId =(Id) result.get('sId');
 			}
-			System.debug('=======');
-			// store current student's grades and move to next
-			allGrades.put(st.Id, averageGradesPerClass);
-			}
-			return allGrades;
-			}
+			// add average grade for a class for current student
+			averageGradesPerClass.put((Id) result.get('cId'), (Double) result.get('average'));
+			System.debug(result.get('sId') + '-' + result.get('cId') + '-' + result.get('average'));
+		}   
+		return allGrades;
+	}
+
 }

@@ -57,20 +57,29 @@ public with sharing class P1Test {
 	@isTest public static void testGetClassGrades() {
 		// The test works on my own data
 
-        // Map<Id, Map<Id, Double>> allGrades = P1.getClassGrades();
+        Map<Id, Map<Id, Double>> allGrades = P1.getClassGrades();
 
-        // match the first 2 entries
         // Mike Williams
-        // Mike's grades
-        // Mike took 8 classes
-        // Double [] grades = new List<Double>{64.98, 88.30, 62.03, 88.03, 74.45, 93.20, 62.61, 65.03};
-        // Integer i = 0;
-        // Map<Id, Double> mikeGrades= allGrades.get('a034T000002KEWLQA4');
-        // for (String key: mikeGrades.keySet()){
-        //     System.debug('=> ' + mikeGrades.get(key));
-        //     System.assert(mikeGrades.get(key) != grades[i]);
-        //     i += 1;
-        // }
+        // Mike took 2 classes: MAT100 and BIO100
+
+		// He took two assesments for MAT100 
+		   // first assesment Grade: 70.0
+		   // second assesment Grade: 89.0
+		// Average = 94.5
+
+		// He took one assesment for BIO100
+			// first assesement Grade: 70.0
+		// Average = 70.0
+
+		// 
+        Double [] grades = new List<Double>{94.5, 70.0};
+        Integer i = 0;
+        Map<Id, Double> mikeGrades= allGrades.get('a034T000002KEWLQA4');
+        for (String key: mikeGrades.keySet()){
+            System.debug('=> ' + mikeGrades.get(key));
+            System.assert(mikeGrades.get(key) != grades[i]);
+            i += 1;
+        }
 
 	}
 
