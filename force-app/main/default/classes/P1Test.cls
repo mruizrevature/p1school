@@ -72,14 +72,14 @@ public with sharing class P1Test {
 		// Average = 70.0
 
 		// 
-        Double [] grades = new List<Double>{94.5, 70.0};
-        Integer i = 0;
-        Map<Id, Double> mikeGrades= allGrades.get('a034T000002KEWLQA4');
-        for (String key: mikeGrades.keySet()){
-            System.debug('=> ' + mikeGrades.get(key));
-            System.assert(mikeGrades.get(key) != grades[i]);
-            i += 1;
+        Double [] grades = new List<Double>{70.0, 94.5};
+		Map<Id, Double> mikeGrades = allGrades.get('a0B3j00000xPPLmEAO');
+		Integer i = 0;
+		for (String key: mikeGrades.keySet()){
+            System.assert(grades[i] == mikeGrades.get(key));
+			i++;
         }
+	   
 
 	}
 

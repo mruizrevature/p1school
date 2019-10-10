@@ -127,11 +127,30 @@ public class P1 {
 				// change currentSId
 				currentSId =(Id) result.get('sId');
 			}
+			// for last one
+			allGrades.put(currentSId, averageGradesPerClass);
+
 			// add average grade for a class for current student
 			averageGradesPerClass.put((Id) result.get('cId'), (Double) result.get('average'));
 			System.debug(result.get('sId') + '-' + result.get('cId') + '-' + result.get('average'));
 		}   
 		return allGrades;
+	}
+	public static void mine(){
+		Map<Id, Map<Id, Double>> allGrades = P1.getClassGrades();
+		System.debug('here');
+		for (String key: allGrades.keySet()){
+			System.debug('key=' + key); 
+			System.debug('value=' + allGrades.get(key));
+		}
+		Double [] grades = new List<Double>{70.0, 94.5};
+		Map<Id, Double> mikeGrades = allGrades.get('a0B3j00000xPPLmEAO');
+		 Integer i = 0;
+		 for (String key: mikeGrades.keySet()){
+            System.debug(grades[i] == mikeGrades.get(key));
+			i++;
+        }
+
 	}
 
 }
