@@ -14,8 +14,8 @@ public class P1 {
 		    return 1;
 	    }
         else if ( n >= 2){
-            //return ((Math.pow(((1+Math.sqrt((Double)5))/2),n)) - (Math.pow(((1-Math.sqrt((Double)5))/2),n)))/Math.sqrt((Double)5);
-            //the formula above is too much of a hassle
+            
+            //the formula above was too much of a hassle
             return  fibonacci(n-1) + fibonacci(n-2);
         }
         else{
