@@ -43,7 +43,7 @@ private class ClassGradeTest {
         Map<Id, Map<Id, Double>> classGrades = ClassGrade.getClassGrades();
         for (Map<Id, Double> mapValue : classGrades.values()) {
             for (Double data : mapValue.values()) {
-                System.assertEquals(data, 80);
+                System.assertEquals(data, 30);
             }
         }
     }

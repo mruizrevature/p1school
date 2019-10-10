@@ -28,6 +28,7 @@
         <members>RoomUtilityClass</members>
 
         <members>ClassGrade</members>
+        <members>ClassGradeTest</members>
         <name>ApexClass</name>
     </types>
     <types>
