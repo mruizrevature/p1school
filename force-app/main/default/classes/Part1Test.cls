@@ -1,4 +1,4 @@
-@isTest
+@isTest(seeAllData = true)
 public with sharing class Part1Test {
 
     @isTest static void fibonacciTest(){
@@ -15,8 +15,21 @@ public with sharing class Part1Test {
 
     @isTest static void isPalindromeTest(){
 
-        System.assertEquals(false, Part1.isPalindrome('lol'));    
+        System.assertEquals(true, Part1.isPalindrome('lol'));
+        System.assertEquals(true, Part1.isPalindrome('bob'));
+        System.assertEquals(false, Part1.isPalindrome('loosl'));
 
+
+    }
+    @isTest static void factorialTest(){
+        System.assertEquals(120, Part1.factorial(5));
+    
+    }
+
+    @isTest static void getAccountsForAGivenStateTest(){
+
+        List<Account> j = Part1.getAccountsForAGivenState(State.CA);
+        System.assert(j.size()>=1, 'Actual: ' + j.size());
     }
 
 }

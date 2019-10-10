@@ -59,13 +59,34 @@ public with sharing class Part1 {
         }
     }
 
-    public static Integer factorial(Integer n) {
-        return 0;
+    public static Integer factorial(Integer n){
+        if(n==0){
+            return 1;
+        }
+        else if (n==1){
+            return 1;
+        }
+        else{
+            return n*factorial(n-1);
+        }
     }
 
+    /*  I only want the accounts that have a contact who works at the same place as the account.
+     * */
+
+    //  Part1.getAccountsForAGivenState(State.CA);
+
     public static List<Account> getAccountsForAGivenState(State s) {
-        return new List<Account>();
+        
+        List <Account> acc = [SELECT id , (SELECT id, name FROM Contacts WHERE Contact.mailingState =:s.name()) FROM Account WHERE Account.BillingState =:s.name()];
+
+        // if (acc.size() == 0) return null;
+        // else 
+        System.debug('Returned acc list : ' + acc.size());
+        return acc;
     }
+
+
 
 
 
