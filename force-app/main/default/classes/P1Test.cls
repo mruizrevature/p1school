@@ -52,6 +52,25 @@ public with sharing class P1Test {
 		System.assert(matchingAccs.size() == 1);
 		// it is sForce
 		System.assert(matchingAccs[0].Name == 'sForce');
+	}
+
+	@isTest public static void testGetClassGrades() {
+		// The test works on my own data
+
+        // Map<Id, Map<Id, Double>> allGrades = P1.getClassGrades();
+
+        // match the first 2 entries
+        // Mike Williams
+        // Mike's grades
+        // Mike took 8 classes
+        // Double [] grades = new List<Double>{64.98, 88.30, 62.03, 88.03, 74.45, 93.20, 62.61, 65.03};
+        // Integer i = 0;
+        // Map<Id, Double> mikeGrades= allGrades.get('a034T000002KEWLQA4');
+        // for (String key: mikeGrades.keySet()){
+        //     System.debug('=> ' + mikeGrades.get(key));
+        //     System.assert(mikeGrades.get(key) != grades[i]);
+        //     i += 1;
+        // }
 
 	}
 
