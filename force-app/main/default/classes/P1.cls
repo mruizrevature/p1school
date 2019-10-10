@@ -136,21 +136,6 @@ public class P1 {
 		}   
 		return allGrades;
 	}
-	public static void mine(){
-		Map<Id, Map<Id, Double>> allGrades = P1.getClassGrades();
-		System.debug('here');
-		for (String key: allGrades.keySet()){
-			System.debug('key=' + key); 
-			System.debug('value=' + allGrades.get(key));
-		}
-		Double [] grades = new List<Double>{70.0, 94.5};
-		Map<Id, Double> mikeGrades = allGrades.get('a0B3j00000xPPLmEAO');
-		 Integer i = 0;
-		 for (String key: mikeGrades.keySet()){
-            System.debug(grades[i] == mikeGrades.get(key));
-			i++;
-        }
-
-	}
+	
 
 }
