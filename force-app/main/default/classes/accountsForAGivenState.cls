@@ -9,8 +9,9 @@ public with sharing class accountsForAGivenState {
      * */
     public static List<Account> getAccountsForAGivenState(State s) {
         String stateString = String.valueOf(s);
-        List<Account> getAccountList = [SELECT Id, Name FROM Account WHERE billingState = :stateString];
-
+        List<Account> getAccountList = [SELECT Id, Name, BillingState,
+        (SELECT Id, Name, MailingState FROM Contacts WHERE MailingState =: stateString)
+        FROM Account WHERE BillingState =: stateString];
         return getAccountList;
     }
 }
