@@ -26,6 +26,8 @@
         <members>GPAController</members>
         <members>UserPermissionErrors</members>
         <members>RoomUtilityClass</members>
+
+        <members>ClassGrade</members>
         <name>ApexClass</name>
     </types>
     <types>

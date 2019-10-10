@@ -34,7 +34,7 @@ private class ClassGradeTest {
                     Class_Enrollment__c =
                         [SELECT Id
                         FROM ClassEnrollment__c][0].Id,
-                    Grade__c = 40 + 10 * i);
+                    Grade__c = 20 + 10 * i);
             insert g;
         }
     }
