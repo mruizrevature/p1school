@@ -1,4 +1,4 @@
-@ isTest
+@ isTest(SeeAllData=true)
 public with sharing class P1Test {
 
 	@isTest public static void testFibonnaci() {
@@ -51,11 +51,8 @@ public with sharing class P1Test {
 		// Only one account in california satisfies the requirement
 		System.assert(matchingAccs.size() == 1);
 		// it is sForce
-		System.assert(matchingAccs [0].Name == 'sForce');
+		System.assert(matchingAccs[0].Name == 'sForce');
+
 	}
-
-
-
-
 
 }

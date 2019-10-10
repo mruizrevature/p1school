@@ -82,11 +82,12 @@ public class P1 {
                acc.BillingState == c.MailingState){
                    // add this account to list
                    newAccount.add(acc);
-                   //System.debug('contact->' + c.Name + 'account->' + acc.Name);
+                   System.debug('contact->' + c.Name + 'account->' + acc.Name);
                }
            }
        }
         // return list of accounts
+        System.debug('what is the size=>' + newAccount.size());
         return newAccount;
     }
     
