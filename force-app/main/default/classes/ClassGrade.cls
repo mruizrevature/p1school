@@ -29,6 +29,7 @@ public with sharing class ClassGrade {
                 for (Grade__c grade : allGrades) {
                     // if the class enrollment ID matches the grade's class enrollment
                     if(classEnrollment.Id == grade.Class_Enrollment__c) {
+                        sumOfAllGrades += grade.Grade__c;
                         // increment the count
                         count ++;
                     }
