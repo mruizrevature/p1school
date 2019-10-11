@@ -11,7 +11,7 @@ public class P1 {
      * Given a string, return its backwards order.
      * */
     public static String reverseString(String s) {
-        return '';
+        return s;
     }
     
     /**
