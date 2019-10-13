@@ -5,7 +5,7 @@ public with sharing class ClassEnrollmentTriggerHelper {
             FROM Class__c 
             WHERE Id = :enteringCE.Class__c
         ][0];
-        // System.debug('days per week: ' + c.DaysPerWeek__c);
+        
         for (Integer i = 0; i < c.DaysPerWeek__c; i++) {
             AttendanceLineItem__c a = new AttendanceLineItem__c(
                 Class__c = enteringCE.Class__c,
@@ -17,7 +17,6 @@ public with sharing class ClassEnrollmentTriggerHelper {
             } catch(DmlException e) {
                 System.debug('An unexpected error has occurred: ' + e.getMessage());
             }
-            // System.debug('line item: ' + a);
         }
     }
     public static void addAttendanceLines(List<ClassEnrollment__c> enteringCE) {

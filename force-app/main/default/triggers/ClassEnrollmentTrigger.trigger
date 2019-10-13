@@ -9,7 +9,13 @@ trigger ClassEnrollmentTrigger on ClassEnrollment__c (after insert, before delet
         }
     }
     if (Trigger.isBefore && Trigger.isDelete) {
-        System.debug(Trigger.old);
+        if (Schema.sObjectType.ClassEnrollment__c.isDeletable()) {
+            ClassEnrollmentTriggerHelper.removeAttendanceLines(Trigger.old);
+        } else {
+            for (ClassEnrollment__c c: Trigger.new) {
+                c.addError(UserPermissionErrors.CANNOT_DELETE_CE);
+            }
+        }
         ClassEnrollmentTriggerHelper.removeAttendanceLines(Trigger.old);
     }
 }

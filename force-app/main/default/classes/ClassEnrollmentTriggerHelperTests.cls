@@ -3,6 +3,7 @@ public with sharing class ClassEnrollmentTriggerHelperTests {
     @TestSetup
     static void makeData() {
         SchoolDataCreator.createData();
+        
         // Class Enrollment creator
         ClassEnrollment__c ce = new ClassEnrollment__c(
             Class__c = [SELECT Id FROM Class__c][0].Id, 
