@@ -93,9 +93,14 @@ public with sharing class ToDelete {
          * */
         public static List<Account> getAccountsForAGivenState(State s) {
             String stateString = String.valueOf(s);
-            List<Account> getAccountList = [SELECT Id, Name FROM Account WHERE billingState = :stateString];
-
-            return getAccountList;
+            List<Account> getAccountList = [SELECT Id, Name, BillingState,
+            (SELECT Id, Name, MailingState FROM Contacts WHERE MailingState =: stateString)
+            FROM Account WHERE BillingState =: stateString];
+            for (SObject accountData : getAccountList) {
+                if (accountData.get('BillingState') == accountData.get('MailingState')) {
+                    return getAccountList;
+                }
+            }
         }
 
         /**

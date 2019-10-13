@@ -12,6 +12,10 @@ public with sharing class accountsForAGivenState {
         List<Account> getAccountList = [SELECT Id, Name, BillingState,
         (SELECT Id, Name, MailingState FROM Contacts WHERE MailingState =: stateString)
         FROM Account WHERE BillingState =: stateString];
-        return getAccountList;
+        for (SObject accountData : getAccountList) {
+            if (accountData.get('BillingState') == accountData.get('MailingState')) {
+                return getAccountList;
+            }
+        }
     }
 }
