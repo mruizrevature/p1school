@@ -54,7 +54,7 @@ private class GetClassGradesTest {
         Map<Id, Map<Id, Double>> classGrades = ClassGrades.getClassGrades();
         for (Map<Id, Double> gradeTest : classGrades.values()) {
             for (Double d : gradeTest.values()) {
-                System.assertEquals(-d, 50);
+                System.assertNotEquals(-d, 50);
             }
         }
     }
