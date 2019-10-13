@@ -26,6 +26,19 @@
         <members>GPAController</members>
         <members>UserPermissionErrors</members>
         <members>RoomUtilityClass</members>
+
+        <!-- Methods Made by Jesse -->
+        <members>FactorFactorial</members>
+        <members>FactorFibonacci</members>
+        <members>FibonacciTest</members>
+        <members>Palindrome</members>
+        <members>PalindromeTest</members>
+        <members>ReverseString</members>
+        <members>ReverseStringTest</members>
+        <members>TestFactorial</members>
+        <members>State</members>
+        <members>AccountForGivenState</members>
+        <members>AccountForGivenStateTest</members>
         <name>ApexClass</name>
     </types>
     <types>
