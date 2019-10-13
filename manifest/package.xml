@@ -39,6 +39,8 @@
         <members>State</members>
         <members>AccountForGivenState</members>
         <members>AccountForGivenStateTest</members>
+        <members>ClassGrades</members>
+        <members>GetClassGradesTest</members>
         <name>ApexClass</name>
     </types>
     <types>
