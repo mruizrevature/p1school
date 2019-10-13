@@ -4,7 +4,9 @@
 
 @IsTest
 private class AccountForGivenStateTest {
-    @IsTest
-    static void testBehavior() {
+    @isTest static void getAccountsForAGivenStateTest(){
+
+        List<Account> j = AccountForGivenState.getAccountsForAGivenState(State.CA);
+        System.assert(j.size()>=1, 'Actual: ' + j.size());
     }
 }

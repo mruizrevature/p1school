@@ -63,6 +63,10 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="State" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="TestFactorial" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
