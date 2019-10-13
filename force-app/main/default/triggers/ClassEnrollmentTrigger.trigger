@@ -1,5 +1,5 @@
-trigger ClassEnrollmentTrigger on ClassEnrollment__c (before insert) {
-    if (Trigger.isBefore) {
+trigger ClassEnrollmentTrigger on ClassEnrollment__c (after insert, after delete) {
+    if (Trigger.isAfter) {
         if (Trigger.isInsert) {
             if (Schema.sObjectType.ClassEnrollment__c.isCreateable()) {
                 ClassEnrollmentTriggerHelper.addAttendanceLines(Trigger.new);
@@ -8,6 +8,9 @@ trigger ClassEnrollmentTrigger on ClassEnrollment__c (before insert) {
                     c.addError(UserPermissionErrors.CANNOT_CREATE_CE);
                 }
             }
+        } else if (Trigger.isDelete) {
+            // error checking
+            ClassEnrollmentTriggerHelper.removeAttendanceLines(Trigger.new);
         }
     }
 }
