@@ -55,6 +55,6 @@ private class PalindromeTest {
     @IsTest static void negativeUTCPalindrome() {
         String testString = '我爱妈妈，妈妈爱我 ';
         Boolean validTest = Palindrome.isPalindrome(testString);
-        System.assertNotEquals(false, validTest);
+        System.assertNotEquals(true, validTest);
     }
 }

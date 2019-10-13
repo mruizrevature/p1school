@@ -29,6 +29,6 @@ private class TestFactorial {
         System.debug(validTest);
         // This is an edge case of someone putting an invalid numerical value.
         // We should test to make sure that it does not fail as well.
-        System.assertEquals(1, validTest);
+        System.assertNotEquals(1, validTest);
     }
 }

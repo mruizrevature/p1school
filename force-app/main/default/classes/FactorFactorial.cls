@@ -15,7 +15,7 @@ public with sharing class FactorFactorial {
         }
 
         // Since n is never supposed to be less than 0, return -1 to denote a failure status code.
-        if (n > 0) {
+        if (n < 0) {
             return -1;
         }
         // since this is a recursive function. multiply our nth number by the
