@@ -36,6 +36,9 @@
         <members>ReverseString</members>
         <members>ReverseStringTest</members>
         <members>TestFactorial</members>
+        <members>State</members>
+        <members>AccountForGivenState</members>
+        <members>AccountForGivenStateTest</members>
         <name>ApexClass</name>
     </types>
     <types>

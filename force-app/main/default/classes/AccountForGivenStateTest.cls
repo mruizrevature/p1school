@@ -4,9 +4,12 @@
 
 @IsTest
 private class AccountForGivenStateTest {
-    @isTest static void getAccountsForAGivenStateTest(){
+    @TestSetup static void InitTest() {
 
-        List<Account> j = AccountForGivenState.getAccountsForAGivenState(State.CA);
-        System.assert(j.size()>=1, 'Actual: ' + j.size());
+    }
+
+    @isTest static void getAccountsForAGivenStateTest(){
+        List<Account> customAccountTest = AccountForGivenState.getAccountsForAGivenState(State.VA);
+        System.assert(customAccountTest.size() >= 1, 'Actual: ' + customAccountTest.size());
     }
 }
