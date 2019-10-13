@@ -26,9 +26,12 @@
         <members>GPAController</members>
         <members>UserPermissionErrors</members>
         <members>RoomUtilityClass</members>
+<<<<<<< HEAD
 
         <members>ClassGrade</members>
         <members>ClassGradeTest</members>
+=======
+>>>>>>> master
         <name>ApexClass</name>
     </types>
     <types>

@@ -22,6 +22,7 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+<<<<<<< HEAD
         <apexClass>ClassGrade</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -30,6 +31,8 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+=======
+>>>>>>> master
         <apexClass>ClassTriggerHelper</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -62,10 +65,13 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+<<<<<<< HEAD
         <apexClass>State</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+=======
+>>>>>>> master
         <apexClass>TopicCreator</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -73,6 +79,7 @@
         <apexClass>UserPermissionErrors</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+<<<<<<< HEAD
     <classAccesses>
         <apexClass>accountsForAGivenState</apexClass>
         <enabled>true</enabled>
@@ -85,6 +92,8 @@
         <apexClass>factorial</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+=======
+>>>>>>> master
     <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>
@@ -152,6 +161,12 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
+<<<<<<< HEAD
+=======
+        <layout>Grade__c-Grade Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+>>>>>>> master
         <layout>Student__c-Student Layout</layout>
     </layoutAssignments>
     <objectPermissions>
@@ -470,10 +485,13 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>CreateReportFolders</name>
+<<<<<<< HEAD
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
         <name>CreateTopics</name>
+=======
+>>>>>>> master
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
