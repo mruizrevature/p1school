@@ -6,5 +6,11 @@
     "**/.sfdx": true
   },
   "eslint.nodePath": "c:\\Users\\James\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lwc-46.17.0\\node_modules",
-  "salesforcedx-vscode-core.show-cli-success-msg": false
+  "salesforcedx-vscode-core.show-cli-success-msg": false,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  }
 }
