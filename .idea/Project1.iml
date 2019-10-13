@@ -23,6 +23,21 @@
                       </option>
                       <option name="name" value="EmailServicesFunction" />
                     </MetadataType>
+                    <MetadataType>
+                      <option name="entries">
+                        <list>
+                          <MetadataEntry>
+                            <option name="name" value="FactorFactorial" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="TestFactorial" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                        </list>
+                      </option>
+                      <option name="name" value="ApexClass" />
+                    </MetadataType>
                   </set>
                 </option>
               </Manifest>
