@@ -35,6 +35,10 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="ClassGrades" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="FactorFactorial" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -44,6 +48,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="FibonacciTest" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="GetClassGradesTest" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
