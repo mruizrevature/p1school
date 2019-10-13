@@ -4,6 +4,7 @@ public with sharing class GPAController {
     */
     @AuraEnabled
     public static void calculateGPA(Id student){
-        
+        // GPA is calculated by dividing the total amount of
+        // grade points earned by the total amount of credit hours attempted
     }
 }
