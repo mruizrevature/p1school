@@ -1,5 +1,7 @@
+@isTest
 public with sharing class AttendanceLineTriggerHelperTests {
-    public AttendanceLineTriggerHelperTests() {
-
+    @TestSetup
+    static void makeData() {
+        SchoolDataCreator.createData();
     }
 }

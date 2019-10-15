@@ -13,6 +13,17 @@ public class SchoolDataCreator {
         // create minors
         createAssessments();
         // createGrades();
+
+        // Class Enrollment creator
+        ClassEnrollment__c ce = new ClassEnrollment__c(
+            Class__c = [SELECT Id FROM Class__c][0].Id, 
+            Student__c = [SELECT Id FROM Student__c][0].Id, 
+            Credits__c = 1, 
+            Status__c = 'Enrolled'
+        );        
+        try {insert ce;} catch(DmlException e) {
+            System.debug('An unexpected error has occurred: ' + e.getMessage());
+        }
     }
     
     private static void deleteExistingSchoolData() {
