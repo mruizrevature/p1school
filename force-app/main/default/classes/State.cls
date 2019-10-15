@@ -1,0 +1,1 @@
+global enum State {VA, NC, CA, NY}
