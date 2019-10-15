@@ -8,5 +8,10 @@
     <columns>Room__c</columns>
     <columns>Time__c</columns>
     <filterScope>Everything</filterScope>
+    <filters>
+        <field>Class__c</field>
+        <operation>contains</operation>
+        <value>MAT</value>
+    </filters>
     <label>All</label>
 </ListView>

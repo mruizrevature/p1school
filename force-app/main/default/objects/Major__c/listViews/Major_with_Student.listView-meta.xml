@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>All</fullName>
+    <fullName>Major_with_Student</fullName>
     <columns>NAME</columns>
     <columns>Student__c</columns>
-    <columns>Status__c</columns>
-    <columns>Class__c</columns>
-    <filterScope>Everything</filterScope>
-    <label>All</label>
+    <columns>Degree__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Major with Student</label>
 </ListView>
