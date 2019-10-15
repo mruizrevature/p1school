@@ -114,25 +114,54 @@ public with sharing class MyMethods {
      * For each student, get the grade for each of their classes.
      */
     public static Map<Id, Map<Id, Double>> getClassGrades() {
-        // Get list of Student Ids
-        // List<Student> StudentList = [
-        //     SELECT 
-        //         Id 
-        //     FROM Student__c
-        // ];
-
         // Get a list of students that are enrolled or 
         // have been enrolled in classes, along with those classes
-        List<ClassEnrollment> classEnrollmentList = [
+        List<ClassEnrollment__c> classEnrollmentList = [
             SELECT 
                 Student__c
                 ,Class__c 
             FROM ClassEnrollment__c 
-            WHERE Student__r.Status__c IN ('Enrolled', 'Suspended', 'Graduated', 'Expelled') 
+            WHERE Student__r.Status__c = 'Enrolled'
         ];
 
-        // Get assessments for each class
+        // Get a list of Grades
+        List<Grade__c> gradeList = [
+            SELECT 
+                Id 
+                ,Assessment__c 
+                ,Grade__c 
+            FROM Grade__c 
+        ];
+
+        // Put all the Class Ids in a list
+        List<Id> classIdList = new List<Id>();
+        Object id;
+        for (ClassEnrollment__c classEnrollment : classEnrollmentList) {
+            
+            // Don't add duplicate Class Ids to the list
+            if (!classEnrollment.get('Class__c').equals(id)) {
+                classIdList.add(classEnrollmentList.get('Class__c'));
+            }
+            id = classEnrollment.get('Class__c');
+        }
+
+        // Put all the Student Ids in a list
+        List<Id> studentIdList = new List<Id>();
+        for (ClassEnrollment__c classEnrollment : classEnrollmentList) {
+            
+            // Don't add duplicate Student Ids to the list
+            if (!classEnrollment.get('Student__c').equals(id)) {
+                classIdList.add(classEnrollmentList.get('Student__c'));
+            }
+            id = classEnrollment.get('Student__c');
+        }
+
         
+
         return new Map<Id,Map<Id, Double>>();
     }
 }
+
+
+
+
