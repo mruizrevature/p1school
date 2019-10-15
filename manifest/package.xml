@@ -3,7 +3,9 @@
     <types>
         <!-- Trigger Helper classes -->
         <members>AssessmentTriggerHelper</members>
+        <members>AttendanceLineTriggerHelper</members>
         <members>ClassTriggerHelper</members>
+        <members>StudentWithdrawAttendanceTriggerHelper</members>
         <members>RoomUtilityClass</members>
 
         <!-- Exceptions -->
@@ -14,13 +16,16 @@
 
         <!-- Test Classes -->
         <members>AssessmentTriggerTests</members>
+        <members>AttendanceLineTests</members>
         <members>ClassTriggerTests</members>
 
         <!-- Test Utility Classes -->
         <members>AssessmentCreator</members>
         <members>ClassCreator</members>
         <members>DepartmentCreator</members>
+        <members>EmployeeCreator</members>
         <members>RoomCreator</members>
+        <members>StudentCreator</members>
         <members>TopicCreator</members>
 
         <members>GPAController</members>
@@ -34,7 +39,9 @@
     </types>
     <types>
         <members>AssessmentTrigger</members>
+        <members>AttendanceLineTrigger</members>
         <members>ClassTrigger</members>
+        <members>StudentWithdrawAttendanceTrigger</members>
         <name>ApexTrigger</name>
     </types>
     <types>
