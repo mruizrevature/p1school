@@ -16,6 +16,5 @@ trigger ClassEnrollmentTrigger on ClassEnrollment__c (after insert, before delet
                 c.addError(UserPermissionErrors.CANNOT_DELETE_CE);
             }
         }
-        ClassEnrollmentTriggerHelper.removeAttendanceLines(Trigger.old);
     }
 }
