@@ -1,4 +1,4 @@
-public class Test {
+public class P1Test {
     /**
      * Return the nth fiboacci number in the fibonacci sequence.
      * It should start 1,1,2,3...
@@ -77,27 +77,70 @@ public class Test {
 
 
         //List<Account> stateContact = [SELECT Name FROM Account WHERE BillingState =: [SELECT MailingState FROM Contact WHERE MailingState =: BillingState(s.Name())]];
-
-       List<Account> stateContact = [SELECT Account.Name, (
-                                        SELECT Contact.Name
-                                        FROM Account.Contacts
-                                        WHERE MailingState =: s.Name()
-                                     )
-
+       List<Account> stateAccount = [SELECT id
         FROM Account
-        WHERE BillingState =: s.Name()
+        WHERE BillingState =: s.name()
        ];
 
-        return stateContact;
+
+       List<Contact> stateContact = [SELECT Account.id
+       FROM Contact
+       WHERE MailingState =: s.name()
+       ];
+
+       List<Account> statesMatching = new List<Account>();
+
+       for (Account matchingAccount: stateAccount){
+            for(Contact matchingContact: stateContact){
+                if(matchingAccount.get('id') == matchingCOntact.get('id')){
+                    if(matchingAccount.get(s.name()) == matchingContact.get(s.name())){
+                        statesMatching.add(matchingAccount);
+                    }
+                }
+            }
+       }
+
+    return statesMatching;
     }
     
     /**
      * For each student, get the grade for each of their classes.
      * */
     public static Map<Id, Map<Id, Double>> getClassGrades() {
-        return new Map<Id, Map<Id, Double>>();
+
+        List<Student__c> studentList = [SELECT Id
+        FROM Student__c
+        ]; 
+
+        List<ClassEnrollment__c> classEnrollment = [SELECT Id, Class__c
+        FROM classEnrollment__c
+        WHERE Student__c IN: studentList
+        ];
+        
+        AggregateResult[] studentGrade = [SELECT AVG(grade__c), Class_Enrollment__c
+        FROM Grade__c
+        GROUP BY Class_Enrollment__c
+        ];
+
+        Map<Id, Map<Id, Double>> studentIdandClass = new Map<Id, Map<Id, Double>>();
+        //Map<Id, Double> classEnrollmentandGrade = new Map<Id, Double>();
+
+        for(Student__c si: studentList){
+
+            Map<Id, Double> innerClassEnrollmentandGrade = new Map<Id, Double>();
+
+            for(ClassEnrollment__c ce: classEnrollment){
+
+                for(AggregateResult gg: studentGrade){
+
+                    if(ce.id==(gg.Class_Enrollment__c)){
+                    innerClassEnrollmentandGrade.put(ce.Class__c, (Double)gg.get('expr0'));
+                    }
+                }
+            }
+            studentIdandClass.put(si.id, innerClassEnrollmentandGrade);
+        }
+        return studentIdandClass;
     }
 
-   
-    
 }
