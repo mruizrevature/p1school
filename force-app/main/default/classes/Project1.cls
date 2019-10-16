@@ -65,13 +65,20 @@ public class Project1 {
     public static Map<Id, Map<Id, Double>> getClassGrades() {
         List<Student__c> students = [ SELECT Id, (SELECT Id, Class__c FROM ClassEnrollments__r) FROM Student__c];
         List<Grade__c> grades = [SELECT Id, Grade__c, Class_Enrollment__c FROM Grade__c];
+
         Map<Id, Map<Id, Double>> classGrades = new Map<Id, Map<Id, Double>>();
         for (Student__c s : students) {
             Map<Id, Double> classGrade = new Map<Id, Double>();
             for (ClassEnrollment__c ce : s.ClassEnrollments__r) {
-                Double sum = 0; 
-                for (Grade__c g : grades) if (ce.Id == g.Class_Enrollment__c) sum += g.Grade__c;
-                if (grades.size() > 0) classGrade.put(ce.Id, sum / grades.size());
+                Double sum = 0;
+                Double count = 0;
+                for (Grade__c g : grades) {
+                    if (ce.Id == g.Class_Enrollment__c) {
+                        sum += g.Grade__c;
+                        count++;
+                    }
+                }
+                if (count > 0) classGrade.put(ce.Class__c, sum / count);
             } classGrades.put(s.Id, classGrade);
         }
         return classGrades;
