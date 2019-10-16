@@ -20,8 +20,5 @@ public with sharing class ClassEnrollmentTriggerHelper {
 
 
 
-
-
-
     }
 }
