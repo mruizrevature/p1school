@@ -133,7 +133,7 @@ public class P1Test {
 
                 for(AggregateResult gg: studentGrade){
 
-                    if(ce.id==(gg.Class_Enrollment__c)){
+                    if(ce.id==((id) gg.get('Class_Enrollment__c'))){
                     innerClassEnrollmentandGrade.put(ce.Class__c, (Double)gg.get('expr0'));
                     }
                 }
