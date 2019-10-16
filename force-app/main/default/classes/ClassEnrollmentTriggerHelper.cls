@@ -6,7 +6,7 @@ public with sharing class ClassEnrollmentTriggerHelper {
             enteringClasses.add(ce.Class__c);
         }
         List<Class__c> classList = [
-            SELECT Id, DaysPerWeek__c 
+            SELECT Id, DaysPerWeek__c, DurationInWeeks__c 
             FROM Class__c 
             WHERE Id IN :enteringClasses
         ];
@@ -15,7 +15,7 @@ public with sharing class ClassEnrollmentTriggerHelper {
             for (Class__c c : classList) {
                 if (c.Id == ce.Class__c) current = c;
             }
-            for (Integer i = 0; i < current.DaysPerWeek__c; i++) {
+            for (Integer i = 0; i < current.DaysPerWeek__c * current.DurationInWeeks__c; i++) {
                 AttendanceLineItem__c a = new AttendanceLineItem__c(
                     Class__c = current.id,
                     ClassEnrollment__c = ce.Id,
