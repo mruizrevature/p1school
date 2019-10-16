@@ -2,11 +2,13 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <!-- Trigger Helper classes -->
+        <members>DuplicateEnrollmentTriggerHelper</members>
         <members>AssessmentTriggerHelper</members>
         <members>ClassTriggerHelper</members>
         <members>RoomUtilityClass</members>
 
         <!-- Exceptions -->
+        <members>DuplicateEnrollmentException</members>
         <members>RoomOccupiedException</members>
 
         <!-- Org Data Creation Classes -->
@@ -16,8 +18,10 @@
 
         <!-- Project 1 Part 1 -->
         <members>MyMethods</members>
+
         <!-- Test Classes -->
         <members>MyMethodsTests</members>
+        <members>DuplicateEnrollmentTriggerTests</members>
         <members>AssessmentTriggerTests</members>
         <members>ClassTriggerTests</members>
 
@@ -38,6 +42,7 @@
         <name>ApexTestSuite</name>
     </types>
     <types>
+        <members>DuplicateEnrollmentTrigger</members>
         <members>AssessmentTrigger</members>
         <members>ClassTrigger</members>
         <name>ApexTrigger</name>

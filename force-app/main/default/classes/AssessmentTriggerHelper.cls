@@ -15,7 +15,7 @@ public with sharing class AssessmentTriggerHelper {
     static void checkIfAssessmentIsUsingRoom(Assessment__c newAssessment) {
         List<Assessment__c> existingAssessments;
 
-        // Make sure the sure has read access for exising Assessment records.
+        // Make sure the user has read access for exising Assessment records.
         if (Schema.sObjectType.Assessment__c.isAccessible()) {
             existingAssessments = [SELECT Id, Date__c, Time__c, Room__c FROM Assessment__c WHERE Date__c =: newAssessment.Date__c AND Time__c =: newAssessment.Time__c AND Room__c =: newAssessment.Room__c];
         }
@@ -44,7 +44,7 @@ public with sharing class AssessmentTriggerHelper {
             listOfTimes.add(a.Time__c);
         }
 
-        // Make sure the sure has read access for exising Assessment records.
+        // Make sure the sure the user has read access for exising Assessment records.
         if (Schema.sObjectType.Assessment__c.isAccessible()) {
             existingAssessments = [SELECT Id, Date__c, Time__c, Room__c FROM Assessment__c WHERE (Date__c IN: listOfDates) AND (Room__c IN: listOfRooms) AND (Time__c IN: listOfTimes)];
         }
