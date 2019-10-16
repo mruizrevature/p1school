@@ -12,7 +12,7 @@ public with sharing class AttendanceLineTriggerHelper {
             AND (Absent__c = true) AND (Excused__c = false)
             GROUP BY Student__c
         ];
-        suspendStudent(suspendList);
+        return absenteeList;
     }
     public static void suspendStudent(List<Student__c> studentList) {
         //
