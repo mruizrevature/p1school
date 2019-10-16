@@ -4,6 +4,8 @@ public with sharing class GPAController {
     */
     @AuraEnabled
     public static void calculateGPA(Id student){
+
+        getGpa(student);
         //CumulativeGPA__c
 
     }
@@ -11,12 +13,13 @@ public with sharing class GPAController {
     public static Double getGPA (Id Student){
    
     //Returns grade of a specific student
-    AggregateResult[] gpaGrade =[SELECT AVG(Grade__c) averageName, Class_Enrollment__c, Class_Enrollment__r.Student__c, Class_Enrollment__r.Credits__c
+    AggregateResult[] gpaGrade =[SELECT AVG(Grade__c) averageName, Class_Enrollment__c, Class_Enrollment__r.Student__c, Class_Enrollment__r.Credits__c testName
     FROM Grade__c
     GROUP BY Class_Enrollment__c, Class_Enrollment__r.Student__c, Class_Enrollment__r.Credits__c
     HAVING Class_Enrollment__r.Student__c =: student
     ];
         Double gradePoint= 0.0;
+        Double gpaForStudent = 0.0;
 
         for (AggregateResult results : gpaGrade) {
            //Object gradePoint = results.get('averageName');
@@ -46,10 +49,11 @@ public with sharing class GPAController {
         }else if((Double) results.get('averageName') >= 93){
             gradePoint=4;
         }
+
+        gpaForStudent = (gradePoint * (Double) results.get('testName')) / gradePoint;
     }
 
     //get the GPA by taking gradepoint and multiplying it by credit and then divide it by credit
-        Double gpaForStudent = 0.0;
 
 
         return gpaForStudent;
