@@ -4,7 +4,8 @@ public with sharing class GPAController {
     */
     @AuraEnabled
     public static void calculateGPA(Id student){
-
+        
+        
         getGpa(student);
         //CumulativeGPA__c
 
