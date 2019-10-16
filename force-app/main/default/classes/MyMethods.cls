@@ -27,7 +27,6 @@ public with sharing class MyMethods {
         for (Integer i = s.length() - 1; i >= 0; --i) {
             stringReversed += s.substring(i, i + 1);
         }
-
         return stringReversed;
     }
 
@@ -114,51 +113,56 @@ public with sharing class MyMethods {
      * For each student, get the grade for each of their classes.
      */
     public static Map<Id, Map<Id, Double>> getClassGrades() {
-        // Get a list of students that are enrolled or 
-        // have been enrolled in classes, along with those classes
+        // Get a list of Students and the Classes they are enrolled in
         List<ClassEnrollment__c> classEnrollmentList = [
-            SELECT 
-                Student__c
+            SELECT
+                Id 
+                ,Student__c
                 ,Class__c 
             FROM ClassEnrollment__c 
             WHERE Student__r.Status__c = 'Enrolled'
         ];
 
-        // Get a list of Grades
-        List<Grade__c> gradeList = [
+        // Get a List<AggregrateResult> of average Grades for each ClassEnrollment
+        AggregateResult[] gradeList = [
             SELECT 
-                Id 
-                ,Assessment__c 
-                ,Grade__c 
-            FROM Grade__c 
+                Class_Enrollment__c
+                ,AVG(Grade__c) averageGrade
+                FROM Grade__c 
+                GROUP BY Class_Enrollment__c
         ];
 
-        // Put all the Class Ids in a list
-        List<Id> classIdList = new List<Id>();
-        Object id;
-        for (ClassEnrollment__c classEnrollment : classEnrollmentList) {
-            
-            // Don't add duplicate Class Ids to the list
-            if (!classEnrollment.get('Class__c').equals(id)) {
-                classIdList.add(classEnrollmentList.get('Class__c'));
+        // Map to store result in
+        Map<Id, Map<Id, Double>> resultMap = new Map<Id, Map<Id, Double>>();
+
+        // Loop through the Students in the classEnrollmentList
+        for (ClassEnrollment__c student : classEnrollmentList) {
+
+            Object currentStudent = student.get('Student__c');
+
+            // Inner map to put inside of the result map. 
+            // <Class Id, Grade>
+            Map<Id, Double> classAndGradeMap = new Map<Id, Double>();
+
+            // Loop through the classes in the classEnrollmentList
+            for (ClassEnrollment__c classes : classEnrollmentList) {
+
+                Object currentClass = classes.get('Class__c');
+
+                for (AggregateResult grade : gradeList) {
+
+                    // In order to add only add the current class and the associated average grade
+                    // we need to check that the ClassEnrollment Ids match up on both the
+                    // Class and the Student
+                    if ((Id)classes.get('Id') == (Id)grade.get('Class_Enrollment__c') &&
+                        (Id)student.get('Id') == (Id)grade.get('Class_Enrollment__c')) {
+                        classAndGradeMap.put((Id)currentClass, (Double)grade.get('averageGrade'));    
+                    }    
+                }
             }
-            id = classEnrollment.get('Class__c');
+            resultMap.put((Id)currentStudent, classAndGradeMap);
         }
-
-        // Put all the Student Ids in a list
-        List<Id> studentIdList = new List<Id>();
-        for (ClassEnrollment__c classEnrollment : classEnrollmentList) {
-            
-            // Don't add duplicate Student Ids to the list
-            if (!classEnrollment.get('Student__c').equals(id)) {
-                classIdList.add(classEnrollmentList.get('Student__c'));
-            }
-            id = classEnrollment.get('Student__c');
-        }
-
-        
-
-        return new Map<Id,Map<Id, Double>>();
+        return resultMap;
     }
 }
 
