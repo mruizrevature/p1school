@@ -86,9 +86,9 @@ public with sharing class ProjectOnePartOne {
         List<Double> grades = new List<Double>();
         Double gradeSum = 0.0;
         for(Student__c s: [SELECT Id FROM Student__c]){
-            for(ClassEnrollment__c ce : [SELECT Id FROM ClassEnrollment__c WHERE Student__c = :s.Id]){
+            for(ClassEnrollment__c ce : [SELECT Id, Class__c FROM ClassEnrollment__c WHERE Student__c = :s.Id]){
                 for(Class__C c : [SELECT Id FROM Class__c WHERE Id = :ce.Class__c]){
-                    for(Grade__c g: [SELECT Grade__c FROM Grade__c WHERE ClassEnrollment__c =: ce.Id]){
+                    for(Grade__c g: [SELECT Grade__c FROM Grade__c WHERE Class_Enrollment__c =: ce.Id]){
                         gradeSum += g.Grade__c;
                     }       
                     if(grades.size() > 0){
