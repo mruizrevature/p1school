@@ -13,13 +13,15 @@ public with sharing class GPAController {
     public static Double getGPA (Id Student){
    
     //Returns grade of a specific student
-    AggregateResult[] gpaGrade =[SELECT AVG(Grade__c) averageName, Class_Enrollment__c, Class_Enrollment__r.Student__c, Class_Enrollment__r.Credits__c testName
+    AggregateResult[] gpaGrade =[SELECT AVG(Grade__c) averageName,  SUM(Class_Enrollment__r.Credits__c) creditName,  Class_Enrollment__r.Student__c
     FROM Grade__c
-    GROUP BY Class_Enrollment__c, Class_Enrollment__r.Student__c, Class_Enrollment__r.Credits__c
-    HAVING Class_Enrollment__r.Student__c =: student
+    GROUP BY  Class_Enrollment__r.Student__c 
+    HAVING Class_Enrollment__r.Student__c =: Student
     ];
         Double gradePoint= 0.0;
         Double gpaForStudent = 0.0;
+
+        //AggregateResult result = Schema.DescribeFieldResult
 
         for (AggregateResult results : gpaGrade) {
            //Object gradePoint = results.get('averageName');
@@ -50,7 +52,7 @@ public with sharing class GPAController {
             gradePoint=4;
         }
 
-        gpaForStudent = (gradePoint * (Double) results.get('testName')) / gradePoint;
+        gpaForStudent = (gradePoint * (Double) results.get('creditName')) / ((Double) results.get('creditName'));
     }
 
     //get the GPA by taking gradepoint and multiplying it by credit and then divide it by credit
