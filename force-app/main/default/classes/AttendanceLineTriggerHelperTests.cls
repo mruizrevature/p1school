@@ -4,4 +4,8 @@ public with sharing class AttendanceLineTriggerHelperTests {
     static void makeData() {
         SchoolDataCreator.createData();
     }
+
+    @isTest static void testCheckDuplicateEnrollment() {
+        //
+    }
 }
