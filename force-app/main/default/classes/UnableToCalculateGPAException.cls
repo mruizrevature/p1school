@@ -2,6 +2,6 @@
  * Created by gamedevmadeeasy on 10/13/19.
  */
 
-public with sharing class UnableToCalculateGPAException extends Exception {
+public class UnableToCalculateGPAException extends Exception {
 
 }

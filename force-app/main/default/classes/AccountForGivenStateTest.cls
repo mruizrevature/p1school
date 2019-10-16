@@ -39,7 +39,6 @@ private class AccountForGivenStateTest {
 
     @isTest static void getAccountsForAGivenStateTest(){
         List<Account> customAccountTest = AccountForGivenState.getAccountsForAGivenState(State.VA);
-        //System.assert(customAccountTest.size() >= 1, 'Actual: ' + customAccountTest.size());
         System.assertEquals(1, customAccountTest.size());
     }
 

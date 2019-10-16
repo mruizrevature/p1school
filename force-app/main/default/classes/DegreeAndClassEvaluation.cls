@@ -10,5 +10,6 @@ public with sharing class DegreeAndClassEvaluation {
         //    - If it was not successful, the CE status should be set to `Denied`
         //    - If enrolled, email the teacher.
         //    - If denied, email the student that an UnrelatedDegreeException exception was thrown.
+        return new ClassEnrollment__c();
     }
 }

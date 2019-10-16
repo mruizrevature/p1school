@@ -35,6 +35,10 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="calculateGPATest" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="ClassGrades" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
