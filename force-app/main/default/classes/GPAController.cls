@@ -12,7 +12,7 @@ public with sharing class GPAController {
     }
     //Get credit of class enrollment
     public static Double getGPA (Id Student){
-   
+    try{
     //Returns grade of a specific student
     AggregateResult[] gpaGrade =[SELECT AVG(Grade__c) averageName,  SUM(Class_Enrollment__r.Credits__c) creditName,  Class_Enrollment__r.Student__c
     FROM Grade__c
@@ -25,7 +25,7 @@ public with sharing class GPAController {
         //AggregateResult result = Schema.DescribeFieldResult
 
         for (AggregateResult results : gpaGrade) {
-           //Object gradePoint = results.get('averageName');
+        //Object gradePoint = results.get('averageName');
          //If Statement to convert grade to gradepoint 
         if((Double) results.get('averageName') < 60){
             gradePoint = 0;
@@ -54,6 +54,11 @@ public with sharing class GPAController {
         }
 
         gpaForStudent = (gradePoint * (Double) results.get('creditName')) / ((Double) results.get('creditName'));
+        }
+                 }catch(UnableToCalculateGPAException calcGPAFail){
+            
+                     calcGPAFail.addError(UserPermissionErrors.CANNOT_CALC_GPA);
+
     }
 
     //get the GPA by taking gradepoint and multiplying it by credit and then divide it by credit
