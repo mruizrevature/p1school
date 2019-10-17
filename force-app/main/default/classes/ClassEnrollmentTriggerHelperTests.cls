@@ -17,7 +17,7 @@ public with sharing class ClassEnrollmentTriggerHelperTests {
                 FROM Class__c 
                 WHERE DaysPerWeek__c = :numAttendance AND DurationInWeeks__c = :numWeeks
             ][0].Id, 
-            Student__c = [SELECT Id FROM Student__c][0].Id, 
+            Student__c = [SELECT Id FROM Student__c LIMIT 1][0].Id, 
             Credits__c = 1, 
             Status__c = 'Enrolled'
         );
@@ -32,7 +32,7 @@ public with sharing class ClassEnrollmentTriggerHelperTests {
 
     @isTest static void testRemoveAttendanceLines() {
         List<AttendanceLineItem__c> a0 = [SELECT Id FROM AttendanceLineItem__c];
-        ClassEnrollment__c ce = [SELECT Id FROM ClassEnrollment__c][0];
+        ClassEnrollment__c ce = [SELECT Id FROM ClassEnrollment__c LIMIT 1][0];
         
         List<AttendanceLineItem__c> a3 = [SELECT Id FROM AttendanceLineItem__c WHERE ClassEnrollment__c =: ce.Id];
         System.assertEquals(34, a3.size());
