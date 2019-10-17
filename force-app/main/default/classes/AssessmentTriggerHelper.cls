@@ -2,7 +2,10 @@ public with sharing class AssessmentTriggerHelper {
     /**
         Given a List<Assessment>, check if there is a Class or Assessment using that room at the specified time.
      */
-
+    public static void preventDoubleRoomBooking(List<Assessment__c> assessmentBeingInserted) {
+        checkIfAssessmentIsUsingRoom(assessmentBeingInserted);
+        //checkIfClassIsUsingRoom(assessmentBeingInserted);
+    }
     public static void preventDoubleRoomBooking(Assessment__c assessmentBeingInserted) {
         checkIfAssessmentIsUsingRoom(assessmentBeingInserted);
         checkIfClassIsUsingRoom(assessmentBeingInserted);
