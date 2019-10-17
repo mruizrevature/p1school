@@ -9,8 +9,7 @@ public with sharing class GPAController {
         calculate(student);
     }
 
-    private static List<Grade__c> getStudentData(Id student)
-    {
+    private static List<Grade__c> getStudentData(Id student) {
         List<Grade__c> grades = [
                 SELECT Id, Grade__c, Class_Enrollment__c, Class_Enrollment__r.Credits__c
                 FROM Grade__c
