@@ -18,10 +18,8 @@ public with sharing class ClassEnrollmentTriggerTests {
 
         for (Integer i = 0; i <5; i++){
 
-            mockCE.Student__c.add(mockCE.Student__c);
-            mockCE.Class__c.add(mockCE.Class__c);
-            mockCE.Status__c..add(mockCE.Status__c);
-            mockCE.Credits__c.add(mockCE.Credits__c);
+            mockCE.add(mockCE.Student__c,mockCE.Class__c, mockCE.Status__c, mockCE.Credits__c);
+            
         }
         insert mockCE;
     }
