@@ -5,7 +5,7 @@
         <members>AssessmentTriggerHelper</members>
         <members>ClassTriggerHelper</members>
         <members>RoomUtilityClass</members>
-
+        <members>ClassEnrollmentHelper</members>
         <!-- new ones -->
         <members>P1</members>
         <members>P1Test</members>
@@ -21,6 +21,7 @@
         <!-- Test Classes -->
         <members>AssessmentTriggerTests</members>
         <members>ClassTriggerTests</members>
+        <members>ClassEnrollmentTriggerTest</members>
 
         <!-- Test Utility Classes -->
         <members>AssessmentCreator</members>
@@ -42,6 +43,8 @@
         <members>AssessmentTrigger</members>
         <members>ClassTrigger</members>
         <name>ApexTrigger</name>
+        <members>ClassEnrollmentTrigger</members>
+
     </types>
     <types>
         <members>School</members>
