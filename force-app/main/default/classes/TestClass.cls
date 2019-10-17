@@ -106,12 +106,17 @@ public with sharing class TestClass {
 
         insert mockCE;
 
-        Grade__c gr = [SELECT 
+        Grade__c gr = [SELECT Grade__c FROM Grade__c WHERE Class_Enrollment__r.Student__r.Id =: studentID.Id];
 
 
 
-
-        ]
+        Map<Id, Map<Id, Double>> getSameGrade = P1Test.getClassGrades();
+        //Traverse through the map to get grade to compare to mack grade
+        for(Map<Id, Double> getGradeAndDouble : getSameGrade.values()){
+            for(Double getExistingGrade : getGradeAndDouble.values()){
+                System.assertEquals(getExistingGrade, gr.Grade__c);
+            }
+        }
 
 
 
