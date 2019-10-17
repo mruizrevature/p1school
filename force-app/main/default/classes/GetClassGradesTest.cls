@@ -23,9 +23,9 @@ private class GetClassGradesTest {
         // Create Some Grades
         for (Integer i = 0; i < 3; i++) {
             Grade__c grade = new Grade__c(
-                    Assessment__c = [SELECT Id FROM Assessment__c][0].Id,
+                    Assessment__c = [SELECT Id FROM Assessment__c][i].Id,
                     Class_Enrollment__c = [SELECT Id FROM ClassEnrollment__c][0].Id,
-                    Grade__c = 40 + 10 * i
+                    Grade__c = 33.33 * i
             );
 
         insert grade;

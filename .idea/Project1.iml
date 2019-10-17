@@ -55,6 +55,10 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="DuplicateEnrollmentTest" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="FactorFactorial" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -113,6 +117,17 @@
                         </list>
                       </option>
                       <option name="name" value="ApexClass" />
+                    </MetadataType>
+                    <MetadataType>
+                      <option name="entries">
+                        <list>
+                          <MetadataEntry>
+                            <option name="name" value="DuplicateEnrollment" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                        </list>
+                      </option>
+                      <option name="name" value="ApexTrigger" />
                     </MetadataType>
                   </set>
                 </option>
