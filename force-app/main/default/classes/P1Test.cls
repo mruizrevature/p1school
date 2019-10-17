@@ -133,9 +133,10 @@ public class P1Test {
 
                 for(AggregateResult gg: studentGrade){
 
-                    if(ce.id==((id) gg.get('Class_Enrollment__c'))){
+                    //Got rid of if statment since id of CE doesnt equal id of student
+                    //if(ce.id==((id) gg.get('Id'))){
                     innerClassEnrollmentandGrade.put(ce.Class__c, (Double)gg.get('expr0'));
-                    }
+                    //}
                 }
             }
             studentIdandClass.put(si.id, innerClassEnrollmentandGrade);

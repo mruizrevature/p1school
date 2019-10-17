@@ -89,42 +89,53 @@ public with sharing class TestClass {
         
     }
 
-    @isTest
+    @isTest()
     static void  testgetClassGrades(){
 
         SchoolDataCreator.createData();
-
-        //need mock data of student, grade, CE
-        ClassEnrollment__c mockCE = new ClassEnrollment__c();
         Student__c studentID = [SELECT id FROM Student__c LIMIT 1];
         Class__c classID = [SELECT id FROM Class__c LIMIT 1];
-
-        mockCE.Student__c = studentID.id;
-        mockCE.Class__c = classID.id;
-        mockCE.Status__c = 'Enrolled';
-        mockCE.Credits__c = 4;
-
+        //need mock data of student, grade, CE
+        ClassEnrollment__c mockCE = new ClassEnrollment__c(
+            Class__c = classID.Id,
+            Student__c = studentID.Id,
+            Credits__c = 4,
+            Status__c = 'Enrolled'
+        );
         insert mockCE;
 
-        Grade__c gr = [SELECT Grade__c FROM Grade__c WHERE Class_Enrollment__r.Student__r.Id =: studentID.Id];
+        Map<Id, Map<Id, Double>> getSameGrade = P1Test.getClassGrades();
+        System.assertEquals(getSameGrade, null, 'number grades');
+        //Traverse through the map to get grade to compare to mack grade
+        for(Map<Id, Double> getGradeAndDouble : getSameGrade.values()){
+            for(Double getExistingGrade : getGradeAndDouble.values()){
+                System.assertEquals(getExistingGrade, 50);
+                System.assertEquals(1,0);
+            }
+        }
+    }
 
-
-
+    //Grade is 80, check that it should fail cause test wants 22
+    @isTest(SeeAllData = true) 
+    static void testgetClassGradesFail() {
         Map<Id, Map<Id, Double>> getSameGrade = P1Test.getClassGrades();
         //Traverse through the map to get grade to compare to mack grade
         for(Map<Id, Double> getGradeAndDouble : getSameGrade.values()){
             for(Double getExistingGrade : getGradeAndDouble.values()){
-                System.assertEquals(getExistingGrade, gr.Grade__c);
+                System.assertEquals(22, getExistingGrade);
             }
         }
-
-
-
-
-
-
-
-        
+    }
+    //Grade is 80 in org, check if it equals
+    @isTest(SeeAllData = true) 
+    static void testgetClassGradesSuccess() {
+        Map<Id, Map<Id, Double>> getSameGrade = P1Test.getClassGrades();
+        //Traverse through the map to get grade to compare to mack grade
+        for(Map<Id, Double> getGradeAndDouble : getSameGrade.values()){
+            for(Double getExistingGrade : getGradeAndDouble.values()){
+                System.assertEquals(80, getExistingGrade);
+            }
+        }
     }
 
 }
