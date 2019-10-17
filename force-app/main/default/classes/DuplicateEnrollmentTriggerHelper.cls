@@ -11,8 +11,8 @@ public with sharing class DuplicateEnrollmentTriggerHelper {
                 for (Integer j = 0; j < enrollmentsBeingInserted.size(); ++j) {
                     if (i != j) {
                         // if class and student match, addError
-                        if ((Id)duplicateClassEnrollment.get('Class__c') == (Id)enrollmentsBeingInserted[i].get('Class__c') &&
-                            (Id)duplicateClassEnrollment.get('Student__c') == (Id)enrollmentsBeingInserted[i].get('Student__c')) {
+                        if ((Id)duplicateClassEnrollment.get('Class__c') == (Id)enrollmentsBeingInserted[j].get('Class__c') &&
+                            (Id)duplicateClassEnrollment.get('Student__c') == (Id)enrollmentsBeingInserted[j].get('Student__c')) {
                             enrollmentsBeingInserted[i].addError(DuplicateEnrollmentTriggerTests.DUPLICATE_ENROLLMENT);
                         }
                     }

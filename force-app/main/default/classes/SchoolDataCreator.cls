@@ -317,7 +317,7 @@ public class SchoolDataCreator {
 
         Integer j = classList.size() > studentList.size() ? studentList.size() : classList.size();
         Integer i = 0;
-        while (i < j - 1) {
+        while (i < j) {
             classEnrollmentsToInsert.add(new ClassEnrollment__c(
                 Class__c = classList[i].Id
                 ,Student__c = studentList[i].Id
