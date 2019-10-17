@@ -1,4 +1,5 @@
 trigger AssessmentTrigger on Assessment__c (before insert) {
+    /*
     if (Trigger.isBefore) {
         if (Trigger.isInsert) {
             if (Schema.sObjectType.Assessment__c.isCreateable()) {
@@ -12,4 +13,5 @@ trigger AssessmentTrigger on Assessment__c (before insert) {
             }
         }
     }
+    */
 }

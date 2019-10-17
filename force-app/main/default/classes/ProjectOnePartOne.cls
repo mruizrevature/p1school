@@ -80,29 +80,37 @@ public with sharing class ProjectOnePartOne {
 
         return stateAccounts;
     }
+
     public static Map<Id, Map<Id, Double>> getClassGrades() {
         Map<Id, Map<Id, Double>> studentsClassGrades = new Map<Id, Map<Id, Double>>();
         Map<Id, Double> tempClassGrades = new Map<Id, Double>();
-        List<Double> grades = new List<Double>();
+        Integer gradeNum = 0;
         Double gradeSum = 0.0;
-        for(Student__c s: [SELECT Id FROM Student__c]){
+        for(Student__c s: [SELECT Id FROM Student__c WHERE Id IN (
+                           SELECT STUDENT__C FROM ClassEnrollment__c)]){
             for(ClassEnrollment__c ce : [SELECT Id, Class__c FROM ClassEnrollment__c WHERE Student__c = :s.Id]){
                 for(Class__C c : [SELECT Id FROM Class__c WHERE Id = :ce.Class__c]){
                     for(Grade__c g: [SELECT Grade__c FROM Grade__c WHERE Class_Enrollment__c =: ce.Id]){
                         gradeSum += g.Grade__c;
+                        gradeNum++;
                     }       
-                    if(grades.size() > 0){
-                    tempClassGrades.put(c.Id, (gradeSum/grades.size()));
+                    if(gradeNum > 0){
+                        tempClassGrades.put(c.Id, (gradeSum/gradeNum));
                     }
-                }
+                    gradeNum = 0;
+                    gradeSum = 0.0;
+                }       
             }
-            if(grades.size() > 0){
+            if(tempClassGrades.size() > 0){
+                System.debug('for ' + s.name + ' we insert: ' + String.valueOf(tempClassGrades));
                 studentsClassGrades.put(s.Id,tempClassGrades.clone());
             }
             tempClassGrades.clear();
-            gradeSum = 0.0;
         }
+        
         return studentsClassGrades;
     }
+
+    
 
 }

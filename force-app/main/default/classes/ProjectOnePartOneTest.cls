@@ -144,7 +144,7 @@ public with sharing class ProjectOnePartOneTest {
         System.assertEquals(1, testMap.get(studentPeteJ.Id).size(), 'Class for 1 student not being recognized when there are ' + scenario);
         System.assertEquals(75.00, testMap.get(studentMikeW.Id).get(classMath.Id), 'Average Function did not function in the presence of ' + scenario);
         System.assertEquals(100.00, testMap.get(studentMikeW.Id).get(classBiology.Id), 'Average Function did not clear Properly in the presence of ' + scenario);
-        System.assertEquals(0.00, testMap.get(studentPeteJ.Id).get(classChemistry.Id), 'Average Function did function properly with multiple students, one of which has a grade of 0.0');
+        System.assertEquals(0.00, testMap.get(studentPeteJ.Id).get(classChemistry.Id), 'Average Function did not function properly with multiple students, one of which has a grade of 0.0');
 
         //test for multiple students with multiple classes with multiple grades, none share any classes
         Assessment__c chemQuizTwo = createAssessment('Chemistry Quiz Two', classChemistry, quizTypeId);
@@ -158,7 +158,7 @@ public with sharing class ProjectOnePartOneTest {
         System.assertEquals(1, testMap.get(studentPeteJ.Id).size(), 'class for 1 student not being recognized when there are ' + scenario);
         System.assertEquals(75.00, testMap.get(studentMikeW.Id).get(classMath.Id), 'Average Function did not function in the presence of ' + scenario);
         System.assertEquals(100.00, testMap.get(studentMikeW.Id).get(classBiology.Id), 'Average Function did not clear Properly in the presence of ' + scenario);
-        System.assertEquals(50.00, testMap.get(studentPeteJ.Id).get(classChemistry.Id), 'Average Function did function properly with multiple students, one of which has a grade of 0.0');
+        System.assertEquals(50.00, testMap.get(studentPeteJ.Id).get(classChemistry.Id), 'Average Function did not function properly with multiple students, one of which has a grade of 0.0');
 
         //test for multiple students with at least 2 classes with multiple grades, one class is shared
         ClassEnrollment__c cePeteInBio = new ClassEnrollment__c(Student__c = studentPeteJ.Id, Class__c = classBiology.Id, Credits__c = 3);
@@ -172,8 +172,8 @@ public with sharing class ProjectOnePartOneTest {
         System.assertEquals(2, testMap.get(studentPeteJ.Id).size(), 'All classes for 1 student not being recognized when there are ' + scenario);
         System.assertEquals(75.00, testMap.get(studentMikeW.Id).get(classMath.Id), 'Average Function did not function in the presence of ' + scenario);
         System.assertEquals(100.00, testMap.get(studentMikeW.Id).get(classBiology.Id), 'Average Function did not clear Properly in the presence of ' + scenario);
-        System.assertEquals(50.00, testMap.get(studentPeteJ.Id).get(classChemistry.Id), 'Average Function did function properly with multiple students, one of which has a grade of 0.0');
-        System.assertEquals(50.00, testMap.get(studentPeteJ.Id).get(classBiology.Id), 'Average Function did function properly with multiple students, one of which has a grade of 0.0');
+        System.assertEquals(50.00, testMap.get(studentPeteJ.Id).get(classChemistry.Id), 'Average Function did not function properly with ' + scenario);
+        System.assertEquals(85.00, testMap.get(studentPeteJ.Id).get(classBiology.Id), 'Average Function did not function properly with ' + scenario);
     }
 
     static Assessment__c createAssessment(String assessmentName, Class__c assessmentClass, Id assessmentType){
