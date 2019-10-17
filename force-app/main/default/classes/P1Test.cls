@@ -74,10 +74,8 @@ public class P1Test {
      *  I only want the accounts that have a contact who works at the same place as the account.
      * */
     public static List<Account> getAccountsForAGivenState(State s) {
-
-
         //List<Account> stateContact = [SELECT Name FROM Account WHERE BillingState =: [SELECT MailingState FROM Contact WHERE MailingState =: BillingState(s.Name())]];
-       List<Account> stateAccount = [SELECT id
+        List<Account> stateAccount = [SELECT id
         FROM Account
         WHERE BillingState =: s.name()
        ];
@@ -112,7 +110,7 @@ public class P1Test {
         FROM Student__c
         ]; 
 
-        List<ClassEnrollment__c> classEnrollment = [SELECT Id, Class__c
+        List<ClassEnrollment__c> classEnrollment = [SELECT Id, Class__c, Student__c
         FROM classEnrollment__c
         WHERE Student__c IN: studentList
         ];
@@ -126,22 +124,29 @@ public class P1Test {
         //Map<Id, Double> classEnrollmentandGrade = new Map<Id, Double>();
 
         for(Student__c si: studentList){
+            //System.debug('si: ' + si);
 
             Map<Id, Double> innerClassEnrollmentandGrade = new Map<Id, Double>();
 
             for(ClassEnrollment__c ce: classEnrollment){
+                // match ce and student
+                if(ce.Student__c == si.Id){
+                    //System.debug('ce: ' + ce);
+                    for(AggregateResult gg: studentGrade){
+                        //System.debug('gg: ' + gg);
 
-                for(AggregateResult gg: studentGrade){
-
-                    //Got rid of if statment since id of CE doesnt equal id of student
-                    //if(ce.id==((id) gg.get('Id'))){
-                    innerClassEnrollmentandGrade.put(ce.Class__c, (Double)gg.get('expr0'));
-                    //}
+                        //Got rid of if statment since id of CE doesnt equal id of student
+                        if(ce.id==((id) gg.get('Class_Enrollment__c'))){
+                            innerClassEnrollmentandGrade.put(ce.Class__c, (Double)gg.get('expr0'));
+                            //System.debug('grades: ' + gg);
+                        }
+                    }
                 }
-            }
-            studentIdandClass.put(si.id, innerClassEnrollmentandGrade);
-        }
-        return studentIdandClass;
+             }
+            //System.debug('class + grades: ' + innerClassEnrollmentandGrade);
+            if (innerClassEnrollmentandGrade.size() > 0 )studentIdandClass.put(si.id, innerClassEnrollmentandGrade);
     }
+        return studentIdandClass;
+}
 
 }
