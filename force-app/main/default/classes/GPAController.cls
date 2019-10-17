@@ -56,9 +56,16 @@ public with sharing class GPAController {
         /*
             average grade per class gradeList[89.34, 45.33, 67.34] <-- 3 classes
             credits per class       creditsEarned[3, 0, 1] <-- credits line up with classes
-            how to check if 
         */
         // creditsEarned * classEnrollmentList.get('Credits__c') == GPA for class
-        // Add all those up and divide by SUM(Credits__c) and we'll have the cumulative GPA
+        List<Double> totalCreditsEarnedPerClass = new List<Double>();
+        for (Integer i = 0; i < classEnrollmentList.size(); ++i) {
+            totalCreditsEarnedPerClass[i] = creditsEarned[i] *  (Double)classEnrollmentList[i].get('Credits__c');
+        }
+
+        // SUM(totalCreditsEarnedPerClass) and divide by SUM(Credits__c) and we'll have the cumulative GPA
+        for (Integer i = 0; i < classEnrollmentList[i].size(); ++i) {
+            
+        }
     }
 }
