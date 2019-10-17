@@ -31,11 +31,10 @@ public with sharing class ClassEnrollmentTriggerHelper {
                 WHERE Class__r.Id =: getClassID(enrollmentInserted) AND Student__r.Id =: getStudentID(enrollmentInserted)
                 ];
         }
-        if (checkIdStudentEnroll.size() > 1){
-            enrollmentInserted[0].addError(UserPermissionErrors.CANNOT_ENROLL_AGAIN);
-        } else{
-            enrollmentInserted[0].addError(UserPermissionErrors.CANNOT_CREATE_ENROLL);
-        }
+
+        if (checkIdStudentEnroll.size() >= 1){
+            throw new DuplicateEnrollmentException(UserPermissionErrors.CANNOT_ENROLL_AGAIN);
+        } 
 
         return checkIdStudentEnroll;
     }
