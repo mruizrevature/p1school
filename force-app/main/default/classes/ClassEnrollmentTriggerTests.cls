@@ -15,7 +15,6 @@ public with sharing class ClassEnrollmentTriggerTests {
         mockCE.Status__c = 'Enrolled';
         mockCE.Credits__c = 4;
 
-
         for (Integer i = 0; i <5; i++){
 
             mockCE.add(mockCE.Student__c,mockCE.Class__c, mockCE.Status__c, mockCE.Credits__c);

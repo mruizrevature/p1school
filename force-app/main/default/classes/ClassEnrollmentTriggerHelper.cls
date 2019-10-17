@@ -3,7 +3,7 @@ public with sharing class ClassEnrollmentTriggerHelper {
     public static void stopDoubleEnroll (List<ClassEnrollment__c> enrollmentInserted){
         checkDoubleEnroll(enrollmentInserted);
     }
- 
+    //get class id from every class in the list of class enrollment
     private static String getClassID(List<ClassEnrollment__c> enrollment) {
         String classID;
         for (ClassEnrollment__c classes : enrollment) {
@@ -12,6 +12,7 @@ public with sharing class ClassEnrollmentTriggerHelper {
             return classID;
     }
 
+    //Get student id from the list of Classenrollment
     private static String getStudentID(List<ClassEnrollment__c> enrollment) {
         String studentID;
         for (ClassEnrollment__c classes : enrollment) {
@@ -19,7 +20,7 @@ public with sharing class ClassEnrollmentTriggerHelper {
         }
             return studentID;
     }
-
+    //checks doubleenroll by matching ID of CE and see if it already exist
     public static List<ClassEnrollment__c> checkDoubleEnroll (List<ClassEnrollment__c> enrollmentInserted){
 
         List<ClassEnrollment__c> checkIdStudentEnroll;
