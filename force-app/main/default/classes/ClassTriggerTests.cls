@@ -52,9 +52,9 @@ public with sharing class ClassTriggerTests {
     }
 
     static void checkThatDoubleBookingIsPrevented(sObject classOrAssessment) {
-        Test.startTest();
+        //Test.startTest();
         Database.SaveResult insertResult = Database.insert(classOrAssessment, false);
-        Test.stopTest();
+        //Test.stopTest();
 
         // Insertion should have been stopped by the user.
         System.assert(!insertResult.isSuccess());
