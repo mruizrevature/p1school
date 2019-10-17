@@ -2,7 +2,7 @@ public with sharing class ClassEnrollmentTriggerHelper {
 
     public static void stopDoubleEnroll (List<ClassEnrollment__c> enrollmentInserted){
         try{
-        checkDoubleEnroll(enrollmentInserted);
+            checkDoubleEnroll(enrollmentInserted);
         }catch (DuplicateEnrollmentException dp){
            System.debug(dp.getMessage());
         }
@@ -37,7 +37,8 @@ public with sharing class ClassEnrollmentTriggerHelper {
         }
 
         if (checkIdStudentEnroll.size() >= 1){
-            throw new DuplicateEnrollmentException(UserPermissionErrors.CANNOT_ENROLL_AGAIN);
+            checkIdStudentEnroll[0].addError(UserPermissionErrors.CANNOT_ENROLL_AGAIN);
+            //throw new DuplicateEnrollmentException(UserPermissionErrors.CANNOT_ENROLL_AGAIN);
         } 
 
         return checkIdStudentEnroll;

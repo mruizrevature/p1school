@@ -6,6 +6,7 @@
         <members>AssessmentTriggerHelper</members>
         <members>ClassTriggerHelper</members>
         <members>RoomUtilityClass</members>
+        
 
         <!-- Exceptions -->
         <members>RoomOccupiedException</members>
