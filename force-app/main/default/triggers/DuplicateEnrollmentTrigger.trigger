@@ -1,11 +1,7 @@
-trigger DuplicateEnrollmentTrigger on ClassEnrollment__c (before insert, before update) {
+trigger DuplicateEnrollmentTrigger on ClassEnrollment__c (before insert) {
     if (Trigger.isBefore) {
-        if (Trigger.isInsert || Trigger.isUpdate) {
-
-            // Check to see if user has create access
-            if (Schema.sObjectType.ClassEnrollment__c.isCreateable()) {
-                DuplicateEnrollmentTriggerHelper.preventDoubleEnrollment(Trigger.New);
-            }
+        if (Trigger.isInsert) {
+            DuplicateEnrollmentTriggerHelper.preventDoubleEnrollment(Trigger.New[0]);
         }
     }
 }

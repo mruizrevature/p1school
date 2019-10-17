@@ -1,12 +1,10 @@
 @isTest
 public with sharing class DuplicateEnrollmentTriggerTests {
-    public final static String DUPLICATE_ENROLLMENT = 'Student cannot be enrolled in the same class twice.';
-
+    
     @TestSetup
     static void makeData() {
         SchoolDataCreator.createData();
     }
-
 
     @isTest static void testDuplicateEnrollment() {
         // Get one Class and one Student to make a duplicate enrollment with
@@ -26,7 +24,5 @@ public with sharing class DuplicateEnrollmentTriggerTests {
 
         Database.SaveResult insertResult = Database.insert(mockClassEnrollment, false);
         System.assert(!insertResult.isSuccess());
-        // System.assertEquals(insertResult.getErrors()[0].getMessage(), 
-        //     DuplicateEnrollmentTriggerTests.DUPLICATE_ENROLLMENT);
     }
 }
