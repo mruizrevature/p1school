@@ -11,8 +11,12 @@ public with sharing class GPAControllerTest {
         FROM Student__C
         WHERE Name='Greg Maddox'
         ];
+        Double testGPA = 0.0;
+        try{
+            testGPA = GPAController.getGPA(s.Id);
+        }catch(UnableToCalculateGPAException calcGPAFail){
+            calcGPAFail.getMessage();
+        }
         System.assertEquals(2, GPAController.getGPA(s.Id));
-        
-
     }
 }

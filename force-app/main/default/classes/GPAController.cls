@@ -12,13 +12,18 @@ public with sharing class GPAController {
     }
     //Get credit of class enrollment
     public static Double getGPA (Id Student){
-    try{
+
     //Returns grade of a specific student
     AggregateResult[] gpaGrade =[SELECT AVG(Grade__c) averageName,  SUM(Class_Enrollment__r.Credits__c) creditName,  Class_Enrollment__r.Student__c
     FROM Grade__c
     GROUP BY  Class_Enrollment__r.Student__c 
     HAVING Class_Enrollment__r.Student__c =: Student
     ];
+
+        if(gpaGrade[0].get('creditName') == 0){
+            throw new UnableToCalculateGPAException(UserPermissionErrors.CANNOT_CALC_GPA);
+        }
+
         Double gradePoint= 0.0;
         Double gpaForStudent = 0.0;
 
@@ -55,11 +60,7 @@ public with sharing class GPAController {
 
         gpaForStudent = (gradePoint * (Double) results.get('creditName')) / ((Double) results.get('creditName'));
         }
-                 }catch(UnableToCalculateGPAException calcGPAFail){
-            
-                     calcGPAFail.addError(UserPermissionErrors.CANNOT_CALC_GPA);
-
-    }
+        
 
     //get the GPA by taking gradepoint and multiplying it by credit and then divide it by credit
 
