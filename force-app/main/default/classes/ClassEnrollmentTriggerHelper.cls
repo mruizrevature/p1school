@@ -1,7 +1,11 @@
 public with sharing class ClassEnrollmentTriggerHelper {
 
     public static void stopDoubleEnroll (List<ClassEnrollment__c> enrollmentInserted){
+        try{
         checkDoubleEnroll(enrollmentInserted);
+        }catch (DuplicateEnrollmentException dp){
+           System.debug(dp.getMessage());
+        }
     }
     //get class id from every class in the list of class enrollment
     private static String getClassID(List<ClassEnrollment__c> enrollment) {
