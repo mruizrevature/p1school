@@ -21,7 +21,8 @@ public with sharing class GPAController {
     ];
 
         if(gpaGrade[0].get('creditName') == 0){
-            throw new UnableToCalculateGPAException(UserPermissionErrors.CANNOT_CALC_GPA);
+            gpaGrade[0].addError(UserPermissionErrors.CANNOT_CALC_GPA);
+            //throw new UnableToCalculateGPAException(UserPermissionErrors.CANNOT_CALC_GPA);
         }
 
         Double gradePoint= 0.0;
