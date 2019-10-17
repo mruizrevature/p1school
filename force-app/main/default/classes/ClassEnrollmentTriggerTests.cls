@@ -29,7 +29,7 @@ public with sharing class ClassEnrollmentTriggerTests {
                                         FROM ClassEnrollment__c
                                         LIMIT 1
                                     ];
-
+        
 
 
     }
