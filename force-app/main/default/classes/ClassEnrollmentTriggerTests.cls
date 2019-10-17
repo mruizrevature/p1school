@@ -8,17 +8,17 @@ public with sharing class ClassEnrollmentTriggerTests {
 
         ClassEnrollment__c mockCE  = new ClassEnrollment__c();
 
-        Student__c studentList = [SELECT Id FROM Student__c];
-        Class__c classList = [SELECT Id FROM Class__c];
+        Student__c studentList = [SELECT Id FROM Student__c LIMIT 1];
+        Class__c classList = [SELECT Id FROM Class__c LIMIT 1];
         mockCE.Student__C = studentList.Id;
         mockCE.Class__c = classList.Id;
-        mockCE.Status__c = 'Enrolled';
-        mockCE.Credits__c = 4;
 
         for (Integer i = 0; i <5; i++){
 
-            mockCE.add(mockCE.Student__c,mockCE.Class__c, mockCE.Status__c, mockCE.Credits__c);
-            
+            mockCE.Student__c = studentList.id;
+            mockCE.Class__c = classList.Id;
+            mockCE.Status__c = 'Enrolled';
+            mockCE.Credits__c = 4;
         }
         insert mockCE;
     }
