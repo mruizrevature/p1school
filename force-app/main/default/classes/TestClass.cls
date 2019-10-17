@@ -91,7 +91,35 @@ public with sharing class TestClass {
 
     @isTest
     static void  testgetClassGrades(){
-        System.debug(P1Test.getClassGrades());
+
+        SchoolDataCreator.createData();
+
+        //need mock data of student, grade, CE
+        ClassEnrollment__c mockCE = new ClassEnrollment__c();
+        Student__c studentID = [SELECT id FROM Student__c LIMIT 1];
+        Class__c classID = [SELECT id FROM Class__c LIMIT 1];
+
+        mockCE.Student__c = studentID.id;
+        mockCE.Class__c = classID.id;
+        mockCE.Status__c = 'Enrolled';
+        mockCE.Credits__c = 4;
+
+        insert mockCE;
+
+        Grade__c gr = [SELECT 
+
+
+
+
+        ]
+
+
+
+
+
+
+
+        
     }
 
 }
