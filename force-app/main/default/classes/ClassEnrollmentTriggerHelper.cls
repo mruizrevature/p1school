@@ -4,23 +4,23 @@ public with sharing class ClassEnrollmentTriggerHelper {
         try{
             checkDoubleEnroll(enrollmentInserted);
         }catch (DuplicateEnrollmentException dp){
-           System.debug(dp.getMessage());
+           System.debug(UserPermissionErrors.CANNOT_ENROLL_AGAIN);
         }
     }
     //get class id from every class in the list of class enrollment
-    private static String getClassID(List<ClassEnrollment__c> enrollment) {
-        String classID;
+    private static Id getClassID(List<ClassEnrollment__c> enrollment) {
+        Id classID;
         for (ClassEnrollment__c classes : enrollment) {
-            classID = classes.Class__r.Id;
+            classID = classes.Class__c;
         }
             return classID;
     }
 
     //Get student id from the list of Classenrollment
-    private static String getStudentID(List<ClassEnrollment__c> enrollment) {
-        String studentID;
+    private static Id getStudentID(List<ClassEnrollment__c> enrollment) {
+        Id studentID;
         for (ClassEnrollment__c classes : enrollment) {
-            studentID = classes.Student__r.Id;
+            studentID = classes.Student__c;
         }
             return studentID;
     }
@@ -29,15 +29,17 @@ public with sharing class ClassEnrollmentTriggerHelper {
 
         List<ClassEnrollment__c> checkIdStudentEnroll;
 
-        if(Schema.sObjectType.ClassEnrollment__c.isAccessible()){
+        //if(Schema.sObjectType.ClassEnrollment__c.isAccessible()){
             checkIdStudentEnroll = [SELECT id, Student__c, Class__c
                 FROM ClassEnrollment__c
-                WHERE Class__r.Id =: getClassID(enrollmentInserted) AND Student__r.Id =: getStudentID(enrollmentInserted)
+                WHERE Class__c =: getClassID(enrollmentInserted) AND Student__c =: getStudentID(enrollmentInserted)
                 ];
-        }
+                System.debug(checkIdStudentEnroll);
+        //}
 
         if (checkIdStudentEnroll.size() >= 1){
-            checkIdStudentEnroll[0].addError(UserPermissionErrors.CANNOT_ENROLL_AGAIN);
+            System.debug('hi');
+            enrollmentInserted[0].addError(UserPermissionErrors.CANNOT_ENROLL_AGAIN);
             //throw new DuplicateEnrollmentException(UserPermissionErrors.CANNOT_ENROLL_AGAIN);
         } 
 
