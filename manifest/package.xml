@@ -5,11 +5,13 @@
         <members>AssessmentTriggerHelper</members>
         <members>AttendanceLineTriggerHelper</members>
         <members>ClassTriggerHelper</members>
+        <members>DuplicateClassEnrollmentTriggerHelper</members>
         <members>StudentWithdrawAttendanceTriggerHelper</members>
         <members>RoomUtilityClass</members>
 
         <!-- Exceptions -->
         <members>RoomOccupiedException</members>
+        <members>DuplicateEnrollmentException</members>
 
         <!-- Org Data Creation Classes -->
         <members>SchoolDataCreator</members>
@@ -18,6 +20,7 @@
         <members>AssessmentTriggerTests</members>
         <members>AttendanceLineTests</members>
         <members>ClassTriggerTests</members>
+        <members>DuplicateClassEnrollmentTests</members>
 
         <!-- Test Utility Classes -->
         <members>AssessmentCreator</members>
@@ -41,6 +44,7 @@
         <members>AssessmentTrigger</members>
         <members>AttendanceLineTrigger</members>
         <members>ClassTrigger</members>
+        <members>DuplicateClassEnrollmentTrigger</members>
         <members>StudentWithdrawAttendanceTrigger</members>
         <name>ApexTrigger</name>
     </types>
