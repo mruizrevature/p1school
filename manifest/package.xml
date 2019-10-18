@@ -30,6 +30,7 @@
         <members>DepartmentCreator</members>
         <members>RoomCreator</members>
         <members>TopicCreator</members>
+        <members>TestDataCreator</members>
 
         <members>GPAController</members>
         <members>UserPermissionErrors</members>
