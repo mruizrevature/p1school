@@ -61,10 +61,15 @@ public with sharing class GPAController {
         Decimal credits = getCreditCount(student);
         Decimal grades = gradeToGPA(student);
 
-        // GPA Formula
-        // (grades * credits) / credits = gpa
-        credits = credits / 45;
-        GPA = (grades * credits) / credits;
+        try {
+            // GPA Formula
+            // (grades * credits) / credits = gpa
+            credits = credits / 45;
+            GPA = (grades * credits) / credits;
+        }
+        catch(UnableToCalculateGPAException unableToCalculateGPAException) {
+            unableToCalculateGPAException.getMessage();
+        }
         return GPA;
     }
 }

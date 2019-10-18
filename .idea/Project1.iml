@@ -47,11 +47,11 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="DuplicateEnrollment" />
+                            <option name="name" value="DuplicateEnrollmentException" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="DuplicateEnrollmentException" />
+                            <option name="name" value="DuplicateEnrollmentHelper" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>

@@ -36,7 +36,7 @@ private class GetClassGradesTest {
         Map<Id, Map<Id, Double>> classGrades = ClassGrades.getClassGrades();
         for (Map<Id, Double> gradeTest : classGrades.values()) {
             for (Double d : gradeTest.values()) {
-                System.assertEquals(d, 50);
+                System.assertEquals(33.33,d);
             }
         }
     }
@@ -45,8 +45,12 @@ private class GetClassGradesTest {
         Map<Id, Map<Id, Double>> classGrades = ClassGrades.getClassGrades();
         for (Map<Id, Double> gradeTest : classGrades.values()) {
             for (Double d : gradeTest.values()) {
-                System.assertNotEquals(d, 30);
+                System.assertNotEquals(30, d);
             }
+        }
+
+        for (Integer i = 0; i < classGrades.size(); i++) {
+
         }
     }
 

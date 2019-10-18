@@ -5,6 +5,7 @@
         <members>AssessmentTriggerHelper</members>
         <members>ClassTriggerHelper</members>
         <members>RoomUtilityClass</members>
+        <members>DuplicateEnrollmentHelper</members>
 
         <!-- Exceptions -->
         <members>RoomOccupiedException</members>
@@ -18,7 +19,7 @@
         <!-- Test Classes -->
         <members>AssessmentTriggerTests</members>
         <members>ClassTriggerTests</members>
-        <members>DuplicateEnrollment</members>
+
         <!-- Test Utility Classes -->
         <members>AssessmentCreator</members>
         <members>ClassCreator</members>
@@ -32,6 +33,7 @@
 
         <!-- Methods Made by Jesse -->
         <members>FactorFactorial</members>
+        <members>DuplicateEnrollmentHelper</members>
         <members>FactorFibonacci</members>
         <members>FibonacciTest</members>
         <members>Palindrome</members>
@@ -45,7 +47,6 @@
         <members>ClassGrades</members>
         <members>GetClassGradesTest</members>
         <members>calculateGPATest</members>
-        <members>DuplicateEnrollment</members>
         <members>DuplicateEnrollmentTest</members>
         <name>ApexClass</name>
     </types>

@@ -14,17 +14,17 @@ private class DuplicateEnrollmentTest {
         ClassEnrollment__c classEnrollment = new ClassEnrollment__c(
                 Class__c = classData[0].Id,
                 Student__c = studentData[0].Id,
-                Credits__c = 10,
+                Credits__c = 1,
                 Status__c = 'Enrolled'
         );
 
         insert classEnrollment;
         // Create Some Grades
-        for (Integer i = 0; i < 5; i++) {
+        for (Integer i = 0; i < 3; i++) {
             Grade__c grade = new Grade__c(
-                    Assessment__c = [SELECT Id FROM Assessment__c][0].Id,
+                    Assessment__c = [SELECT Id FROM Assessment__c][i].Id,
                     Class_Enrollment__c = [SELECT Id FROM ClassEnrollment__c][0].Id,
-                    Grade__c = 60
+                    Grade__c = 33.33 * i
             );
 
             insert grade;
@@ -36,6 +36,11 @@ private class DuplicateEnrollmentTest {
         List<ClassEnrollment__c> classEnrollments =
         [SELECT Id, Student__c, Class__c FROM ClassEnrollment__c];
 
-        System.assert(true, DuplicateEnrollment.checkForDuplicateEnrollment(classEnrollments));
+        List<ClassEnrollment__c> duplicate = classEnrollments;
+
+        insert duplicate;
+        for (Integer i = 0; i < classEnrollments.size(); i++) {
+            System.assert(duplicate.contains(classEnrollments[i]));
+        }
     }
 }
