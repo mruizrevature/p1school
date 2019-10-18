@@ -12,7 +12,7 @@ public with sharing class GPAControllerTests {
 
         Test.startTest();
 
-        Student__c aStudent = [SELECT Id FROM Student__c LIMIT 1];
+        Student__c aStudent = [SELECT Id FROM Student__c LIMIT 1 OFFSET 2];
         List<Grade__c> theirGrades = [SELECT Id,Grade__c FROM Grade__c WHERE Class_Enrollment__r.Student__c=:astudent.id];
 
         Id degree = [SELECT Degree__c FROM Major__c WHERE Student__c =:astudent.Id LIMIT 1].Degree__c;

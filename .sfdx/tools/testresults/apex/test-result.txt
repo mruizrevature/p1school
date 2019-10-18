@@ -1,0 +1,33 @@
+=== Test Reports
+FORMAT  FILE
+──────  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+txt     c:\Users\JJJJJJJ\Documents\p1school\p1school\.sfdx\tools\testresults\apex\test-result.txt
+txt     c:\Users\JJJJJJJ\Documents\p1school\p1school\.sfdx\tools\testresults\apex\test-run-id.txt
+junit   c:\Users\JJJJJJJ\Documents\p1school\p1school\.sfdx\tools\testresults\apex\test-result-7075600000lK1db-junit.xml
+json    c:\Users\JJJJJJJ\Documents\p1school\p1school\.sfdx\tools\testresults\apex\test-result-7075600000lK1db.json
+
+=== Test Results
+TEST NAME                              OUTCOME  MESSAGE  RUNTIME (MS)
+─────────────────────────────────────  ───────  ───────  ────────────
+GPAControllerTests.calculateGPATester  Pass              199
+
+=== Test Summary
+NAME                 VALUE
+───────────────────  ───────────────────────────────────────────────────────────
+Outcome              Passed
+Tests Ran            1
+Passing              1
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Start Time      Oct 18, 2019 9:54 AM
+Test Execution Time  199 ms
+Test Total Time      199 ms
+Command Time         5334 ms
+Hostname             https://dream-momentum-8339-dev-ed.cs42.my.salesforce.com/
+Org Id               00D560000002CSWEA2
+Username             test-egsyittfeedl@example.com
+Test Run Id          7075600000lK1db
+User Id              00556000003bhPyAAI
+

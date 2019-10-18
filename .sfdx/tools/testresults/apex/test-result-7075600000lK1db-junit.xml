@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2019-10-18T09:54:15-04:00" hostname="https://dream-momentum-8339-dev-ed.cs42.my.salesforce.com/" tests="1" failures="0"  errors="0"  time="0.2">
+        <properties>
+            <property name="outcome" value="Passed"/>
+            <property name="testsRan" value="1"/>
+            <property name="passing" value="1"/>
+            <property name="failing" value="0"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="100%"/>
+            <property name="failRate" value="0%"/>
+            <property name="testStartTime" value="Oct 18, 2019 9:54 AM"/>
+            <property name="testExecutionTime" value="0.2 s"/>
+            <property name="testTotalTime" value="0.2 s"/>
+            <property name="commandTime" value="5.33 s"/>
+            <property name="hostname" value="https://dream-momentum-8339-dev-ed.cs42.my.salesforce.com/"/>
+            <property name="orgId" value="00D560000002CSWEA2"/>
+            <property name="username" value="test-egsyittfeedl@example.com"/>
+            <property name="testRunId" value="7075600000lK1db"/>
+            <property name="userId" value="00556000003bhPyAAI"/>
+        </properties>
+        <testcase name="calculateGPATester" classname="GPAControllerTests" time="0.2">
+        </testcase>
+    </testsuite>
+</testsuites>

@@ -1,0 +1,3015 @@
+[
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646298,
+            "changeTime": 1570216646298,
+            "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646298,
+            "changeTime": 1570216646298,
+            "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570642073641,
+            "changeTime": 1571322179182,
+            "contentHash": "304fd6232149e31efd35a8e460172e912032f343",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\applications",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\applications",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570642073524,
+            "changeTime": 1570642073524,
+            "contentHash": "e05f20d68ef154f9f17f5b7051bb1df276d2e994",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\applications\\School.app-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\applications\\School.app-meta.xml",
+            "isDirectory": false,
+            "size": 929,
+            "modifiedTime": 1570642073524,
+            "changeTime": 1570642073524,
+            "contentHash": "4127db88a5266253f39bdf1fe95975a2eaad33ee",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570633527838,
+            "changeTime": 1570633527838,
+            "contentHash": "c7d552e79c5aa68a5c2f421cd3e90325facf40dc",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570642073528,
+            "changeTime": 1570642073528,
+            "contentHash": "ffe6ac1b472f825f66bc97e000dfbc8b48146d70",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButton.auradoc",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButton.auradoc",
+            "isDirectory": false,
+            "size": 214,
+            "modifiedTime": 1570633527839,
+            "changeTime": 1570633527839,
+            "contentHash": "407a14e54b2a31f34bdc3d6864f898b846cd6f14",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButton.cmp",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButton.cmp",
+            "isDirectory": false,
+            "size": 226,
+            "modifiedTime": 1570642073526,
+            "changeTime": 1570642073526,
+            "contentHash": "7a9ecbaa5095f2e9e32c97501a6809aa157cafd2",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButton.cmp-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButton.cmp-meta.xml",
+            "isDirectory": false,
+            "size": 246,
+            "modifiedTime": 1570633527841,
+            "changeTime": 1570633527841,
+            "contentHash": "5869a50b0783d1a885baf26dcb58e504b582980b",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButton.css",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButton.css",
+            "isDirectory": false,
+            "size": 12,
+            "modifiedTime": 1570633527842,
+            "changeTime": 1570633527842,
+            "contentHash": "62fce833b8cbf54a137353694e5e7fb5183a3aa5",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButton.design",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButton.design",
+            "isDirectory": false,
+            "size": 42,
+            "modifiedTime": 1570633527843,
+            "changeTime": 1570633527843,
+            "contentHash": "6ea7d49903f517fcd762a13181f931479bb35c24",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButton.svg",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButton.svg",
+            "isDirectory": false,
+            "size": 667,
+            "modifiedTime": 1570633527844,
+            "changeTime": 1570633527844,
+            "contentHash": "fe7fd10b3d5c910463a4cbaaa998b5e75bd6ca8a",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButtonController.js",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButtonController.js",
+            "isDirectory": false,
+            "size": 483,
+            "modifiedTime": 1570642073528,
+            "changeTime": 1570642073528,
+            "contentHash": "55a1236512d3f8845c27f6cb4b060fb0b8663cde",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButtonHelper.js",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButtonHelper.js",
+            "isDirectory": false,
+            "size": 50,
+            "modifiedTime": 1570633527846,
+            "changeTime": 1570633527846,
+            "contentHash": "918895777e9adcce0220bbeb98deb77808a77b47",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButtonRenderer.js",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\aura\\GPAButton\\GPAButtonRenderer.js",
+            "isDirectory": false,
+            "size": 55,
+            "modifiedTime": 1570633527848,
+            "changeTime": 1570633527848,
+            "contentHash": "3ef474273bcb41f3564687a65b0357460ae004ed",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1571404886426,
+            "changeTime": 1571404886426,
+            "contentHash": "e11457a03d23a5256216beca11a38bf7dc74131a",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\AssessmentCreator.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\AssessmentCreator.cls",
+            "isDirectory": false,
+            "size": 1168,
+            "modifiedTime": 1570642073530,
+            "changeTime": 1570642073530,
+            "contentHash": "aba67df470392c214c35f44efb1f4b7a4ca5f688",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\AssessmentCreator.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\AssessmentCreator.cls-meta.xml",
+            "isDirectory": false,
+            "size": 179,
+            "modifiedTime": 1570642073685,
+            "changeTime": 1570642073685,
+            "contentHash": "28f7346530a48fd24372c2bfd8924a042e1cca16",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\AssessmentTriggerHelper.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\AssessmentTriggerHelper.cls",
+            "isDirectory": false,
+            "size": 5769,
+            "modifiedTime": 1571403661964,
+            "changeTime": 1571403661964,
+            "contentHash": "0a5493919e3ba173a34a724eb375bbead28ac659",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\AssessmentTriggerHelper.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\AssessmentTriggerHelper.cls-meta.xml",
+            "isDirectory": false,
+            "size": 179,
+            "modifiedTime": 1570642073683,
+            "changeTime": 1570642073683,
+            "contentHash": "28f7346530a48fd24372c2bfd8924a042e1cca16",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\AssessmentTriggerTests.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\AssessmentTriggerTests.cls",
+            "isDirectory": false,
+            "size": 3490,
+            "modifiedTime": 1571403661966,
+            "changeTime": 1571403661966,
+            "contentHash": "56026b9f84cf04b5bfa4ef946bffa1198d8443ef",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\AssessmentTriggerTests.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\AssessmentTriggerTests.cls-meta.xml",
+            "isDirectory": false,
+            "size": 179,
+            "modifiedTime": 1570642073539,
+            "changeTime": 1570642073539,
+            "contentHash": "28f7346530a48fd24372c2bfd8924a042e1cca16",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassCreator.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassCreator.cls",
+            "isDirectory": false,
+            "size": 768,
+            "modifiedTime": 1570642073541,
+            "changeTime": 1570642073541,
+            "contentHash": "cd80eaa7eaf027d7640eaad9b5b18e7718ff2f48",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassCreator.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassCreator.cls-meta.xml",
+            "isDirectory": false,
+            "size": 179,
+            "modifiedTime": 1570642073542,
+            "changeTime": 1570642073542,
+            "contentHash": "28f7346530a48fd24372c2bfd8924a042e1cca16",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassEnrollmentTriggerHelper.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassEnrollmentTriggerHelper.cls",
+            "isDirectory": false,
+            "size": 1865,
+            "modifiedTime": 1571403661967,
+            "changeTime": 1571403661967,
+            "contentHash": "7b9c5c0f95743de7e782d4d9c071755fb80e93b2",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassEnrollmentTriggerHelper.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassEnrollmentTriggerHelper.cls-meta.xml",
+            "isDirectory": false,
+            "size": 211,
+            "modifiedTime": 1571403661969,
+            "changeTime": 1571403661969,
+            "contentHash": "4c18f94d2117d17c1f9b0d22e8945eca0144d783",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassEnrollmentTriggerTests.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassEnrollmentTriggerTests.cls",
+            "isDirectory": false,
+            "size": 3078,
+            "modifiedTime": 1571403957142,
+            "changeTime": 1571403957142,
+            "contentHash": "3dd8da17057fa7ce1040327a6f68bf9a9ff90155",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassEnrollmentTriggerTests.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassEnrollmentTriggerTests.cls-meta.xml",
+            "isDirectory": false,
+            "size": 210,
+            "modifiedTime": 1571403661972,
+            "changeTime": 1571403661972,
+            "contentHash": "e37a56f0174e19d0ce8f143f11c2f5a5816c1599",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassTriggerHelper.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassTriggerHelper.cls",
+            "isDirectory": false,
+            "size": 1436,
+            "modifiedTime": 1571403661974,
+            "changeTime": 1571403661974,
+            "contentHash": "68910ce2ea6757076fbd6b825c69517fa58bc29d",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassTriggerHelper.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassTriggerHelper.cls-meta.xml",
+            "isDirectory": false,
+            "size": 179,
+            "modifiedTime": 1570642073545,
+            "changeTime": 1570642073545,
+            "contentHash": "28f7346530a48fd24372c2bfd8924a042e1cca16",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassTriggerTests.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassTriggerTests.cls",
+            "isDirectory": false,
+            "size": 2854,
+            "modifiedTime": 1571403661975,
+            "changeTime": 1571403661975,
+            "contentHash": "247ddfabd7bbe3ea57a95a57362eadb28e1485dc",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassTriggerTests.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\ClassTriggerTests.cls-meta.xml",
+            "isDirectory": false,
+            "size": 179,
+            "modifiedTime": 1570642073549,
+            "changeTime": 1570642073549,
+            "contentHash": "28f7346530a48fd24372c2bfd8924a042e1cca16",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\DepartmentCreator.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\DepartmentCreator.cls",
+            "isDirectory": false,
+            "size": 256,
+            "modifiedTime": 1570642073550,
+            "changeTime": 1570642073550,
+            "contentHash": "2b19fa859e7af3ff6e9df8de44a5f358f5e50eb7",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\DepartmentCreator.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\DepartmentCreator.cls-meta.xml",
+            "isDirectory": false,
+            "size": 179,
+            "modifiedTime": 1570642073552,
+            "changeTime": 1570642073552,
+            "contentHash": "28f7346530a48fd24372c2bfd8924a042e1cca16",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\DuplicateEnrollmentException.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\DuplicateEnrollmentException.cls",
+            "isDirectory": false,
+            "size": 74,
+            "modifiedTime": 1571403661977,
+            "changeTime": 1571403661977,
+            "contentHash": "3faf94c271f37d8919eef00782d6d296e9abfc37",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\DuplicateEnrollmentException.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\DuplicateEnrollmentException.cls-meta.xml",
+            "isDirectory": false,
+            "size": 211,
+            "modifiedTime": 1571403661978,
+            "changeTime": 1571403661978,
+            "contentHash": "4dae81fac35be24b69b47dcbfed0157a5780a20b",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\GPAController.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\GPAController.cls",
+            "isDirectory": false,
+            "size": 2294,
+            "modifiedTime": 1571403661980,
+            "changeTime": 1571403661980,
+            "contentHash": "a7b853cfd6a0de017a96a09dcf17b50eab8079cf",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\GPAController.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\GPAController.cls-meta.xml",
+            "isDirectory": false,
+            "size": 179,
+            "modifiedTime": 1570642073557,
+            "changeTime": 1571381013232,
+            "contentHash": "28f7346530a48fd24372c2bfd8924a042e1cca16",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\GPAControllerTests.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\GPAControllerTests.cls",
+            "isDirectory": false,
+            "size": 1897,
+            "modifiedTime": 1571405745938,
+            "changeTime": 1571405745938,
+            "contentHash": "44f29b5ff41ecfcd5564c2a1121ad6fc3168626e",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\GPAControllerTests.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\GPAControllerTests.cls-meta.xml",
+            "isDirectory": false,
+            "size": 201,
+            "modifiedTime": 1571403661983,
+            "changeTime": 1571403661983,
+            "contentHash": "245eea525beb8ba83b4272689ac9f465df8e9879",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\MyTestClass.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\MyTestClass.cls",
+            "isDirectory": false,
+            "size": 8890,
+            "modifiedTime": 1571403661985,
+            "changeTime": 1571403661985,
+            "contentHash": "52893503a04798134bac56ab5c4055930fc1da65",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\MyTestClass.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\MyTestClass.cls-meta.xml",
+            "isDirectory": false,
+            "size": 194,
+            "modifiedTime": 1570642073561,
+            "changeTime": 1571372205137,
+            "contentHash": "fcc6a028bd1f809a4eaa7d7425fbe305b9ec7eff",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\P0.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\P0.cls",
+            "isDirectory": false,
+            "size": 2401,
+            "modifiedTime": 1571404886425,
+            "changeTime": 1571404886425,
+            "contentHash": "42745f7830e9fd0a64a0b137e9bbae1e8c3a02d3",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\P0.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\P0.cls-meta.xml",
+            "isDirectory": false,
+            "size": 185,
+            "modifiedTime": 1571404886426,
+            "changeTime": 1571404886426,
+            "contentHash": "d7be1ac77bfef79ad8c91abca4813f76050a4f13",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\P1.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\P1.cls",
+            "isDirectory": false,
+            "size": 4172,
+            "modifiedTime": 1571403661987,
+            "changeTime": 1571403661987,
+            "contentHash": "99d13272687ddffd06015d2be5cc87109a3bbb47",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\P1.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\P1.cls-meta.xml",
+            "isDirectory": false,
+            "size": 185,
+            "modifiedTime": 1570642073569,
+            "changeTime": 1570642073569,
+            "contentHash": "54dbcb1abd3dbe2646e69c7c62890424b9a3c020",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\RoomCreator.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\RoomCreator.cls",
+            "isDirectory": false,
+            "size": 164,
+            "modifiedTime": 1570642073570,
+            "changeTime": 1570642073570,
+            "contentHash": "f25760073116ea0297edb435cfe86836b2657f5d",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\RoomCreator.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\RoomCreator.cls-meta.xml",
+            "isDirectory": false,
+            "size": 179,
+            "modifiedTime": 1570642073571,
+            "changeTime": 1570642073571,
+            "contentHash": "28f7346530a48fd24372c2bfd8924a042e1cca16",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\RoomOccupiedException.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\RoomOccupiedException.cls",
+            "isDirectory": false,
+            "size": 68,
+            "modifiedTime": 1570642073572,
+            "changeTime": 1570642073572,
+            "contentHash": "54c593a7165ff3e63cdb30d2531b67164307d354",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\RoomOccupiedException.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\RoomOccupiedException.cls-meta.xml",
+            "isDirectory": false,
+            "size": 179,
+            "modifiedTime": 1570642073574,
+            "changeTime": 1570642073574,
+            "contentHash": "28f7346530a48fd24372c2bfd8924a042e1cca16",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\RoomUtilityClass.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\RoomUtilityClass.cls",
+            "isDirectory": false,
+            "size": 1733,
+            "modifiedTime": 1571403661989,
+            "changeTime": 1571403661989,
+            "contentHash": "960b0739a31ed8c9a9c875d101147ed640b34451",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\RoomUtilityClass.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\RoomUtilityClass.cls-meta.xml",
+            "isDirectory": false,
+            "size": 179,
+            "modifiedTime": 1570642073578,
+            "changeTime": 1570642073578,
+            "contentHash": "28f7346530a48fd24372c2bfd8924a042e1cca16",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\SchoolDataCreator.cls",
+        {
+            "state": "u",
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\SchoolDataCreator.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 25572,
+            "modifiedTime": 1571406828510,
+            "changeTime": 1571406828510,
+            "isWorkspace": false,
+            "contentHash": "114b555586060f692cb5f5fdd713c857db7e34c2"
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\SchoolDataCreator.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\SchoolDataCreator.cls-meta.xml",
+            "isDirectory": false,
+            "size": 179,
+            "modifiedTime": 1570216646300,
+            "changeTime": 1570216646300,
+            "contentHash": "28f7346530a48fd24372c2bfd8924a042e1cca16",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\State.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\State.cls",
+            "isDirectory": false,
+            "size": 333,
+            "modifiedTime": 1571403661992,
+            "changeTime": 1571403661992,
+            "contentHash": "745c261dd1de6c94e2d0884b3105c00fa43334be",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\State.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\State.cls-meta.xml",
+            "isDirectory": false,
+            "size": 188,
+            "modifiedTime": 1571403661993,
+            "changeTime": 1571403661993,
+            "contentHash": "85b0ef589e44a572c10e723d071fb1aad820e4a1",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\TopicCreator.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\TopicCreator.cls",
+            "isDirectory": false,
+            "size": 216,
+            "modifiedTime": 1570642073580,
+            "changeTime": 1570642073580,
+            "contentHash": "a022f4e50b2d9cd0e6a4809a6900698d26414de8",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\TopicCreator.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\TopicCreator.cls-meta.xml",
+            "isDirectory": false,
+            "size": 179,
+            "modifiedTime": 1570642073614,
+            "changeTime": 1570642073614,
+            "contentHash": "28f7346530a48fd24372c2bfd8924a042e1cca16",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\UnableToCalculateGPAException.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\UnableToCalculateGPAException.cls",
+            "isDirectory": false,
+            "size": 76,
+            "modifiedTime": 1571403661995,
+            "changeTime": 1571403661995,
+            "contentHash": "3260cc0ea23a67a185598a4d2d31478a113ef1ec",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\UnableToCalculateGPAException.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\UnableToCalculateGPAException.cls-meta.xml",
+            "isDirectory": false,
+            "size": 212,
+            "modifiedTime": 1571403661996,
+            "changeTime": 1571403661996,
+            "contentHash": "ceae072edf9b819f33fd4aa1be84cca49f333ef8",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\UnrelatedDegreeException.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\UnrelatedDegreeException.cls",
+            "isDirectory": false,
+            "size": 72,
+            "modifiedTime": 1571403661998,
+            "changeTime": 1571403661998,
+            "contentHash": "1864b87eba8a35b9549f57d79000e6602db4f8ce",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\UnrelatedDegreeException.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\UnrelatedDegreeException.cls-meta.xml",
+            "isDirectory": false,
+            "size": 207,
+            "modifiedTime": 1571403661999,
+            "changeTime": 1571403661999,
+            "contentHash": "83ab10fd6f80112544085a54da50f85378c3c369",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\UserPermissionErrors.cls",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\UserPermissionErrors.cls",
+            "isDirectory": false,
+            "size": 544,
+            "modifiedTime": 1570642073615,
+            "changeTime": 1570642073615,
+            "contentHash": "6421cee69c05e96098cfd40b6adeafaa37e5c085",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\UserPermissionErrors.cls-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\classes\\UserPermissionErrors.cls-meta.xml",
+            "isDirectory": false,
+            "size": 179,
+            "modifiedTime": 1570642073616,
+            "changeTime": 1570642073616,
+            "contentHash": "28f7346530a48fd24372c2bfd8924a042e1cca16",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\layouts",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\layouts",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570642073618,
+            "changeTime": 1570642073618,
+            "contentHash": "68e7fb60418bb1b4fe2edcec7d1c7c07d687ae85",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\layouts\\Student__c-Student Layout.layout-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\layouts\\Student__c-Student Layout.layout-meta.xml",
+            "isDirectory": false,
+            "size": 8752,
+            "modifiedTime": 1570642073618,
+            "changeTime": 1570642073618,
+            "contentHash": "97f21825b9131d2488335173c8cdebd412ed2a11",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\lwc",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\lwc",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646302,
+            "changeTime": 1570216646302,
+            "contentHash": "a973ac1b5be0e216b2a2db1b82ae5ba97f4086f4",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646399,
+            "changeTime": 1570216646399,
+            "contentHash": "e2fe264f25faa22a717298620602da4a5bdd07cf",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646312,
+            "changeTime": 1570216646312,
+            "contentHash": "f95594732eba3b44f50af5b5907dfd588c35b3ab",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\Assessment__c.object-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\Assessment__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5378,
+            "modifiedTime": 1570216646304,
+            "changeTime": 1570216646304,
+            "contentHash": "58d85d0fb804b1512e1345a5052123582a318af2",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\fields",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\fields",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646310,
+            "changeTime": 1570216646310,
+            "contentHash": "a55b865e466fe517d912bafa8e23782615c9961c",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\fields\\Class__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\fields\\Class__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 556,
+            "modifiedTime": 1570216646306,
+            "changeTime": 1570216646306,
+            "contentHash": "2c00e7e845e321e6a8576f18b9cf814a76d61a4d",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\fields\\Date__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\fields\\Date__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 425,
+            "modifiedTime": 1570216646307,
+            "changeTime": 1570216646307,
+            "contentHash": "0de08f3e4e157c2edb9653fa7c2fa78e8d48e328",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\fields\\Graded__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\fields\\Graded__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 367,
+            "modifiedTime": 1570216646308,
+            "changeTime": 1570216646308,
+            "contentHash": "bb1757386b5564cb34c21e01c36b6bd647ef4e71",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\fields\\Room__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\fields\\Room__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 553,
+            "modifiedTime": 1570216646309,
+            "changeTime": 1570216646309,
+            "contentHash": "39b98b4e9ccbb746aa49cd5be6f1227d085652c6",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\fields\\Time__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\fields\\Time__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 422,
+            "modifiedTime": 1570216646310,
+            "changeTime": 1570216646310,
+            "contentHash": "85018cf9fbc35361128124ad8b1ef7840369fd3b",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\listViews",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\listViews",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646311,
+            "changeTime": 1570216646311,
+            "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\listViews\\All.listView-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\listViews\\All.listView-meta.xml",
+            "isDirectory": false,
+            "size": 402,
+            "modifiedTime": 1570216646312,
+            "changeTime": 1570216646312,
+            "contentHash": "4560f58125e87d8578c20419a4a164ba4e25346c",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\recordTypes",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\recordTypes",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646316,
+            "changeTime": 1570216646316,
+            "contentHash": "8a0fcddcb7d66db344109a03bba32aa37a73cfcd",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\recordTypes\\HW.recordType-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\recordTypes\\HW.recordType-meta.xml",
+            "isDirectory": false,
+            "size": 196,
+            "modifiedTime": 1570216646313,
+            "changeTime": 1570216646313,
+            "contentHash": "3cb546b531a39bb3bf06bb5906fca9a4723573da",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\recordTypes\\Project.recordType-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\recordTypes\\Project.recordType-meta.xml",
+            "isDirectory": false,
+            "size": 206,
+            "modifiedTime": 1570216646314,
+            "changeTime": 1570216646314,
+            "contentHash": "b57495bdd47893b344d10738ab0bfb4c1f31cffb",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\recordTypes\\Quiz.recordType-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Assessment__c\\recordTypes\\Quiz.recordType-meta.xml",
+            "isDirectory": false,
+            "size": 200,
+            "modifiedTime": 1570216646316,
+            "changeTime": 1570216646316,
+            "contentHash": "67be59edf2ffaff5658a58c29e58a98a0ed42114",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646323,
+            "changeTime": 1570216646323,
+            "contentHash": "0489f5c2249c01a31847d81dbc5736cc91bc0426",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c\\AttendanceLineItem__c.object-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c\\AttendanceLineItem__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5405,
+            "modifiedTime": 1570216646318,
+            "changeTime": 1570216646318,
+            "contentHash": "d6fd6f4aa62a5756032ec183c82a293c888f23d6",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c\\fields",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c\\fields",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646322,
+            "changeTime": 1570216646322,
+            "contentHash": "1eb05c9d43ecae20d6ec46759a06a5b7ff52a109",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c\\fields\\ClassEnrollment__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c\\fields\\ClassEnrollment__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 605,
+            "modifiedTime": 1570216646320,
+            "changeTime": 1570216646320,
+            "contentHash": "52bf780f0f3a97cfff31e7b34ebb5dada2e715a2",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c\\fields\\Class__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c\\fields\\Class__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 574,
+            "modifiedTime": 1570216646321,
+            "changeTime": 1570216646321,
+            "contentHash": "478282f879ebbda26f062e2810395385c449c707",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c\\fields\\Student__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c\\fields\\Student__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 580,
+            "modifiedTime": 1570216646322,
+            "changeTime": 1570216646322,
+            "contentHash": "5c203ba01412c1770d5715029a5407ea680657cf",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c\\listViews",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c\\listViews",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646324,
+            "changeTime": 1570216646324,
+            "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c\\listViews\\All.listView-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\AttendanceLineItem__c\\listViews\\All.listView-meta.xml",
+            "isDirectory": false,
+            "size": 210,
+            "modifiedTime": 1570216646324,
+            "changeTime": 1570216646324,
+            "contentHash": "0e12c1b5a25bc6685e00c26cb98c9986fc1d82c4",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646331,
+            "changeTime": 1570216646331,
+            "contentHash": "60571afeea63ee6b90b4cdcf9cd8c8e03edd6237",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\ClassEnrollment__c.object-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\ClassEnrollment__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5401,
+            "modifiedTime": 1570216646325,
+            "changeTime": 1570216646325,
+            "contentHash": "f9b08b63de2b3a938037d98e778bb79b379bd0f2",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\fields",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\fields",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646330,
+            "changeTime": 1570216646330,
+            "contentHash": "9b16cac3a2667df182aeaca284fa5cbec6fb53b8",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\fields\\Class__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\fields\\Class__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 664,
+            "modifiedTime": 1570216646326,
+            "changeTime": 1570216646326,
+            "contentHash": "3d849c8aa43a46733e9ef5a3bccacbb03ae2455e",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\fields\\Credits__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\fields\\Credits__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 438,
+            "modifiedTime": 1570216646327,
+            "changeTime": 1570216646327,
+            "contentHash": "528d98cb34b532942ca10087a0e543028c751bf1",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\fields\\Status__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\fields\\Status__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 1039,
+            "modifiedTime": 1570216646329,
+            "changeTime": 1570216646329,
+            "contentHash": "736f59c9fac927f87e9ea0d55985ea0895781798",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\fields\\Student__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\fields\\Student__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 669,
+            "modifiedTime": 1570216646330,
+            "changeTime": 1570216646330,
+            "contentHash": "2f2619538ecdf8484188f329beeda3116bacf12a",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\listViews",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\listViews",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646331,
+            "changeTime": 1570216646331,
+            "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\listViews\\All.listView-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\ClassEnrollment__c\\listViews\\All.listView-meta.xml",
+            "isDirectory": false,
+            "size": 210,
+            "modifiedTime": 1570216646331,
+            "changeTime": 1570216646331,
+            "contentHash": "0e12c1b5a25bc6685e00c26cb98c9986fc1d82c4",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646346,
+            "changeTime": 1570216646346,
+            "contentHash": "33ab39879186774da6c4b949701e971a4d9136d9",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\Class__c.object-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\Class__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5304,
+            "modifiedTime": 1570216646333,
+            "changeTime": 1570216646333,
+            "contentHash": "d78835555836a01ac7c05aa244a001408a6a93c2",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646345,
+            "changeTime": 1570216646345,
+            "contentHash": "03a13abe43406a9fcec35df4612026be343b7683",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\Capacity__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\Capacity__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 441,
+            "modifiedTime": 1570216646335,
+            "changeTime": 1570216646335,
+            "contentHash": "9096ac8f8dce3c2e5b153276e68913c67b6fd9af",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\DaysPerWeek__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\DaysPerWeek__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 448,
+            "modifiedTime": 1570216646337,
+            "changeTime": 1570216646337,
+            "contentHash": "204c7ff74a4eae6d9335ddfdc086834b7040dd2c",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\Department__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\Department__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 563,
+            "modifiedTime": 1570216646338,
+            "changeTime": 1570216646338,
+            "contentHash": "61d71b1699278636c6526e1d0e2185ec87e2def5",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\DurationInWeeks__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\DurationInWeeks__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 583,
+            "modifiedTime": 1570216646339,
+            "changeTime": 1570216646339,
+            "contentHash": "e547fc8bfdd44e6f465c1bbf29d634a0b21c5f2f",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\EndDate__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\EndDate__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 357,
+            "modifiedTime": 1570216646340,
+            "changeTime": 1570216646340,
+            "contentHash": "e60f9b33ebfa6512c21d49e4f03f43cc6e247f71",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\Room__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\Room__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 545,
+            "modifiedTime": 1570216646341,
+            "changeTime": 1570216646341,
+            "contentHash": "e7a233efd0e91cd46d2521039cfb8c0ad48b86ab",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\ScheduledTime__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\ScheduledTime__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 370,
+            "modifiedTime": 1570216646342,
+            "changeTime": 1570216646342,
+            "contentHash": "640b8dbe7ef32a6773b77d780981c5600669abf7",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\StartDate__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\StartDate__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 361,
+            "modifiedTime": 1570216646343,
+            "changeTime": 1570216646343,
+            "contentHash": "299ffbd0e7eadb3923cf2d6989838da536a22c13",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\Status__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\Status__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 1018,
+            "modifiedTime": 1570216646344,
+            "changeTime": 1570216646344,
+            "contentHash": "47ea551a5ae574dc28fbba1aa3fd4ac62daaf4cb",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\Topic__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\fields\\Topic__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 548,
+            "modifiedTime": 1570216646345,
+            "changeTime": 1570216646345,
+            "contentHash": "7207bdf3acec16f55ca407293844ee569484c7ef",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\listViews",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\listViews",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646346,
+            "changeTime": 1570216646346,
+            "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\listViews\\All.listView-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Class__c\\listViews\\All.listView-meta.xml",
+            "isDirectory": false,
+            "size": 607,
+            "modifiedTime": 1570216646347,
+            "changeTime": 1570216646347,
+            "contentHash": "48f1948ef458e431e93c022199d6b235bc4b33d3",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Degree__c",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Degree__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646352,
+            "changeTime": 1570216646352,
+            "contentHash": "b6a4e4f6b2f33f8392a743041161b6d2d36b3bb8",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Degree__c\\Degree__c.object-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Degree__c\\Degree__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5306,
+            "modifiedTime": 1570216646348,
+            "changeTime": 1570216646348,
+            "contentHash": "230f1f8ab53dc6a6e1b2a4388021edc51db90c7d",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Degree__c\\fields",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Degree__c\\fields",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646350,
+            "changeTime": 1570216646350,
+            "contentHash": "09359498efc2f4018e1c2edac76e1f2a10dfa88c",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Degree__c\\fields\\Department__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Degree__c\\fields\\Department__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 563,
+            "modifiedTime": 1570216646350,
+            "changeTime": 1570216646350,
+            "contentHash": "4baf92a1a60d3efc2dae8800e373d0744c4e6a17",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Degree__c\\listViews",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Degree__c\\listViews",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646352,
+            "changeTime": 1570216646352,
+            "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Degree__c\\listViews\\All.listView-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Degree__c\\listViews\\All.listView-meta.xml",
+            "isDirectory": false,
+            "size": 277,
+            "modifiedTime": 1570216646352,
+            "changeTime": 1570216646352,
+            "contentHash": "45f385484e63c3705c08a6444dd17f8d2585835a",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Department__c",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Department__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646356,
+            "changeTime": 1570216646356,
+            "contentHash": "db9491480a0a56c94f04b49f2a42332f8c1e9c43",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Department__c\\Department__c.object-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Department__c\\Department__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5318,
+            "modifiedTime": 1570216646355,
+            "changeTime": 1570216646355,
+            "contentHash": "0ceaa17c546d231c206827c5e7ce680569d47040",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Department__c\\listViews",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Department__c\\listViews",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646357,
+            "changeTime": 1570216646357,
+            "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Department__c\\listViews\\All.listView-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Department__c\\listViews\\All.listView-meta.xml",
+            "isDirectory": false,
+            "size": 210,
+            "modifiedTime": 1570216646357,
+            "changeTime": 1570216646357,
+            "contentHash": "0e12c1b5a25bc6685e00c26cb98c9986fc1d82c4",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Employee__c",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Employee__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646361,
+            "changeTime": 1570216646361,
+            "contentHash": "1cff88f920c8820216006b697e769ae9db45824d",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Employee__c\\Employee__c.object-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Employee__c\\Employee__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5312,
+            "modifiedTime": 1570216646359,
+            "changeTime": 1570216646359,
+            "contentHash": "c39fa0d1079c5512b813ad835335d43dcd3aee0c",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Employee__c\\fields",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Employee__c\\fields",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646360,
+            "changeTime": 1570216646360,
+            "contentHash": "09359498efc2f4018e1c2edac76e1f2a10dfa88c",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Employee__c\\fields\\Department__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Employee__c\\fields\\Department__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 567,
+            "modifiedTime": 1570216646361,
+            "changeTime": 1570216646361,
+            "contentHash": "6e3e334e2a3224e0dd817b36d29483e869162a30",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Employee__c\\listViews",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Employee__c\\listViews",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646362,
+            "changeTime": 1570216646362,
+            "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Employee__c\\listViews\\All.listView-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Employee__c\\listViews\\All.listView-meta.xml",
+            "isDirectory": false,
+            "size": 277,
+            "modifiedTime": 1570216646362,
+            "changeTime": 1570216646362,
+            "contentHash": "45f385484e63c3705c08a6444dd17f8d2585835a",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646367,
+            "changeTime": 1570216646367,
+            "contentHash": "5813350610ba14ea02b9ceaad1a8fc3c40b66822",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c\\fields",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c\\fields",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570642073620,
+            "changeTime": 1570642073620,
+            "contentHash": "e411195992ce76651a04c6adbd4da4adb7479644",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c\\fields\\Assessment__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c\\fields\\Assessment__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 561,
+            "modifiedTime": 1570216646365,
+            "changeTime": 1570216646365,
+            "contentHash": "fd1dcab85bc3a1b6c4f91272dce4fd4922b842ba",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c\\fields\\Class_Enrollment__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c\\fields\\Class_Enrollment__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 578,
+            "modifiedTime": 1570216646366,
+            "changeTime": 1570216646366,
+            "contentHash": "ce375686fc8e3bd8c84553bdb0316e753abab80c",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c\\fields\\Grade__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c\\fields\\Grade__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 434,
+            "modifiedTime": 1570642073620,
+            "changeTime": 1570642073620,
+            "contentHash": "2fc87515985cb40701cac0314168371e91d3f8b2",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c\\Grade__c.object-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c\\Grade__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5358,
+            "modifiedTime": 1570216646363,
+            "changeTime": 1570216646363,
+            "contentHash": "c7c7a4827bd156c05693607d12c6daadc73325d9",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c\\listViews",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c\\listViews",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646367,
+            "changeTime": 1570216646367,
+            "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c\\listViews\\All.listView-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Grade__c\\listViews\\All.listView-meta.xml",
+            "isDirectory": false,
+            "size": 321,
+            "modifiedTime": 1570216646368,
+            "changeTime": 1570216646368,
+            "contentHash": "3476ce515293d48c684dd9bd412ccbeffb86f9a6",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Major__c",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Major__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646372,
+            "changeTime": 1570216646372,
+            "contentHash": "b713d688c971edc21aa93235805e1988a3c60fb4",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Major__c\\fields",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Major__c\\fields",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646372,
+            "changeTime": 1570216646372,
+            "contentHash": "b742a16271efb6f92fcde44a65b126341017b716",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Major__c\\fields\\Degree__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Major__c\\fields\\Degree__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 549,
+            "modifiedTime": 1570216646371,
+            "changeTime": 1570216646371,
+            "contentHash": "f429aebc30c8aba349fb35e33c39d1b895e70534",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Major__c\\fields\\Student__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Major__c\\fields\\Student__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 552,
+            "modifiedTime": 1570216646372,
+            "changeTime": 1570216646372,
+            "contentHash": "27fb108a79adcad1ca09887b68e4ccf81036ad6e",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Major__c\\listViews",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Major__c\\listViews",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646374,
+            "changeTime": 1570216646374,
+            "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Major__c\\listViews\\All.listView-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Major__c\\listViews\\All.listView-meta.xml",
+            "isDirectory": false,
+            "size": 308,
+            "modifiedTime": 1570216646375,
+            "changeTime": 1570216646375,
+            "contentHash": "f1caa4cbf251455b1756b5d8f7b8308393e5a132",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Major__c\\Major__c.object-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Major__c\\Major__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5362,
+            "modifiedTime": 1570216646369,
+            "changeTime": 1570216646369,
+            "contentHash": "12486cf722810754b5dcebb5f594ae9c850fe85e",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Minor__c",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Minor__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646380,
+            "changeTime": 1570216646380,
+            "contentHash": "ae43fd9f62e891b743c346c4981aeab91422a430",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Minor__c\\fields",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Minor__c\\fields",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646379,
+            "changeTime": 1570216646379,
+            "contentHash": "b742a16271efb6f92fcde44a65b126341017b716",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Minor__c\\fields\\Degree__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Minor__c\\fields\\Degree__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 549,
+            "modifiedTime": 1570216646378,
+            "changeTime": 1570216646378,
+            "contentHash": "12f4a0b2919f60e7e2f438947763df5356d34666",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Minor__c\\fields\\Student__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Minor__c\\fields\\Student__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 552,
+            "modifiedTime": 1570216646379,
+            "changeTime": 1570216646379,
+            "contentHash": "996bc21c190d3fc5f24dcc1ec80ec61e2acf3ff8",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Minor__c\\listViews",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Minor__c\\listViews",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646381,
+            "changeTime": 1570216646381,
+            "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Minor__c\\listViews\\All.listView-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Minor__c\\listViews\\All.listView-meta.xml",
+            "isDirectory": false,
+            "size": 308,
+            "modifiedTime": 1570216646381,
+            "changeTime": 1570216646381,
+            "contentHash": "f1caa4cbf251455b1756b5d8f7b8308393e5a132",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Minor__c\\Minor__c.object-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Minor__c\\Minor__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5362,
+            "modifiedTime": 1570216646377,
+            "changeTime": 1570216646377,
+            "contentHash": "0511fed6b50491d4785fe7c9d2267d124a80027c",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Room__c",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Room__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646383,
+            "changeTime": 1570216646383,
+            "contentHash": "0408b3a39e2116c0416f478e202a4c3cc51feebb",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Room__c\\listViews",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Room__c\\listViews",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646384,
+            "changeTime": 1570216646384,
+            "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Room__c\\listViews\\All.listView-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Room__c\\listViews\\All.listView-meta.xml",
+            "isDirectory": false,
+            "size": 210,
+            "modifiedTime": 1570216646384,
+            "changeTime": 1570216646384,
+            "contentHash": "0e12c1b5a25bc6685e00c26cb98c9986fc1d82c4",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Room__c\\Room__c.object-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Room__c\\Room__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5356,
+            "modifiedTime": 1570216646382,
+            "changeTime": 1570216646382,
+            "contentHash": "591fbecd6b814ddf1cdd3499621ca70005c4a17a",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646397,
+            "changeTime": 1570216646397,
+            "contentHash": "6916669c22724552c057d2a4f9ca75e828f12155",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646396,
+            "changeTime": 1570216646396,
+            "contentHash": "4ea0a1afdec3bd257585d4e890889a5fd9dcfa92",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields\\Advisor__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields\\Advisor__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 557,
+            "modifiedTime": 1570216646387,
+            "changeTime": 1570216646387,
+            "contentHash": "d1896a09ce18f97ec815194f8b6771c95718bdb7",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields\\Age__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields\\Age__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 431,
+            "modifiedTime": 1570216646388,
+            "changeTime": 1570216646388,
+            "contentHash": "5ce83f0f575ea1c707a0c72f1c4733bff8deb716",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields\\CumulativeGPA__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields\\CumulativeGPA__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 490,
+            "modifiedTime": 1570216646390,
+            "changeTime": 1570216646390,
+            "contentHash": "6116d7e41ee4be0154ba9353f498e265c73a6def",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields\\Email__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields\\Email__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 421,
+            "modifiedTime": 1570216646391,
+            "changeTime": 1570216646391,
+            "contentHash": "ce839a53e80dc99244468a4b1080edf537b9089a",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields\\MajorGPA__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields\\MajorGPA__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 442,
+            "modifiedTime": 1570216646393,
+            "changeTime": 1570216646393,
+            "contentHash": "98926125ba484d820f4c00c8c606b5e7ac0342af",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields\\PhoneNumber__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields\\PhoneNumber__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 367,
+            "modifiedTime": 1570216646395,
+            "changeTime": 1570216646395,
+            "contentHash": "19f517a2e1ee16fb502a271b2e1641ed33457b28",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields\\Status__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\fields\\Status__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 1527,
+            "modifiedTime": 1570216646396,
+            "changeTime": 1570216646396,
+            "contentHash": "8dcf797b70fce4d671cb3eefcb309158ec092508",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\listViews",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\listViews",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646398,
+            "changeTime": 1570216646398,
+            "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\listViews\\All.listView-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\listViews\\All.listView-meta.xml",
+            "isDirectory": false,
+            "size": 488,
+            "modifiedTime": 1570216646398,
+            "changeTime": 1570216646398,
+            "contentHash": "8b53ada4507d50d13b855bb24ec1dac590bc66ed",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\Student__c.object-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Student__c\\Student__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5309,
+            "modifiedTime": 1570216646386,
+            "changeTime": 1570216646386,
+            "contentHash": "0f65f1faf56875cd775cdab480c71cd9c8b9dc2c",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Topic__c",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Topic__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570642073621,
+            "changeTime": 1570642073621,
+            "contentHash": "e132983142dcf680d3e3181c9b6689a9c7fb8c3b",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Topic__c\\fields",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Topic__c\\fields",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570216646401,
+            "changeTime": 1570216646401,
+            "contentHash": "fe22268b94b8ffcddba776828291b5c1b0a23c58",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Topic__c\\fields\\Degree__c.field-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Topic__c\\fields\\Degree__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 549,
+            "modifiedTime": 1570216646401,
+            "changeTime": 1570216646401,
+            "contentHash": "28b5eb7e7fb02f66e6df753a14b0e9baf0412cc3",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Topic__c\\listViews",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Topic__c\\listViews",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570642073622,
+            "changeTime": 1570642073622,
+            "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Topic__c\\listViews\\All.listView-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Topic__c\\listViews\\All.listView-meta.xml",
+            "isDirectory": false,
+            "size": 210,
+            "modifiedTime": 1570642073622,
+            "changeTime": 1570642073622,
+            "contentHash": "0e12c1b5a25bc6685e00c26cb98c9986fc1d82c4",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Topic__c\\Topic__c.object-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\objects\\Topic__c\\Topic__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5307,
+            "modifiedTime": 1570216646400,
+            "changeTime": 1570216646400,
+            "contentHash": "803b649a07603ce9f7f323e7a2dcac837ea893df",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\profiles",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\profiles",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570642073624,
+            "changeTime": 1570642073624,
+            "contentHash": "dd4bc5d00d5b87ac9dcfa94ec543d354d095c25c",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\profiles\\Admin.profile-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\profiles\\Admin.profile-meta.xml",
+            "isDirectory": false,
+            "size": 30481,
+            "modifiedTime": 1570642073624,
+            "changeTime": 1570642073624,
+            "contentHash": "3b9d20f6b7a4087f924f5daada94236d784e7d47",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\quickActions",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\quickActions",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570642073625,
+            "changeTime": 1570642073625,
+            "contentHash": "1fda09c162b2b39c4ac39da223030db42e9cea2e",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\quickActions\\Student__c.CalculateGPA.quickAction-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\quickActions\\Student__c.CalculateGPA.quickAction-meta.xml",
+            "isDirectory": false,
+            "size": 355,
+            "modifiedTime": 1570642073626,
+            "changeTime": 1570642073626,
+            "contentHash": "2a36fd0b4f908ec80af8e3f262ea545c9b740daf",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1570642073640,
+            "changeTime": 1570642073640,
+            "contentHash": "b3a57ed4ad131805acd97b085fdd920f009a88ca",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Assessment__c.tab-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Assessment__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 191,
+            "modifiedTime": 1570642073627,
+            "changeTime": 1570642073627,
+            "contentHash": "fb59a0fd7f015a619968d3587a30fc3cbac3139d",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\AttendanceLineItem__c.tab-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\AttendanceLineItem__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 193,
+            "modifiedTime": 1570642073628,
+            "changeTime": 1570642073628,
+            "contentHash": "9f311b52fe2fbd1cd8056769f49de31e18551bd7",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\ClassEnrollment__c.tab-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\ClassEnrollment__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 193,
+            "modifiedTime": 1570642073629,
+            "changeTime": 1570642073629,
+            "contentHash": "9fe5510b07a97d83423ec9e9bae78a022b89f5dc",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Class__c.tab-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Class__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 192,
+            "modifiedTime": 1570642073630,
+            "changeTime": 1570642073630,
+            "contentHash": "be9162c98334cadbca07764a0106723c96cca877",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Degree__c.tab-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Degree__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 190,
+            "modifiedTime": 1570642073631,
+            "changeTime": 1570642073631,
+            "contentHash": "7da811107ffdff493518b71e0fad115c0285b72b",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Department__c.tab-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Department__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 190,
+            "modifiedTime": 1570642073632,
+            "changeTime": 1570642073632,
+            "contentHash": "7da811107ffdff493518b71e0fad115c0285b72b",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Employee__c.tab-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Employee__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 190,
+            "modifiedTime": 1570642073633,
+            "changeTime": 1570642073633,
+            "contentHash": "7da811107ffdff493518b71e0fad115c0285b72b",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Grade__c.tab-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Grade__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 188,
+            "modifiedTime": 1570642073634,
+            "changeTime": 1570642073634,
+            "contentHash": "0759b406cf3c3fe0dc59a4ac6d683521c294d6e0",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Major__c.tab-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Major__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 197,
+            "modifiedTime": 1570642073635,
+            "changeTime": 1570642073635,
+            "contentHash": "4f65890bdf39706f743ddc8f10f4a82f93279276",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Minor__c.tab-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Minor__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 190,
+            "modifiedTime": 1570642073636,
+            "changeTime": 1570642073636,
+            "contentHash": "7da811107ffdff493518b71e0fad115c0285b72b",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Room__c.tab-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Room__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 190,
+            "modifiedTime": 1570642073637,
+            "changeTime": 1570642073637,
+            "contentHash": "7da811107ffdff493518b71e0fad115c0285b72b",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Student__c.tab-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Student__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 193,
+            "modifiedTime": 1570642073639,
+            "changeTime": 1570642073639,
+            "contentHash": "9fe5510b07a97d83423ec9e9bae78a022b89f5dc",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Topic__c.tab-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\tabs\\Topic__c.tab-meta.xml",
+            "isDirectory": false,
+            "size": 191,
+            "modifiedTime": 1570642073640,
+            "changeTime": 1570642073640,
+            "contentHash": "87c144fcde352c9cea183788fee55ef2fac92fe5",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\triggers",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\triggers",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1571403661999,
+            "changeTime": 1571403661999,
+            "contentHash": "9703ef0c7eaafb1cb5c2e81efda961cfd3247475",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\triggers\\AssessmentTrigger.trigger",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\triggers\\AssessmentTrigger.trigger",
+            "isDirectory": false,
+            "size": 611,
+            "modifiedTime": 1571403661999,
+            "changeTime": 1571403661999,
+            "contentHash": "0ac1c817c02da172172483254101ab4b9b130056",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\triggers\\AssessmentTrigger.trigger-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\triggers\\AssessmentTrigger.trigger-meta.xml",
+            "isDirectory": false,
+            "size": 183,
+            "modifiedTime": 1570642073643,
+            "changeTime": 1570642073643,
+            "contentHash": "e6b0c1d6050d9775218b486242e79de262a51d3d",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\triggers\\ClassEnrollmentTrigger.trigger",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\triggers\\ClassEnrollmentTrigger.trigger",
+            "isDirectory": false,
+            "size": 477,
+            "modifiedTime": 1571403732421,
+            "changeTime": 1571403732421,
+            "contentHash": "2490e3a76caf99d41befcc065a417ba1066bc575",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\triggers\\ClassEnrollmentTrigger.trigger-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\triggers\\ClassEnrollmentTrigger.trigger-meta.xml",
+            "isDirectory": false,
+            "size": 206,
+            "modifiedTime": 1571403661999,
+            "changeTime": 1571403661999,
+            "contentHash": "8ee6e1e6193cddc9094e8acfe41eb88415bb04fa",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\triggers\\ClassTrigger.trigger",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\triggers\\ClassTrigger.trigger",
+            "isDirectory": false,
+            "size": 585,
+            "modifiedTime": 1571403661999,
+            "changeTime": 1571403661999,
+            "contentHash": "6a25aca7d3a10d56e39317c53a1872a54cdc89ba",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\triggers\\ClassTrigger.trigger-meta.xml",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school\\force-app\\main\\default\\triggers\\ClassTrigger.trigger-meta.xml",
+            "isDirectory": false,
+            "size": 183,
+            "modifiedTime": 1570642073645,
+            "changeTime": 1570642073645,
+            "contentHash": "e6b0c1d6050d9775218b486242e79de262a51d3d",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school",
+        {
+            "sourcePath": "c:\\Users\\JJJJJJJ\\Documents\\p1school\\p1school",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1571404982229,
+            "changeTime": 1571404982229,
+            "contentHash": "54ab489977c568a5497a53f76ad3ee1187dd0156",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": true,
+            "isArtifactRoot": false
+        }
+    ]
+]

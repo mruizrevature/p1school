@@ -2,7 +2,7 @@ public class SchoolDataCreator {
 
     public static void createData() {
         
-        deleteExistingSchoolData();
+        //deleteExistingSchoolData();
 
         createDepartments();
         createRooms();
@@ -286,7 +286,7 @@ public class SchoolDataCreator {
             for (Student__c student: students) {
                 student.Status__c = 'Enrolled';
                 if (student.Status__c == 'Enrolled') {
-                    if((Math.random()*10)>7)
+                    if((Math.random()*10)>8)
                         classEnrollmentsToInsert.add(
                             new ClassEnrollment__c(Student__c=student.Id,Class__c=c.Id,Credits__c = 4, Status__c = 'Enrolled'));
                 }
