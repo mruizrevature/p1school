@@ -26,6 +26,17 @@
         <members>GPAController</members>
         <members>UserPermissionErrors</members>
         <members>RoomUtilityClass</members>
+
+        <!-- My Classes -->
+        <members>State</members>
+        <members>P1</members>
+        <members>MyTestClass</members>
+        <members>UnableToCalculateGPAException</members>
+        <members>UnrelatedDegreeException</members>
+        <members>DuplicateEnrollmentException</members>
+        <members>ClassEnrollmentTriggerHelper</members>
+        <members>ClassEnrollmentTriggerTester</members>
+
         <name>ApexClass</name>
     </types>
     <types>
@@ -35,6 +46,7 @@
     <types>
         <members>AssessmentTrigger</members>
         <members>ClassTrigger</members>
+        <members>ClassEnrollmentTrigger</members>
         <name>ApexTrigger</name>
     </types>
     <types>

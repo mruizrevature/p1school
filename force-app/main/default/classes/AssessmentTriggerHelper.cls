@@ -4,7 +4,7 @@ public with sharing class AssessmentTriggerHelper {
      */
     public static void preventDoubleRoomBooking(List<Assessment__c> assessmentsBeingInserted) {
         checkIfAssessmentIsUsingRoom(assessmentsBeingInserted);
-        // checkIfClassIsUsingRoom(assessmentsBeingInserted);
+        checkIfClassIsUsingRoom(assessmentsBeingInserted);
     }
 
     public static void preventDoubleRoomBooking(Assessment__c assessmentBeingInserted) {
@@ -17,7 +17,10 @@ public with sharing class AssessmentTriggerHelper {
 
         // Make sure the sure has read access for exising Assessment records.
         if (Schema.sObjectType.Assessment__c.isAccessible()) {
-            existingAssessments = [SELECT Id, Date__c, Time__c, Room__c FROM Assessment__c WHERE Date__c =: newAssessment.Date__c AND Time__c =: newAssessment.Time__c AND Room__c =: newAssessment.Room__c];
+            existingAssessments = [SELECT Id, Date__c, Time__c, Room__c FROM Assessment__c 
+                                        WHERE Date__c =: newAssessment.Date__c 
+                                        AND Time__c =: newAssessment.Time__c 
+                                        AND Room__c =: newAssessment.Room__c];
         }
 
         if (existingAssessments != null) { // User has at least read access
@@ -46,7 +49,10 @@ public with sharing class AssessmentTriggerHelper {
 
         // Make sure the sure has read access for exising Assessment records.
         if (Schema.sObjectType.Assessment__c.isAccessible()) {
-            existingAssessments = [SELECT Id, Date__c, Time__c, Room__c FROM Assessment__c WHERE (Date__c IN: listOfDates) AND (Room__c IN: listOfRooms) AND (Time__c IN: listOfTimes)];
+            existingAssessments = [SELECT Id, Date__c, Time__c, Room__c FROM Assessment__c
+                                        WHERE (Date__c IN: listOfDates) 
+                                        AND (Room__c IN: listOfRooms) 
+                                        AND (Time__c IN: listOfTimes)];
         }
 
         for (Assessment__c newAssessment: assessmentsBeingInserted) {   
@@ -69,7 +75,11 @@ public with sharing class AssessmentTriggerHelper {
         List<Class__c> existingClasses;
 
         if (Schema.sObjectType.Class__c.isAccessible()) {
-            existingClasses = [SELECT Id FROM Class__c WHERE (StartDate__c <=: newAssessment.Date__c) AND (EndDate__c >=: newAssessment.Date__c) AND (ScheduledTime__c =: newAssessment.Time__c) AND Room__c =: newAssessment.Room__c];
+            existingClasses = [SELECT Id FROM Class__c  
+                                    WHERE (StartDate__c <=: newAssessment.Date__c) 
+                                    AND (EndDate__c >=: newAssessment.Date__c) 
+                                    AND (ScheduledTime__c =: newAssessment.Time__c) 
+                                    AND Room__c =: newAssessment.Room__c];
         }
 
         if (existingClasses != null) { // User has at least read access
@@ -78,6 +88,33 @@ public with sharing class AssessmentTriggerHelper {
             }
         } else  { // User cannot read Class  
             newAssessment.addError(UserPermissionErrors.CANNOT_READ_CLASSES);
+        }   
+    }
+    static void checkIfClassIsUsingRoom(List<Assessment__c> newAssessments) {
+        List<Class__c> existingClasses;
+
+        if (Schema.sObjectType.Class__c.isAccessible()) {
+            for(Assessment__c newAssessment: newAssessments){
+                existingClasses.add([SELECT Id FROM Class__c  
+                                    WHERE (StartDate__c <=: newAssessment.Date__c) 
+                                    AND (EndDate__c >=: newAssessment.Date__c) 
+                                    AND (ScheduledTime__c =: newAssessment.Time__c) 
+                                    AND Room__c =: newAssessment.Room__c]);
+            }
+            
+        }
+
+        if (existingClasses != null) { // User has at least read access
+            if (existingClasses.size() > 0) { // Double booking
+                for(Assessment__c newAssessment: newAssessments){
+                    RoomUtilityClass.denyRecordTryingToDoubleBookRoom(newAssessment);
+                }
+            }
+        } else  { // User cannot read Class  
+            for(Assessment__c newAssessment: newAssessments){
+                newAssessment.addError(UserPermissionErrors.CANNOT_READ_CLASSES);
+            }
+            
         }   
     }
 }
