@@ -62,7 +62,6 @@ public with sharing class EnrollmentTriggerTests {
         System.assertEquals(5, [SELECT Id FROM ClassEnrollment__c].size());
         System.assertNotEquals(5, [SELECT Id FROM ClassEnrollment__c].size());
         System.assertNotEquals(3,[SELECT Id FROM ClassEnrollment__c].size());
-        //System.assertEquals(insertResults[0].getErrors()[0].getMessage(),'This class enrollment for said student has already been created. Please choose another.');
         Test.stopTest();
     }
   

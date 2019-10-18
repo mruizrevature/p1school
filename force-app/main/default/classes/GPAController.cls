@@ -7,12 +7,13 @@ public with sharing class GPAController {
         Double gPA = 0.0;
         AggregateResult[] gr = [SELECT  AVG(Grade__c)avgGrade, Class_Enrollment__r.Student__r.Name, Class_Enrollment__r.Student__r.Id 
                                 FROM Grade__c 
-                                GROUP BY Class_Enrollment__r.Student__r.Name, Class_Enrollment__r.Student__r.Id];
+                                GROUP BY Class_Enrollment__r.Student__r.Name, Class_Enrollment__r.Student__r.Id HAVING Class_Enrollment__r.Student__r.Id =: student];
+        Student__c stu = [SELECT Id, CumulativeGPA__c FROM Student__c WHERE Id =: student];
         for(AggregateResult gradePA : gr){
             if((Double)gradePA.get('avgGrade') < 0.0){
                 throw new UnableToCalculateGPAException('Cannot calculate the GPA for this student: ' + (Id)gradePA.get('Student__r.Id'));
             }
-            else if((Double)gradePA.get('avgGrade') > 0.0 && (Double)gradePA.get('avgGrade') < 65.0){
+            else if((Double)gradePA.get('avgGrade') >= 0.0 && (Double)gradePA.get('avgGrade') < 65.0){
                 gPA = 0.0;
             }
             else if((Double)gradePA.get('avgGrade') >= 65.0 && (Double)gradePA.get('avgGrade') < 67.0){
@@ -45,8 +46,9 @@ public with sharing class GPAController {
             else if((Double)gradePA.get('avgGrade') >=93.0){
                 gPA = 4.0;
             }
-            update (Id)gradePA.get('Class_Enrollment__r.Student__r.Id');
+            //(Id)gradePA.get('Class_Enrollment__r.Student__r.Id');
+            stu.CumulativeGPA__c = gPA;
+            update   stu;
         }
     }
 }
-//attendance line items do Delete [select ___ from ___ where ___ = ______]

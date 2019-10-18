@@ -11,3 +11,4 @@ trigger EnrollmentTrigger on ClassEnrollment__c (before insert) {
         }
     }
 }
+/**after insert before deletion */
