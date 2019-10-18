@@ -296,7 +296,6 @@ public class SchoolDataCreator {
     //     }
     //     insert gradesToInsert;
     // }
-    
     private static double getRandomNumber() {
         Double randomNumber = Math.random();
         while (randomNumber < 0.5) {
