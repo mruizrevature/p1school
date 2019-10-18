@@ -2,9 +2,11 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <!-- Trigger Helper classes -->
+        <members>ClassEnrollmentTriggerHelper</members>
         <members>AssessmentTriggerHelper</members>
         <members>ClassTriggerHelper</members>
         <members>RoomUtilityClass</members>
+        
 
         <!-- Exceptions -->
         <members>RoomOccupiedException</members>
@@ -15,6 +17,7 @@
         <!-- Test Classes -->
         <members>AssessmentTriggerTests</members>
         <members>ClassTriggerTests</members>
+        <members>ClassEnrollmentTriggerTest</members>
 
         <!-- Test Utility Classes -->
         <members>AssessmentCreator</members>

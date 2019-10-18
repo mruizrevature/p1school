@@ -54,9 +54,9 @@ public with sharing class AssessmentTriggerTests {
     // }
 
     static void checkThatDoubleBookingWasPrevented(sObject classOrAssessment) {
-        Test.startTest();
+        //Test.startTest();
         Database.SaveResult insertResult = Database.insert(classOrAssessment, false);
-        Test.stopTest();
+        //Test.stopTest();
 
         checkThatInsertionFailed(insertResult, RoomUtilityClass.ROOM_BOOKED);
     }
