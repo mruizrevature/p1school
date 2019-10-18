@@ -6,6 +6,7 @@
         <members>ClassTriggerHelper</members>
         <members>RoomUtilityClass</members>
         <members>ClassEnrollmentHelper</members>
+        <members>UnExcusedAbsensesTriggerHelper</members>
         <!-- new ones -->
         <members>P1</members>
         <members>P1Test</members>
@@ -44,6 +45,7 @@
         <members>ClassTrigger</members>
         <name>ApexTrigger</name>
         <members>ClassEnrollmentTrigger</members>
+        <members>UnExcusedAbsensesTrigger</members>
 
     </types>
     <types>
