@@ -14,8 +14,10 @@ public class DuplicateEnrollmentTriggerTest
         insert ce;
     }  
 
+
+    // testing that inserting a single classEnrollment that is a duplicate does not insert and generates the correct errors
     @isTest
-    public static void testSingleInsert()
+    public static void testSingleInsertOfPreventDuplicateEnrollment()
     {
         Test.startTest();
         ClassEnrollment__c ce = [SELECT Id, Student__c, Class__c FROM ClassEnrollment__c LIMIT 1];
@@ -37,9 +39,10 @@ public class DuplicateEnrollmentTriggerTest
         Test.stopTest();
     }
 
-
+    // testing that inserting a list of classEnrollment that contain duplicates does not insert the duplicate record
+    // and generates the correct errors
     @isTest
-    public static void testMultipleInsert()
+    public static void testMultipleInsertOfPreventDuplicateEnrollment()
     {
         Test.startTest();
         ClassEnrollment__c ce = [SELECT Id, Student__c, Class__c FROM ClassEnrollment__c LIMIT 1];
