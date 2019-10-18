@@ -1,5 +1,4 @@
 public with sharing class TestDataCreator {
-    	public static List<ClassEnrollment__c> ClassEnrollments;
     public static void createDataForEnrollment(){
 		// Create Two Departments
 		List<Department__c> departments = new List<Department__c>();
@@ -65,8 +64,34 @@ public with sharing class TestDataCreator {
 									   ScheduledTime__c=(Time.newInstance(8, 0, 0, 0)), 
 									   Status__c= 'In Progress', 
 									   Topic__c= topic2.Id);
+        Class__c class3 = new Class__c(Name = 'MMM000', 
+									   Capacity__c= 10, 
+									   DaysPerWeek__c= 3, 
+									   Department__c= d1.Id, 
+									   StartDate__c=(Date.newInstance(2019, 8, 12)), 
+									   EndDate__c=(Date.newInstance(2019, 12, 15)), 
+									   Room__c = new Room__c().Id, 
+									   ScheduledTime__c=(Time.newInstance(9, 0, 0, 0)), 
+									   Status__c= 'In Progress', 
+									   Topic__c= topic1.Id);
+
+		Class__c class4 = new Class__c(Name = 'PPP000', 
+									   Capacity__c= 10, 
+									   DaysPerWeek__c= 5, 
+									   Department__c= d2.Id, 
+									   StartDate__c=(Date.newInstance(2019, 7, 12)), 
+									   EndDate__c=(Date.newInstance(2019, 11, 13)), 
+									   Room__c= new Room__c().Id, 
+									   ScheduledTime__c=(Time.newInstance(8, 0, 0, 0)), 
+									   Status__c= 'In Progress', 
+									   Topic__c= topic2.Id);
+
+    
 		classes.add(class1);
 		classes.add(class2);
+        classes.add(class3);
+        classes.add(class4);
+
 		insert classes;
 		System.debug('Classes Created');
 
