@@ -90,10 +90,10 @@ public class P1Test {
 
        for (Account matchingAccount: stateAccount){
             for(Contact matchingContact: stateContact){
-                if(matchingAccount.get('id') == matchingCOntact.get('id')){
-                    if(matchingAccount.get(s.name()) == matchingContact.get(s.name())){
+                if(matchingAccount.get('id') == matchingContact.get('Accountid')){
+                    //if(matchingAccount.get(s.name()) == matchingContact.get(s.name())){
                         statesMatching.add(matchingAccount);
-                    }
+                    //}
                 }
             }
        }

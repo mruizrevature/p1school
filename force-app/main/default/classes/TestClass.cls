@@ -47,17 +47,20 @@ public with sharing class TestClass {
         Contact mockContactState = new Contact();
         mockContactState.lastName ='Toby';
         mockContactState.MailingState = 'CA';
-        //mockContactState.Id = mockAccountState.Id;
+        mockContactState.AccountId = mockAccountState.Id;
         insert mockContactState;
 
-        // mockAccountState.Name = 'Her';
-        // mockAccountState.BillingSTate = 'PA';
-        // insert mockAccountState;
+        mockAccountState = new Account();
+        mockAccountState.Name = 'Her';
+        mockAccountState.BillingSTate = 'PA';
+        insert mockAccountState;
 
-        // mockAccountState.Name = 'It';
-        // mockAccountState.BillingSTate = 'DE';
-        // insert mockAccountState;
+        mockAccountState = new Account();
+        mockAccountState.Name = 'It';
+        mockAccountState.BillingSTate = 'DE';
+        insert mockAccountState;
 
+        //size is 1
         System.assertEquals(1, P1Test.getAccountsForAGivenState(State.CA).size());
         
     }
@@ -85,7 +88,6 @@ public with sharing class TestClass {
             for(Double getExistingGrade : getGradeAndDouble.values()){
                 //Grade is 70 or 80
                 System.assertNotEquals(60,getExistingGrade);
-                //a
 
             }
         }
