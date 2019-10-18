@@ -5,9 +5,13 @@
         <members>AssessmentTriggerHelper</members>
         <members>ClassTriggerHelper</members>
         <members>RoomUtilityClass</members>
+        <members>EnrollmentTriggerHelper</members>
+
 
         <!-- Exceptions -->
         <members>RoomOccupiedException</members>
+        <members>DuplicateEnrollmentException</members>
+        <members>UnableToCalculateGPAException</members>                
 
         <!-- Org Data Creation Classes -->
         <members>SchoolDataCreator</members>
@@ -15,6 +19,8 @@
         <!-- Test Classes -->
         <members>AssessmentTriggerTests</members>
         <members>ClassTriggerTests</members>
+        <members>EnrollmentTriggerTests</members>
+        <members>P1Tests</members>
 
         <!-- Test Utility Classes -->
         <members>AssessmentCreator</members>
@@ -22,11 +28,17 @@
         <members>DepartmentCreator</members>
         <members>RoomCreator</members>
         <members>TopicCreator</members>
+        <members>EnrollmentCreator</members>
+        <members>StudentCreator</members>
 
         <members>GPAController</members>
         <members>UserPermissionErrors</members>
         <members>RoomUtilityClass</members>
+        <members>DuplicateEnrollment</members>
+        <members>P1</members>
+        <members>State</members>
         <name>ApexClass</name>
+
     </types>
     <types>
         <members>*</members>
@@ -35,6 +47,7 @@
     <types>
         <members>AssessmentTrigger</members>
         <members>ClassTrigger</members>
+        <members>EnrollmentTrigger</members>
         <name>ApexTrigger</name>
     </types>
     <types>

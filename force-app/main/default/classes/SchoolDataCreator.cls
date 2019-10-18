@@ -13,6 +13,7 @@ public class SchoolDataCreator {
         // create minors
         createAssessments();
         // createGrades();
+        //createClassEnrollments();
     }
     
     private static void deleteExistingSchoolData() {
@@ -233,14 +234,14 @@ public class SchoolDataCreator {
     //     List<Student__c> students = [SELECT Id, Status__c FROM Student__c];
     //     List<Class__c> classes = [SELECT Id FROM Class__c];
         
-    //     List<Class_Enrollment__c> classEnrollmentsToInsert = new List<Class_Enrollment__c>();
+    //     List<ClassEnrollment__c> classEnrollmentsToInsert = new List<ClassEnrollment__c>();
         
     //     for (Class__c c: classes) {
     //         for (Student__c student: students) {
     //             if (student.Status__c == 'Enrolled') {
-    //                 classEnrollmentsToInsert.add(new Class_Enrollment__c(Student__c=student.Id,Class__c=c.Id));
+    //                 classEnrollmentsToInsert.add(new ClassEnrollment__c(Student__c=student.Id,Class__c=c.Id));
     //             }
-    //         }	
+    //         }
     //     }
         
     //     insert classEnrollmentsToInsert;
