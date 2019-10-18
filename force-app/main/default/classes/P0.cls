@@ -52,8 +52,8 @@ public with sharing class P0 {
     //For each student, get the grade for each of their classes
     public static Map<Id, Map<Id, Double>> getClassGrades() {
         
-        List<ClassEnrollment__c> classenrollments = [SELECT ClassEnrollment__c.Name, ClassEnrollment__c.Id,ClassEnrollment__c.Class__r.Id, ClassEnrollment__c.Student__r.Name, ClassEnrollment__c.Student__r.Id FROM ClassEnrollment__c];// 
-        List<Grade__c> grades = [SELECT Grade__c.Name,Grade__c.Grade__c, Grade__c.Class_Enrollment__r.Student__c, Grade__c.Class_Enrollment__r.Name,Grade__c.Class_Enrollment__r.Id, Grade__c.Assessment__r.Name FROM Grade__c];
+        List<ClassEnrollment__c> classenrollments = [SELECT Name, Id,ClassEnrollment__c.Class__r.Id, ClassEnrollment__c.Student__r.Name, ClassEnrollment__c.Student__r.Id FROM ClassEnrollment__c];// 
+        List<Grade__c> grades = [SELECT Name, Grade__c, Grade__c.Class_Enrollment__r.Student__c, Grade__c.Class_Enrollment__r.Name,Grade__c.Class_Enrollment__r.Id, Grade__c.Assessment__r.Name FROM Grade__c];
         List<Student__c> students = [SELECT Id FROM Student__c];
         Map<Id, Map<Id, Double>> avgGradeForStudent = new Map<Id, Map<Id, Double>>();
         for(Student__c stud : students){ // For each student
