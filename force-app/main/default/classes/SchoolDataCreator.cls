@@ -12,8 +12,22 @@ public class SchoolDataCreator {
         createMajors();
         // create minors
         createAssessments();
-        // createGrades();
+        createClassEnrollment();
+        createGrades();
+
     }
+
+    /**
+        Grades required fields:
+
+        Assessment__c Lookup(Assessment)
+        Class_Enrollment__c Lookup(ClassEnrollment__c)
+        Grade__c Number(3,2)
+
+     */
+    // private static void createGrades() {
+
+    // }
     
     private static void deleteExistingSchoolData() {
         deleteExistingGrades();
@@ -270,32 +284,54 @@ public class SchoolDataCreator {
         insert assessmentsToInsert;
     }
     
-    // private static void createGrades() {
-    //     List<Class__c> classes = [SELECT Id FROM Class__c];
+    private static void createGrades() {
+        List<Class__c> classes = [SELECT Id FROM Class__c];
         
-    //     List<Class_Enrollment__c> classEnrollments = [SELECT Id, Class__c FROM Class_Enrollment__c];
+        List<ClassEnrollment__c> classEnrollments = [SELECT Id, Class__c FROM ClassEnrollment__c];
         
-    //     List<Assessment__c> assessments = [SELECT Id, Class__c FROM Assessment__c];
-    //     List<Grade__c> gradesToInsert = new List<Grade__c>();
+        List<Assessment__c> assessments = [SELECT Id, Class__c FROM Assessment__c];
+        List<Grade__c> gradesToInsert = new List<Grade__c>();
         
-    //     Integer countClassEnrollments = 0;
+        Integer countClassEnrollments = 0;
         
-    //     for (Assessment__c assessment: assessments) {
-    //         for (Class__c c: classes) {
-    //             if (assessment.Class__c == c.Id) {
-    //                 for (Class_Enrollment__c ce: classEnrollments) {
-    //                     if (ce.Class__c == assessment.Class__c) {
-    //                         countClassEnrollments++;
-    //                         gradesToInsert.add(new Grade__c(Assessment__c=assessment.Id,
-    //                                                         ClassEnrollment__c=ce.Id,
-    //                                                         Grade__c=getRandomNumber()));
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     insert gradesToInsert;
-    // }
+        for (Assessment__c assessment: assessments) {
+            for (Class__c c: classes) {
+                if (assessment.Class__c == c.Id) {
+                    for (ClassEnrollment__c ce: classEnrollments) {
+                        if (ce.Class__c == assessment.Class__c) {
+                            countClassEnrollments++;
+                            gradesToInsert.add(new Grade__c(Assessment__c=assessment.Id,
+                                                            Class_Enrollment__c=ce.Id,
+                                                            Grade__c=getRandomNumber()));
+                        }
+                    }
+                }
+            }
+        }
+        insert gradesToInsert;
+    }
+
+        private static void createClassEnrollment() {
+        List<Class__c> classList = [SELECT Id FROM Class__c];
+        List<Student__c> studentList = [SELECT Id FROM Student__c];
+        Integer credit = 4;
+        String status = 'Enrolled';
+
+        List<ClassEnrollment__c> classEnrollmentsToInsert = new List<ClassEnrollment__c>();
+
+        Integer j = classList.size() > studentList.size() ? studentList.size() : classList.size();
+        Integer i = 0;
+        while (i < j) {
+            classEnrollmentsToInsert.add(new ClassEnrollment__c(
+                Class__c = classList[i].Id
+                ,Student__c = studentList[i].Id
+                ,Credits__c = credit
+                ,Status__c = status
+            ));
+            ++i;
+        }
+        insert classEnrollmentsToInsert;
+    }
     
     private static double getRandomNumber() {
         Double randomNumber = Math.random();

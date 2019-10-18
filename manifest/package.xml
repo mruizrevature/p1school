@@ -8,6 +8,7 @@
 
         <!-- Exceptions -->
         <members>RoomOccupiedException</members>
+        <members>UnableToCalculateGPAException</members>
 
         <!-- Org Data Creation Classes -->
         <members>SchoolDataCreator</members>
