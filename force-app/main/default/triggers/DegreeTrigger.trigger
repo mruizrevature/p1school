@@ -12,6 +12,6 @@ trigger DegreeTrigger on ClassEnrollment__c (before insert) {
     for (ClassEnrollment__c a: Trigger.new) {
         if (a.Student__r.Major__. != a.Class__c)
             a.addError('Department does not match degree');
-            [SELECT [SELECT [SELECT Degree__r.Department__r.Name FROM Major__r] FROM Student__c] FROM ClassEnrollment__c];
+        SELECT (SELECT Degree__r.Department__r.Name FROM Majors__c) FROM ClassEnrollment__c WHERE (SELECT ClassEnrollment__c from Student__c)
     }
 }
