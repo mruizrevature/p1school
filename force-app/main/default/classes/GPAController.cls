@@ -4,7 +4,16 @@ public with sharing class GPAController {
     */
     @AuraEnabled
     public static void calculateGPA(Id student) {
-        List<ClassEnrollment__c> classEnrollmentList = [
+        try {
+            getCumulativeGPA(student);
+            //throw new UnableToCalculateGPAException('Unable to calculate GPA.');
+        } catch (UnableToCalculateGPAException e) {
+            System.debug(e.getMessage());
+        }
+    }
+
+    public static Double getCumulativeGPA(Id student) {
+            List<ClassEnrollment__c> classEnrollmentList = [
             SELECT 
                 Id
                 ,Class__c
@@ -30,7 +39,7 @@ public with sharing class GPAController {
             Grade__c[] grades = classEnrollment.Grades__r;
 
             Double gradeSum = 0.0;
-            Integer count = 0;
+            Double count = 0.0;
             for (Grade__c grade : grades) {
                 gradeSum += grade.Grade__c;
                 ++count;
@@ -39,18 +48,18 @@ public with sharing class GPAController {
         }
         // Now gradeList[0] is for class 1's average, gradeList[1] is for class 2's average, etc. 
         
-        List<Integer> creditsEarned = new List<Integer>();
+        List<Double> creditsEarned = new List<Double>();
         for (Integer i = 0; i < classEnrollmentList.size(); ++i) {
             if (gradeList[i] >= 90) {
-                creditsEarned[i] = 4;
+                creditsEarned.add(4);
             } else if (gradeList[i] >= 80) {
-                creditsEarned[i] = 3;
+                creditsEarned.add(3);
             } else if (gradeList[i] >= 70) {
-                creditsEarned[i] = 2;
+                creditsEarned.add(2);
             } else if (gradeList[i] >= 60) {
-                creditsEarned[i] = 1;
+                creditsEarned.add(1);
             } else {
-                creditsEarned[i] = 0;
+                creditsEarned.add(0);
             }
         }
         /*
@@ -60,12 +69,17 @@ public with sharing class GPAController {
         // creditsEarned * classEnrollmentList.get('Credits__c') == GPA for class
         List<Double> totalCreditsEarnedPerClass = new List<Double>();
         for (Integer i = 0; i < classEnrollmentList.size(); ++i) {
-            totalCreditsEarnedPerClass[i] = creditsEarned[i] *  (Double)classEnrollmentList[i].get('Credits__c');
+            totalCreditsEarnedPerClass.add(creditsEarned[i] * (Double)classEnrollmentList[i].get('Credits__c'));
         }
 
         // SUM(totalCreditsEarnedPerClass) and divide by SUM(Credits__c) and we'll have the cumulative GPA
-        for (Integer i = 0; i < classEnrollmentList[i].size(); ++i) {
-            
+        Double sumEarnedCredits = 0;
+        Double sumCredits = 0;
+        for (Integer i = 0; i < classEnrollmentList.size(); ++i) {
+            sumEarnedCredits += totalCreditsEarnedPerClass[i];
+            sumCredits += (Double)classEnrollmentList[i].get('Credits__c');
         }
+
+        return sumEarnedCredits / sumCredits;
     }
 }
