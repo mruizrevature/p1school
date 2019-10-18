@@ -32,8 +32,6 @@ public with sharing class P1Test {
         mockContactTwo.MailingState = 'MD';
         mockContactTwo.AccountId = mockAccount.Id;
         insert mockContactTwo;
-        
-        
     }
 
     @isTest static void testFibonacci() {
