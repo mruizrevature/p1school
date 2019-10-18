@@ -1,0 +1,46 @@
+{
+    "summary": {
+        "outcome": "Passed",
+        "testsRan": 1,
+        "passing": 1,
+        "failing": 0,
+        "skipped": 0,
+        "passRate": "100%",
+        "failRate": "0%",
+        "testStartTime": "Oct 18, 2019 9:54 AM",
+        "testExecutionTime": "199 ms",
+        "testTotalTime": "199 ms",
+        "commandTime": "5334 ms",
+        "hostname": "https://dream-momentum-8339-dev-ed.cs42.my.salesforce.com/",
+        "orgId": "00D560000002CSWEA2",
+        "username": "test-egsyittfeedl@example.com",
+        "testRunId": "7075600000lK1db",
+        "userId": "00556000003bhPyAAI"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v47.0/tooling/sobjects/ApexTestResult/07M560000052zhxEAA"
+            },
+            "Id": "07M560000052zhxEAA",
+            "QueueItemId": "70956000001MFK4AAO",
+            "StackTrace": null,
+            "Message": null,
+            "AsyncApexJobId": "7075600000lK1dbAAC",
+            "MethodName": "calculateGPATester",
+            "Outcome": "Pass",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v47.0/tooling/sobjects/ApexClass/01p56000002P1LJAA0"
+                },
+                "Id": "01p56000002P1LJAA0",
+                "Name": "GPAControllerTests",
+                "NamespacePrefix": null
+            },
+            "RunTime": 199,
+            "FullName": "GPAControllerTests.calculateGPATester"
+        }
+    ]
+}

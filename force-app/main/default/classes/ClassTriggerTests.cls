@@ -1,4 +1,4 @@
-@isTest
+ @isTest
 public with sharing class ClassTriggerTests {
     @TestSetup
     static void setup(){

@@ -37,21 +37,21 @@ public with sharing class AssessmentTriggerTests {
         // checkThatDoubleBookingWasPrevented(newAssessments);
     }
 
-    /**
+    /** 
         Assessment being created and an Assessment Class the room
      */
-    // @isTest static void testDoubleBookingAssessmentWithExistingClass() {
-    //     Class__c mockExistingClass = [SELECT Id FROM Class__c LIMIT 1];
-    //     Room__c room = [SELECT Id FROM Room__c LIMIT 1];
-    //     Assessment__c mockNewAssessment = new Assessment__c();
-    //     mockNewAssessment.Name = 'MockAssessment';
-    //     mockNewAssessment.Room__c = room.Id;
-    //     mockNewAssessment.Class__c = mockExistingClass.Id;
-    //     mockNewAssessment.Date__c = Date.newInstance(2050,1,4);
-    //     mockNewAssessment.Time__c = Time.newInstance(9,0,0,0);
+    @isTest static void testDoubleBookingAssessmentWithExistingClass() {
+        Class__c mockExistingClass = [SELECT Id FROM Class__c LIMIT 1];
+        Room__c room = [SELECT Id FROM Room__c LIMIT 1];
+        Assessment__c mockNewAssessment = new Assessment__c();
+        mockNewAssessment.Name = 'MockAssessment';
+        mockNewAssessment.Room__c = room.Id;
+        mockNewAssessment.Class__c = mockExistingClass.Id;
+        mockNewAssessment.Date__c = Date.newInstance(2050,1,4);
+        mockNewAssessment.Time__c = Time.newInstance(9,0,0,0);
 
-    //     checkThatDoubleBookingWasPrevented(mockNewAssessment);
-    // }
+        checkThatDoubleBookingWasPrevented(mockNewAssessment);
+    }
 
     static void checkThatDoubleBookingWasPrevented(sObject classOrAssessment) {
         Test.startTest();

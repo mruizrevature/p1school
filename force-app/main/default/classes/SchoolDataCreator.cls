@@ -1,6 +1,8 @@
 public class SchoolDataCreator {
+
     public static void createData() {
-        deleteExistingSchoolData();
+        
+        //deleteExistingSchoolData();
 
         createDepartments();
         createRooms();
@@ -12,10 +14,11 @@ public class SchoolDataCreator {
         createMajors();
         // create minors
         createAssessments();
-        // createGrades();
+        createClassEnrollments();
+        createGrades();
     }
     
-    private static void deleteExistingSchoolData() {
+    public static void deleteExistingSchoolData() {
         deleteExistingGrades();
         deleteExistingAssessments();
         deleteExistingClassEnrollments();
@@ -30,7 +33,8 @@ public class SchoolDataCreator {
         deleteExistingEmployees();
         deleteExistingDepartments();
     }
-    
+
+    //13 soql
     private static void deleteExistingGrades() { delete [SELECT Id FROM Grade__c]; }
     private static void deleteExistingAssessments() { delete [SELECT Id FROM Assessment__c]; }
     private static void deleteExistingClassEnrollments() { delete [SELECT Id FROM ClassEnrollment__c]; }
@@ -45,7 +49,7 @@ public class SchoolDataCreator {
     private static void deleteExistingEmployees() { delete [SELECT Id FROM Employee__C]; }
     private static void deleteExistingDepartments() { delete [SELECT Id FROM Department__C]; }
     
-    private static void createDepartments() {
+    public static void createDepartments() {
         List<String> departmentNames = new List<String> {'Math', 'Science', 'Education', 'History'};
         List<Department__c> departmentsToInsert = new List<Department__c>();
         for (Integer i= 0; i < departmentNames.size(); i++) {
@@ -54,15 +58,14 @@ public class SchoolDataCreator {
         insert departmentsToInsert;
     }
 
-    private static void createRooms() {
+    public static void createRooms() {
         List<Room__c> roomsToInsert = new List<Room__c>();
         for (Integer i= 0; i < 10; i++) {
             roomsToInsert.add(new Room__c());
         }
         insert roomsToInsert;
     }
-
-    private static void createDegrees() {
+    public static void createDegrees() {
         List<Department__c> departments = [SELECT Id, Name FROM Department__c];
         Map<String, Id> departmentNameToId = new Map<String, Id>();
 
@@ -84,8 +87,7 @@ public class SchoolDataCreator {
 
         insert degreesToInsert;
     }
-
-    private static void createTopics() {
+    public static void createTopics() {
         List<Degree__c> degrees = [SELECT Id, Name FROM Degree__c];
         Map<String, Id> degreeNameToId = new Map<String, Id>();
 
@@ -93,7 +95,12 @@ public class SchoolDataCreator {
             degreeNameToId.put(degree.Name, degree.Id);
         }
 
-        List<String> topicNames = new List<String> {'Algebra', 'Pre-Calculus', 'Probability', 'Sport Analytics', 'General Biology', 'Genetics', 'Concepts of Chemistry', 'Chemistry of Beer', 'Democracy and Education', 'Evolution of Schooling' ,'College Reading and Study Skills', 'Teaching Language Arts', 'Other Worlds', 'Humans and the Environment', 'Introduction to Archaeology', 'Artifacts and Culture'};
+        List<String> topicNames = new List<String> 
+            {'Algebra', 'Pre-Calculus', 'Probability', 'Sport Analytics',
+            'General Biology', 'Genetics', 'Concepts of Chemistry', 'Chemistry of Beer',
+            'Democracy and Education', 'Evolution of Schooling' ,'College Reading and Study Skills',
+            'Teaching Language Arts', 'Other Worlds', 'Humans and the Environment', 'Introduction to Archaeology',
+            'Artifacts and Culture'};
         List<Topic__c> topicsToInsert = new List<Topic__c>();
 
         topicsToInsert.add(new Topic__c(Name=topicNames[0], Degree__c=degreeNameToId.get('General Mathematics')));
@@ -116,8 +123,11 @@ public class SchoolDataCreator {
         insert topicsToInsert;
     }
 
-    private static void createEmployees() {
-        List<String> employeeNames = new List<String> {'Mark Jackson', 'Pete Maravich', 'Serena Williams', 'Megan Rapinoe', 'Jesse Gillis', 'Phillip Mack', 'Janet Williams', 'Mike Jones'};
+    public static void createEmployees() {
+        List<String> employeeNames = new List<String> 
+            {'Mark Jackson', 'Pete Maravich', 'Serena Williams',
+            'Megan Rapinoe', 'Jesse Gillis', 'Phillip Mack',
+            'Janet Williams', 'Mike Jones'};
         List<Employee__c> employeesToInsert = new List<Employee__c>();
 
         List<Department__c> departments = [SELECT Id, Name FROM Department__c];
@@ -138,34 +148,71 @@ public class SchoolDataCreator {
         insert employeesToInsert;
     }
 
-    private static void createStudents() {
+    public static void createStudents() {
         List<Employee__c> advisors = [SELECT Id FROM Employee__c];
         List<Student__c> studentsToInsert = new List<Student__c>();
         
-        studentsToInsert.add(new Student__c(Name='Mike Williams',PhoneNumber__c='0000000000',Age__c=18,Email__c='mwilliams@gmail.com',Status__c='Prospect',Advisor__c=advisors[0].Id));
-        studentsToInsert.add(new Student__c(Name='Pete Jacobs',PhoneNumber__c='0000000000',Age__c=28,Email__c='pjacobs@gmail.com',Status__c='Prospect',Advisor__c=advisors[0].Id));
-        studentsToInsert.add(new Student__c(Name='Carly Jones',PhoneNumber__c='0000000000',Age__c=22,Email__c='cjones@gmail.com',Status__c='Prospect',Advisor__c=advisors[1].Id));
-        studentsToInsert.add(new Student__c(Name='Andy Young',PhoneNumber__c='0000000000',Age__c=35,Email__c='ayoung@gmail.com',Status__c='Prospect',Advisor__c=advisors[1].Id));
-        studentsToInsert.add(new Student__c(Name='Janice Keenan',PhoneNumber__c='0000000000',Age__c=24,Email__c='jkeenan@gmail.com',Status__c='Prospect',Advisor__c=advisors[2].Id));
-        studentsToInsert.add(new Student__c(Name='Bill Brunson',PhoneNumber__c='0000000000',Age__c=19,Email__c='bbrunson@gmail.com',Status__c='Prospect',Advisor__c=advisors[2].Id));
-        studentsToInsert.add(new Student__c(Name='Jake Pitsel',PhoneNumber__c='0000000000',Age__c=18,Email__c='jpitsel@gmail.com',Status__c='Prospect',Advisor__c=advisors[3].Id));
-        studentsToInsert.add(new Student__c(Name='Susan Jetse',PhoneNumber__c='0000000000',Age__c=31,Email__c='sjetse@gmail.com',Status__c='Prospect',Advisor__c=advisors[3].Id));
-        studentsToInsert.add(new Student__c(Name='Joe McFlusters',PhoneNumber__c='0000000000',Age__c=22,Email__c='jmcflusters@gmail.com',Status__c='Prospect',Advisor__c=advisors[4].Id));
-        studentsToInsert.add(new Student__c(Name='Alec Baldwin',PhoneNumber__c='0000000000',Age__c=26,Email__c='abaldwin@gmail.com',Status__c='Prospect',Advisor__c=advisors[4].Id));
-        studentsToInsert.add(new Student__c(Name='Bill Russell',PhoneNumber__c='0000000000',Age__c=45,Email__c='brussell@gmail.com',Status__c='Prospect',Advisor__c=advisors[5].Id));
-        studentsToInsert.add(new Student__c(Name='Joe Rogan',PhoneNumber__c='0000000000',Age__c=35,Email__c='jrogan@gmail.com',Status__c='Prospect',Advisor__c=advisors[5].Id));
-        studentsToInsert.add(new Student__c(Name='Oprah Winfrey',PhoneNumber__c='0000000000',Age__c=27,Email__c='owinfrey@gmail.com',Status__c='Prospect',Advisor__c=advisors[6].Id));
-        studentsToInsert.add(new Student__c(Name='Randy Moss',PhoneNumber__c='0000000000',Age__c=22,Email__c='rmoss@gmail.com',Status__c='Prospect',Advisor__c=advisors[6].Id));
-        studentsToInsert.add(new Student__c(Name='Allen Iverson',PhoneNumber__c='0000000000',Age__c=25,Email__c='ai@gmail.com',Status__c='Prospect',Advisor__c=advisors[7].Id));
-        studentsToInsert.add(new Student__c(Name='Lebron James',PhoneNumber__c='0000000000',Age__c=21,Email__c='goat@gmail.com',Status__c='Prospect',Advisor__c=advisors[7].Id));
-        studentsToInsert.add(new Student__c(Name='Jenny Peterson',PhoneNumber__c='0000000000',Age__c=29,Email__c='jpeterson@gmail.com',Status__c='Prospect',Advisor__c=advisors[7].Id));
-        studentsToInsert.add(new Student__c(Name='Peter Jetson',PhoneNumber__c='0000000000',Age__c=31,Email__c='pjetson@gmail.com',Status__c='Prospect',Advisor__c=advisors[7].Id));
-        studentsToInsert.add(new Student__c(Name='Greg Maddox',PhoneNumber__c='0000000000',Age__c=27,Email__c='gmaddox@gmail.com',Status__c='Prospect',Advisor__c=advisors[7].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Mike Williams',PhoneNumber__c='0000000000',
+            Age__c=18,Email__c='mwilliams@gmail.com',Status__c='Prospect',Advisor__c=advisors[0].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Pete Jacobs',PhoneNumber__c='0000000000',
+            Age__c=28,Email__c='pjacobs@gmail.com',Status__c='Prospect',Advisor__c=advisors[0].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Carly Jones',PhoneNumber__c='0000000000',
+            Age__c=22,Email__c='cjones@gmail.com',Status__c='Prospect',Advisor__c=advisors[1].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Andy Young',PhoneNumber__c='0000000000',
+            Age__c=35,Email__c='ayoung@gmail.com',Status__c='Prospect',Advisor__c=advisors[1].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Janice Keenan',PhoneNumber__c='0000000000',
+            Age__c=24,Email__c='jkeenan@gmail.com',Status__c='Prospect',Advisor__c=advisors[2].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Bill Brunson',PhoneNumber__c='0000000000',
+            Age__c=19,Email__c='bbrunson@gmail.com',Status__c='Prospect',Advisor__c=advisors[2].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Jake Pitsel',PhoneNumber__c='0000000000',
+            Age__c=18,Email__c='jpitsel@gmail.com',Status__c='Prospect',Advisor__c=advisors[3].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Susan Jetse',PhoneNumber__c='0000000000',
+            Age__c=31,Email__c='sjetse@gmail.com',Status__c='Prospect',Advisor__c=advisors[3].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Joe McFlusters',PhoneNumber__c='0000000000',
+            Age__c=22,Email__c='jmcflusters@gmail.com',Status__c='Prospect',Advisor__c=advisors[4].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Alec Baldwin',PhoneNumber__c='0000000000',
+            Age__c=26,Email__c='abaldwin@gmail.com',Status__c='Prospect',Advisor__c=advisors[4].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Bill Russell',PhoneNumber__c='0000000000',
+            Age__c=45,Email__c='brussell@gmail.com',Status__c='Prospect',Advisor__c=advisors[5].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Joe Rogan',PhoneNumber__c='0000000000',
+            Age__c=35,Email__c='jrogan@gmail.com',Status__c='Prospect',Advisor__c=advisors[5].Id));
+        studentsToInsert.add(new Student__c(Name='Oprah Winfrey',PhoneNumber__c='0000000000',
+            Age__c=27,Email__c='owinfrey@gmail.com',Status__c='Prospect',Advisor__c=advisors[6].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Randy Moss',PhoneNumber__c='0000000000',
+            Age__c=22,Email__c='rmoss@gmail.com',Status__c='Prospect',Advisor__c=advisors[6].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Allen Iverson',PhoneNumber__c='0000000000',
+            Age__c=25,Email__c='ai@gmail.com',Status__c='Prospect',Advisor__c=advisors[7].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Lebron James',PhoneNumber__c='0000000000',
+            Age__c=21,Email__c='goat@gmail.com',Status__c='Prospect',Advisor__c=advisors[7].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Jenny Peterson',PhoneNumber__c='0000000000',
+            Age__c=29,Email__c='jpeterson@gmail.com',Status__c='Prospect',Advisor__c=advisors[7].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Peter Jetson',PhoneNumber__c='0000000000',
+            Age__c=31,Email__c='pjetson@gmail.com',Status__c='Prospect',Advisor__c=advisors[7].Id));
+        studentsToInsert.add(new Student__c
+            (Name='Greg Maddox',PhoneNumber__c='0000000000',
+            Age__c=27,Email__c='gmaddox@gmail.com',Status__c='Prospect',Advisor__c=advisors[7].Id));
         
         insert studentsToInsert; 
     }
 
-    private static void createMajors() {
+    public static void createMajors() {
         List<Major__c> majorsToInsert = new List<Major__c>();
         List<Degree__c> degrees = [SELECT Id FROM Degree__c];
         List<Student__c> students = [SELECT Id FROM Student__c];
@@ -193,7 +240,7 @@ public class SchoolDataCreator {
         insert majorsToInsert;
     }
     
-    private static void createClasses() {
+    public static void createClasses() {
         List<Class__c> classesToInsert = new List<Class__c>();
         List<Department__c> departments = [SELECT Id, Name FROM Department__c];
         Map<String, Id> departmentNameToId = new Map<String, Id>();
@@ -229,24 +276,27 @@ public class SchoolDataCreator {
         insert classesToInsert;
     }
     
-    // private static void createClassEnrollments() {
-    //     List<Student__c> students = [SELECT Id, Status__c FROM Student__c];
-    //     List<Class__c> classes = [SELECT Id FROM Class__c];
+    public static void createClassEnrollments() {
+        List<Student__c> students = [SELECT Id, Status__c FROM Student__c];
+        List<Class__c> classes = [SELECT Id FROM Class__c];
         
-    //     List<Class_Enrollment__c> classEnrollmentsToInsert = new List<Class_Enrollment__c>();
+        List<ClassEnrollment__c> classEnrollmentsToInsert = new List<ClassEnrollment__c>();
         
-    //     for (Class__c c: classes) {
-    //         for (Student__c student: students) {
-    //             if (student.Status__c == 'Enrolled') {
-    //                 classEnrollmentsToInsert.add(new Class_Enrollment__c(Student__c=student.Id,Class__c=c.Id));
-    //             }
-    //         }	
-    //     }
+        for (Class__c c: classes) {
+            for (Student__c student: students) {
+                student.Status__c = 'Enrolled';
+                if (student.Status__c == 'Enrolled') {
+                    if((Math.random()*10)>8)
+                        classEnrollmentsToInsert.add(
+                            new ClassEnrollment__c(Student__c=student.Id,Class__c=c.Id,Credits__c = 4, Status__c = 'Enrolled'));
+                }
+            }	
+        }
         
-    //     insert classEnrollmentsToInsert;
-    // }
+        insert classEnrollmentsToInsert;
+    }
 
-    private static void createAssessments() {
+    public static void createAssessments() {
         List<Class__c> classes = [SELECT Id, ScheduledTime__c, Room__c, StartDate__c FROM Class__c];
         List<Assessment__c> assessmentsToInsert = new List<Assessment__c>();
 
@@ -269,40 +319,41 @@ public class SchoolDataCreator {
         
         insert assessmentsToInsert;
     }
+
+
     
-    // private static void createGrades() {
-    //     List<Class__c> classes = [SELECT Id FROM Class__c];
+    public static void createGrades() {
+        List<Class__c> classes = [SELECT Id FROM Class__c];
         
-    //     List<Class_Enrollment__c> classEnrollments = [SELECT Id, Class__c FROM Class_Enrollment__c];
+        List<ClassEnrollment__c> classEnrollments = [SELECT Id, Class__c FROM ClassEnrollment__c];
         
-    //     List<Assessment__c> assessments = [SELECT Id, Class__c FROM Assessment__c];
-    //     List<Grade__c> gradesToInsert = new List<Grade__c>();
+        List<Assessment__c> assessments = [SELECT Id, Class__c FROM Assessment__c];
+        List<Grade__c> gradesToInsert = new List<Grade__c>();
         
-    //     Integer countClassEnrollments = 0;
+        //Integer countClassEnrollments = 0;
         
-    //     for (Assessment__c assessment: assessments) {
-    //         for (Class__c c: classes) {
-    //             if (assessment.Class__c == c.Id) {
-    //                 for (Class_Enrollment__c ce: classEnrollments) {
-    //                     if (ce.Class__c == assessment.Class__c) {
-    //                         countClassEnrollments++;
-    //                         gradesToInsert.add(new Grade__c(Assessment__c=assessment.Id,
-    //                                                         ClassEnrollment__c=ce.Id,
-    //                                                         Grade__c=getRandomNumber()));
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     insert gradesToInsert;
-    // }
-    
-    private static double getRandomNumber() {
-        Double randomNumber = Math.random();
-        while (randomNumber < 0.5) {
-            randomNumber = Math.random();
+        for (Assessment__c assessment: assessments) {
+            for (Class__c c: classes) {
+                if (assessment.Class__c == c.Id) {
+                    for (ClassEnrollment__c ce: classEnrollments) {
+                        if (ce.Class__c == assessment.Class__c) {
+                            //countClassEnrollments++;
+                            if(Math.random()*10>8)
+                                gradesToInsert.add(new Grade__c(Assessment__c=assessment.Id,
+                                                                Class_Enrollment__c=ce.Id,
+                                                                Grade__c=getRandomNumber()));
+                        }
+                    }
+                }
+            }
         }
-        
-        return randomNumber * 100;
+        insert gradesToInsert;
+    }
+
+
+    //random number 50-100
+    private static double getRandomNumber() {
+        Double randomNumber = Math.random()*25;
+        return randomNumber+(Math.random()*25)+50;
     }    
 }
