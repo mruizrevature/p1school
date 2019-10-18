@@ -1,10 +1,9 @@
 trigger ClassEnrollmentTrigger on ClassEnrollment__c (before insert, after insert, before delete) {
     if (Trigger.isBefore) {
         if (Trigger.isInsert) {
-            
-            ClassEnrollmentTriggerHelper.checkDuplicateEnrollment(Trigger.new);
+            for(ClassEnrollment__c ce: Trigger.new)
+                ClassEnrollmentTriggerHelper.checkDuplicateEnrollment(ce);
 
-           
         }
         else if(Trigger.isDelete)
         {

@@ -43,7 +43,7 @@ public with sharing class ClassEnrollmentTriggerTests {
         try{
             insert toInsert;
 
-        }catch(DuplicateEnrollmentException e)
+        }catch(Exception e)
         {
             System.assert(false,'Inserting new class enrollments failed for list');
         }
@@ -63,7 +63,7 @@ public with sharing class ClassEnrollmentTriggerTests {
         Boolean failedInsert=false;
         try{
             insert toInsert;
-        }catch(DuplicateEnrollmentException e)
+        }catch(Exception e)
         {
             failedInsert = true;
         }finally{
@@ -74,7 +74,7 @@ public with sharing class ClassEnrollmentTriggerTests {
         failedInsert=false;
         try{
             insert new ClassEnrollment__c(Student__c=students[0].Id,Class__c=classes[0].Id,Credits__c = 4, Status__c = 'Enrolled');
-        }catch(DuplicateEnrollmentException e)
+        }catch(Exception e)
         {
             failedInsert = true;
         }finally{
@@ -85,7 +85,7 @@ public with sharing class ClassEnrollmentTriggerTests {
         try{
             insert new ClassEnrollment__c(Student__c=students[0].Id,Class__c=classes[6].Id,Credits__c = 4, Status__c = 'Enrolled');
 
-        }catch(DuplicateEnrollmentException e)
+        }catch(Exception e)
         {
             System.assert(false,'Inserting new class enrollment failed');
         }
