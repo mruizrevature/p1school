@@ -21,6 +21,7 @@
         <members>ClassTriggerTests</members>
         <members>EnrollmentTriggerTests</members>
         <members>P1Tests</members>
+        <members>GPACalculatorTest</members>
 
         <!-- Test Utility Classes -->
         <members>AssessmentCreator</members>
