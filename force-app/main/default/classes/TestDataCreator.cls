@@ -86,11 +86,24 @@ public with sharing class TestDataCreator {
 									   Status__c= 'In Progress', 
 									   Topic__c= topic2.Id);
 
+	Class__c class5 = new Class__c(Name = 'UUU000', 
+									   Capacity__c= 10, 
+									   DaysPerWeek__c= 1, 
+									   Department__c= d2.Id, 
+									   StartDate__c=(Date.newInstance(2019, 7, 12)), 
+									   EndDate__c=(Date.newInstance(2019, 11, 13)), 
+									   Room__c= new Room__c().Id, 
+									   ScheduledTime__c=(Time.newInstance(8, 0, 0, 0)), 
+									   Status__c= 'In Progress', 
+									   Topic__c= topic2.Id);
+
+
     
 		classes.add(class1);
 		classes.add(class2);
         classes.add(class3);
         classes.add(class4);
+        classes.add(class5);
 
 		insert classes;
 		System.debug('Classes Created');

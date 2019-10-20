@@ -30,19 +30,20 @@ public with sharing class UnExcusedAbsensesTriggerHelper {
                 canEnroll.put(thisId, 'can_enroll');
             }
         }
-		Map<Id, List<ClassEnrollment__c>> groupedByStudent = new
+		// a map containing student id and corresponding list of enrollments
+		Map<Id, List<ClassEnrollment__c>> studentEnrollments = new
 		Map<Id, List<ClassEnrollment__c>>();
 
 		for (ClassEnrollment__c cenr :enrollments) {
-			if(groupedByStudent.containsKey(cenr.Student__c)) {
-				groupedByStudent.get(cenr.Student__c).add(cenr);
+			if(studentEnrollments.containsKey(cenr.Student__c)) {
+				studentEnrollments.get(cenr.Student__c).add(cenr);
 			} else {
-				groupedByStudent.put(cenr.Student__c, new List<ClassEnrollment__c>());
+				studentEnrollments.put(cenr.Student__c, new List<ClassEnrollment__c>{cenr});
 			}
 		}
-		for(Id thisId :groupedByStudent.keySet()) {
+		for(Id thisId :studentEnrollments.keySet()) {
 			canEnroll.put(thisId, 
-					      canStudentEnrollToClasses(groupedByStudent.get(thisId)));
+					      canStudentEnrollToClasses(studentEnrollments.get(thisId)));
 		}
 	}
 
@@ -60,7 +61,7 @@ public with sharing class UnExcusedAbsensesTriggerHelper {
 					}
 				}
 			}
-		}       
+		}      
 		// if student is absent from four or more different classes
 		if(absentCount >= 4) {
 			return 'expelled';

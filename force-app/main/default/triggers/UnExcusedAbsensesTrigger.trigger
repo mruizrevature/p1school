@@ -6,7 +6,6 @@
 // If this happens for a fourth class, they should be expelled.
 trigger UnExcusedAbsensesTrigger on ClassEnrollment__c(before insert) {
 	List<ClassEnrollment__c> enrollments = Trigger.new;
-    System.debug('trigger new'+ enrollments);
 	if(Schema.sObjectType.ClassEnrollment__c.isCreateable()) {
 		// collect student ids
 		Set<Id> studIds = new Set<Id>();

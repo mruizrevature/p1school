@@ -12,8 +12,8 @@ public with sharing class ClassEnrollmentTriggerTest {
 		List<Class__c> classes = [SELECT Id FROM Class__c];
 		// 1 student
 		System.assert(students.size() == 1);
-		// 4 classes
-		System.assert(classes.size() == 4);
+		// 5 classes
+		System.assert(classes.size() == 5);
 
 		List<ClassEnrollment__c> ClassEnrollments = new List<ClassEnrollment__c>();
 		ClassEnrollment__c ce1 = new ClassEnrollment__c(Student__c = students.get(0).Id, Class__c = classes.get(0).Id, Credits__c = 3, Status__c = 'Enrolled');
@@ -65,7 +65,6 @@ public with sharing class ClassEnrollmentTriggerTest {
 		// index is zero because only 1 enrollemnt is remaining in list
 		delete ClassEnrollments.get(0);
 		attLineItems = [SELECT Id FROM AttendanceLineItem__c];
-		// System.debug('see me=>' + attLineItems.size());
 		// all attendance line items are deleted
 		System.assert(attLineItems.size() == 0);
 	}
