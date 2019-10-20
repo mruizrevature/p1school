@@ -24,5 +24,8 @@ public with sharing class DuplicateEnrollmentTriggerTests {
 
         Database.SaveResult insertResult = Database.insert(mockClassEnrollment, false);
         System.assert(!insertResult.isSuccess());
+        System.assertEquals(DuplicateEnrollmentTriggerHelper.DUPLICATE_ENROLLMENT, 
+            insertResult.getErrors()[0].getMessage());
+        System.assert(insertResult.getErrors().size() > 0);
     }
 }
