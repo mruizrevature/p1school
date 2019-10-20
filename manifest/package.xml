@@ -5,9 +5,13 @@
         <members>AssessmentTriggerHelper</members>
         <members>ClassTriggerHelper</members>
         <members>RoomUtilityClass</members>
+        <members>duplicateEnrollmentTriggerHelper</members>
+        <members>State</members>
+        <members>P1</members>
 
         <!-- Exceptions -->
         <members>RoomOccupiedException</members>
+        <members>DuplicateEnrollmentException</members>
 
         <!-- Org Data Creation Classes -->
         <members>SchoolDataCreator</members>
@@ -15,6 +19,8 @@
         <!-- Test Classes -->
         <members>AssessmentTriggerTests</members>
         <members>ClassTriggerTests</members>
+        <members>DuplicateEnrollmentTriggerTest</members>
+        <members>P1Tests</members>
 
         <!-- Test Utility Classes -->
         <members>AssessmentCreator</members>
@@ -33,6 +39,7 @@
         <name>ApexTestSuite</name>
     </types>
     <types>
+        <members>DuplicateEnrollmentTrigger</members>
         <members>AssessmentTrigger</members>
         <members>ClassTrigger</members>
         <name>ApexTrigger</name>
