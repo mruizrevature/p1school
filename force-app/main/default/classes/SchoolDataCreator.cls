@@ -1,7 +1,7 @@
 public class SchoolDataCreator {
     public static void createData() {
         deleteExistingSchoolData();
-
+        
         createDepartments();
         createRooms();
         createDegrees();
@@ -12,7 +12,8 @@ public class SchoolDataCreator {
         createMajors();
         // create minors
         createAssessments();
-        // createGrades();
+        createClassEnrollments();
+        createGrades();
     }
     
     private static void deleteExistingSchoolData() {
@@ -47,13 +48,13 @@ public class SchoolDataCreator {
     
     private static void createDepartments() {
         List<String> departmentNames = new List<String> {'Math', 'Science', 'Education', 'History'};
-        List<Department__c> departmentsToInsert = new List<Department__c>();
+            List<Department__c> departmentsToInsert = new List<Department__c>();
         for (Integer i= 0; i < departmentNames.size(); i++) {
             departmentsToInsert.add(new Department__c(Name=departmentNames[i]));
         }
         insert departmentsToInsert;
     }
-
+    
     private static void createRooms() {
         List<Room__c> roomsToInsert = new List<Room__c>();
         for (Integer i= 0; i < 10; i++) {
@@ -61,18 +62,18 @@ public class SchoolDataCreator {
         }
         insert roomsToInsert;
     }
-
+    
     private static void createDegrees() {
         List<Department__c> departments = [SELECT Id, Name FROM Department__c];
         Map<String, Id> departmentNameToId = new Map<String, Id>();
-
+        
         for (Department__c dept: departments) {
             departmentNameToId.put(dept.Name, dept.Id);
         }
         
         List<String> degreeNames = new List<String> {'Mathematics', 'Applied Statistics', 'Biology', 'Chemistry', 'Education', 'Educational Reading', 'Geology', 'Anthropology'};
-        List<Degree__c> degreesToInsert = new List<Degree__c>();
-
+            List<Degree__c> degreesToInsert = new List<Degree__c>();
+        
         degreesToInsert.add(new Degree__c(Name=degreeNames[0], Department__c=departmentNameToId.get('Math')));
         degreesToInsert.add(new Degree__c(Name=degreeNames[1], Department__c=departmentNameToId.get('Math')));
         degreesToInsert.add(new Degree__c(Name=degreeNames[2], Department__c=departmentNameToId.get('Science')));
@@ -81,21 +82,21 @@ public class SchoolDataCreator {
         degreesToInsert.add(new Degree__c(Name=degreeNames[5], Department__c=departmentNameToId.get('Education')));
         degreesToInsert.add(new Degree__c(Name=degreeNames[6], Department__c=departmentNameToId.get('History')));
         degreesToInsert.add(new Degree__c(Name=degreeNames[7], Department__c=departmentNameToId.get('History')));
-
+        
         insert degreesToInsert;
     }
-
+    
     private static void createTopics() {
         List<Degree__c> degrees = [SELECT Id, Name FROM Degree__c];
         Map<String, Id> degreeNameToId = new Map<String, Id>();
-
+        
         for (Degree__c degree: degrees) {
             degreeNameToId.put(degree.Name, degree.Id);
         }
-
+        
         List<String> topicNames = new List<String> {'Algebra', 'Pre-Calculus', 'Probability', 'Sport Analytics', 'General Biology', 'Genetics', 'Concepts of Chemistry', 'Chemistry of Beer', 'Democracy and Education', 'Evolution of Schooling' ,'College Reading and Study Skills', 'Teaching Language Arts', 'Other Worlds', 'Humans and the Environment', 'Introduction to Archaeology', 'Artifacts and Culture'};
-        List<Topic__c> topicsToInsert = new List<Topic__c>();
-
+            List<Topic__c> topicsToInsert = new List<Topic__c>();
+        
         topicsToInsert.add(new Topic__c(Name=topicNames[0], Degree__c=degreeNameToId.get('General Mathematics')));
         topicsToInsert.add(new Topic__c(Name=topicNames[1], Degree__c=degreeNameToId.get('General Mathematics')));
         topicsToInsert.add(new Topic__c(Name=topicNames[2], Degree__c=degreeNameToId.get('Applied Statistics')));
@@ -115,17 +116,17 @@ public class SchoolDataCreator {
         
         insert topicsToInsert;
     }
-
+    
     private static void createEmployees() {
         List<String> employeeNames = new List<String> {'Mark Jackson', 'Pete Maravich', 'Serena Williams', 'Megan Rapinoe', 'Jesse Gillis', 'Phillip Mack', 'Janet Williams', 'Mike Jones'};
-        List<Employee__c> employeesToInsert = new List<Employee__c>();
-
+            List<Employee__c> employeesToInsert = new List<Employee__c>();
+        
         List<Department__c> departments = [SELECT Id, Name FROM Department__c];
         Map<String, Id> departmentNameToId = new Map<String, Id>();
         for (Department__c dept: departments) {
             departmentNameToId.put(dept.Name, dept.Id);
         }
-
+        
         employeesToInsert.add(new Employee__c(Name=employeeNames[0], Department__c=departmentNameToId.get('Math')));
         employeesToInsert.add(new Employee__c(Name=employeeNames[1], Department__c=departmentNameToId.get('Math')));
         employeesToInsert.add(new Employee__c(Name=employeeNames[2], Department__c=departmentNameToId.get('Science')));
@@ -134,10 +135,10 @@ public class SchoolDataCreator {
         employeesToInsert.add(new Employee__c(Name=employeeNames[5], Department__c=departmentNameToId.get('Education')));
         employeesToInsert.add(new Employee__c(Name=employeeNames[6], Department__c=departmentNameToId.get('History')));
         employeesToInsert.add(new Employee__c(Name=employeeNames[6], Department__c=departmentNameToId.get('History')));
-    
+        
         insert employeesToInsert;
     }
-
+    
     private static void createStudents() {
         List<Employee__c> advisors = [SELECT Id FROM Employee__c];
         List<Student__c> studentsToInsert = new List<Student__c>();
@@ -164,7 +165,7 @@ public class SchoolDataCreator {
         
         insert studentsToInsert; 
     }
-
+    
     private static void createMajors() {
         List<Major__c> majorsToInsert = new List<Major__c>();
         List<Degree__c> degrees = [SELECT Id FROM Degree__c];
@@ -189,7 +190,7 @@ public class SchoolDataCreator {
         majorsToInsert.add(new Major__c(Degree__c=degrees[1].Id,Student__c=students[16].Id));
         majorsToInsert.add(new Major__c(Degree__c=degrees[2].Id,Student__c=students[17].Id));
         majorsToInsert.add(new Major__c(Degree__c=degrees[3].Id,Student__c=students[18].Id));
-
+        
         insert majorsToInsert;
     }
     
@@ -200,10 +201,10 @@ public class SchoolDataCreator {
         for (Department__c dept: departments) {
             departmentNameToId.put(dept.Name, dept.Id);
         }
-
+        
         List<Room__c> rooms = [SELECT Id FROM Room__c];
         List<Topic__c> topics = [SELECT Id, Name FROM Topic__c];
-                                                                                                                                                                                                                                                
+        
         Map<String, Id> topicNamesToId = new Map<String, Id>();
         for (Topic__c topic : topics) {
             topicNamesToId.put(topic.Name, topic.Id);
@@ -229,30 +230,26 @@ public class SchoolDataCreator {
         insert classesToInsert;
     }
     
-    // private static void createClassEnrollments() {
-    //     List<Student__c> students = [SELECT Id, Status__c FROM Student__c];
-    //     List<Class__c> classes = [SELECT Id FROM Class__c];
+    private static void createClassEnrollments() {
+        List<Student__c> students = [SELECT Id, Status__c FROM Student__c];
+        List<Class__c> classes = [SELECT Id FROM Class__c];
         
-    //     List<Class_Enrollment__c> classEnrollmentsToInsert = new List<Class_Enrollment__c>();
-        
-    //     for (Class__c c: classes) {
-    //         for (Student__c student: students) {
-    //             if (student.Status__c == 'Enrolled') {
-    //                 classEnrollmentsToInsert.add(new Class_Enrollment__c(Student__c=student.Id,Class__c=c.Id));
-    //             }
-    //         }	
-    //     }
-        
-    //     insert classEnrollmentsToInsert;
-    // }
-
+        List<ClassEnrollment__c> classEnrollmentsToInsert = new List<ClassEnrollment__c>();
+        Integer i = 0;
+        while(i < classes.size()){
+            classEnrollmentsToInsert.add(new ClassEnrollment__c(Student__c = students[i].Id, Class__c = classes[i].Id, Credits__c = 4));
+            i++;
+        }
+        insert classEnrollmentsToInsert;
+    }
+    
     private static void createAssessments() {
         List<Class__c> classes = [SELECT Id, ScheduledTime__c, Room__c, StartDate__c FROM Class__c];
         List<Assessment__c> assessmentsToInsert = new List<Assessment__c>();
-
+        
         Schema.DescribeSObjectResult assessmentInfo = Assessment__c.SObjectType.getDescribe();
         List<Schema.RecordTypeInfo> assessmentRecordTypeInfos = assessmentInfo.getRecordTypeInfos();
-
+        
         for(Schema.RecordTypeInfo recordTypeInfo: assessmentRecordTypeInfos) {
             if (recordTypeInfo.getDeveloperName() != 'Master') {
                 for (Class__c c: classes) {
@@ -270,39 +267,45 @@ public class SchoolDataCreator {
         insert assessmentsToInsert;
     }
     
-    // private static void createGrades() {
-    //     List<Class__c> classes = [SELECT Id FROM Class__c];
+    private static void createGrades() {
+        List<Class__c> classes = [SELECT Id FROM Class__c];
         
-    //     List<Class_Enrollment__c> classEnrollments = [SELECT Id, Class__c FROM Class_Enrollment__c];
+        List<ClassEnrollment__c> classEnrollments = [SELECT Id, Class__c, Student__c FROM ClassEnrollment__c];
         
-    //     List<Assessment__c> assessments = [SELECT Id, Class__c FROM Assessment__c];
-    //     List<Grade__c> gradesToInsert = new List<Grade__c>();
+        List<Student__c> students = [SELECT Id FROM Student__c];
         
-    //     Integer countClassEnrollments = 0;
+        List<Assessment__c> assessments = [SELECT Id, Class__c FROM Assessment__c];
+        List<Grade__c> gradesToInsert = new List<Grade__c>();
         
-    //     for (Assessment__c assessment: assessments) {
-    //         for (Class__c c: classes) {
-    //             if (assessment.Class__c == c.Id) {
-    //                 for (Class_Enrollment__c ce: classEnrollments) {
-    //                     if (ce.Class__c == assessment.Class__c) {
-    //                         countClassEnrollments++;
-    //                         gradesToInsert.add(new Grade__c(Assessment__c=assessment.Id,
-    //                                                         ClassEnrollment__c=ce.Id,
-    //                                                         Grade__c=getRandomNumber()));
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     insert gradesToInsert;
-    // }
-    
-    private static double getRandomNumber() {
-        Double randomNumber = Math.random();
-        while (randomNumber < 0.5) {
-            randomNumber = Math.random();
+        Integer countClassEnrollments = 0;
+        
+        for (Assessment__c assessment: assessments) {
+            for (Class__c c: classes) {
+                if (assessment.Class__c == c.Id) {
+                    for (ClassEnrollment__c ce: classEnrollments) {
+                        if (ce.Class__c == assessment.Class__c) {
+                            
+                            countClassEnrollments++;
+                            gradesToInsert.add(new Grade__c(Assessment__c=assessment.Id,
+                                                            Class_Enrollment__c=ce.Id,
+                                                            Grade__c=getRandomNumber()));
+                        }
+                        
+                    
+                    
+                }
+            }
         }
-        
-        return randomNumber * 100;
-    }    
+    }
+    insert gradesToInsert;
+}
+
+private static double getRandomNumber() {
+    Double randomNumber = Math.random();
+    while (randomNumber < 0.5) {
+        randomNumber = Math.random();
+    }
+    
+    return randomNumber * 100;
+}    
 }
