@@ -5,9 +5,9 @@ public with sharing class ClassCreator {
 
         Department__c existingDepartment = [SELECT Id FROM Department__c LIMIT 1];
         newClass.Department__c = existingDepartment.Id;
-        newClass.daysPerWeek__c = 1;
-        newClass.StartDate__c = Date.newInstance(2050,1,1);
-        newClass.EndDate__c = Date.newInstance(2050,1, 10);
+        newClass.daysPerWeek__c = 3;
+        newClass.StartDate__c = Date.newInstance(2050, 1, 1);
+        newClass.EndDate__c = Date.newInstance(2050, 1, 30);
         newClass.ScheduledTime__c = Time.newInstance(9,0,0,0);
 
         Room__c existingRoom = [SELECT Id FROM Room__c LIMIT 1];
