@@ -9,9 +9,12 @@ trigger DegreeTrigger on ClassEnrollment__c (before insert) {
     // List<ClassEnrollment__c> newEnrollments = [SELECT Student__c, Class__c from ClassEnrollment__c];
     // SELECT Class__r.Department__r.Name FROM ClassEnrollment__c
     // SELECT Student__r.Department__r.Name FROM ClassEnrollment__c
-    for (ClassEnrollment__c a: Trigger.new) {
-        if (a.Student__r.Major__. != a.Class__c)
-            a.addError('Department does not match degree');
-        SELECT (SELECT Degree__r.Department__r.Name FROM Majors__c) FROM ClassEnrollment__c WHERE (SELECT ClassEnrollment__c from Student__c)
+    if (Trigger.isInsert){
+        if (Trigger.isUpdate){
+            for (ClassEnrollment__c a: Trigger.new) {
+                DegreeTriggerHelper.preventUnrelatedClassSubject();
+                //SELECT (SELECT Degree__r.Department__r.Name FROM Majors__c) FROM ClassEnrollment__c WHERE (SELECT ClassEnrollment__c from Student__c)
+            }
+        }
     }
 }
