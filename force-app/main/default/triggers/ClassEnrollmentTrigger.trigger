@@ -1,9 +1,9 @@
-trigger ClassEnrollmentTrigger on SOBJECT (before insert) {
+trigger ClassEnrollmentTrigger on ClassEnrollment__c (before insert) {
     if (Trigger.isBefore) {
         if (Trigger.isInsert) {
-            if (Schema.sObjectType.Assessment__c.isCreateable()) {
+            if (Schema.sObjectType.ClassEnrollment__c.isCreateable()) {
                 for (ClassEnrollment__c ce: Trigger.new) {
-                    ClassTriggerHelper.preventDoubleRoomBooking(ce);
+                    ClassEnrollmentTriggerHelper.preventDuplicateEnrollment(ce);
                 }
             } else {
                 for (ClassEnrollment__c ce: Trigger.new) {
