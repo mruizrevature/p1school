@@ -15,6 +15,7 @@
         <!-- Test Classes -->
         <members>AssessmentTriggerTests</members>
         <members>ClassTriggerTests</members>
+        <members>ProjectOnePartOneTest</members>
 
         <!-- Test Utility Classes -->
         <members>AssessmentCreator</members>
@@ -22,7 +23,7 @@
         <members>DepartmentCreator</members>
         <members>RoomCreator</members>
         <members>TopicCreator</members>
-
+        <members>ProjectOnePartOne</members>
         <members>GPAController</members>
         <members>UserPermissionErrors</members>
         <members>RoomUtilityClass</members>
