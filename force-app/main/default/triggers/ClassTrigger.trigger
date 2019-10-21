@@ -1,4 +1,5 @@
 trigger ClassTrigger on Class__c (before insert) {
+    /*
     if (Trigger.isBefore) {
         if (Trigger.isInsert) {
             if (Schema.sObjectType.Class__c.isCreateable()) {
@@ -12,4 +13,5 @@ trigger ClassTrigger on Class__c (before insert) {
             }
         }
     }
+    */
 }

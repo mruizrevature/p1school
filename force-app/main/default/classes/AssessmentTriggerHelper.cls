@@ -1,7 +1,9 @@
 public with sharing class AssessmentTriggerHelper {
+     
     /**
         Given a List<Assessment>, check if there is a Class or Assessment using that room at the specified time.
      */
+    /*
     public static void preventDoubleRoomBooking(List<Assessment__c> assessmentsBeingInserted) {
         checkIfAssessmentIsUsingRoom(assessmentsBeingInserted);
         // checkIfClassIsUsingRoom(assessmentsBeingInserted);
@@ -80,4 +82,5 @@ public with sharing class AssessmentTriggerHelper {
             newAssessment.addError(UserPermissionErrors.CANNOT_READ_CLASSES);
         }   
     }
+ */   
 }
