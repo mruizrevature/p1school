@@ -11,7 +11,7 @@ public class SchoolDataCreator {
         createStudents();
         createMajors();
         // create minors
-        createAssessments();
+        //createAssessments();
         // createGrades();
     }
     
