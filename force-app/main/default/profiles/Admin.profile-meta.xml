@@ -62,6 +62,14 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>P1</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>P1Tests</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>RoomCreator</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -75,6 +83,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>SchoolDataCreator</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>States</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>

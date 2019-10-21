@@ -21,6 +21,7 @@
         <members>AttendanceLineTests</members>
         <members>ClassTriggerTests</members>
         <members>DuplicateClassEnrollmentTests</members>
+        <members>P1Tests</members>
 
         <!-- Test Utility Classes -->
         <members>AssessmentCreator</members>
@@ -31,6 +32,8 @@
         <members>StudentCreator</members>
         <members>TopicCreator</members>
 
+        <members>P1</members>
+        <members>States</members>
         <members>GPAController</members>
         <members>UserPermissionErrors</members>
         <members>RoomUtilityClass</members>
