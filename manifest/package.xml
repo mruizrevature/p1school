@@ -8,13 +8,16 @@
 
         <!-- Exceptions -->
         <members>RoomOccupiedException</members>
+        <members>UnableToCalculateGPAException</members>
 
         <!-- Org Data Creation Classes -->
         <members>SchoolDataCreator</members>
+        <members>SpecificDataCreator</members>
 
         <!-- Test Classes -->
         <members>AssessmentTriggerTests</members>
         <members>ClassTriggerTests</members>
+        <members>GPAControllerTest</members>
 
         <!-- Test Utility Classes -->
         <members>AssessmentCreator</members>
