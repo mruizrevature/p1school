@@ -85,4 +85,47 @@ public class P1
         List<Account> acc = [SELECT Name FROM Account WHERE BillingState =: s.name() AND Id IN (SELECT AccountId FROM Contact WHERE MailingState =: s.name())];
         return acc;
     }
+
+
+
+     /**
+     * For each student, get the grade for each of their classes.
+     * */
+    public static Map<Id, Map<Id, Double>> getClassGrades() 
+    {
+        // query the database for every student's average grade for all their classes
+        List<AggregateResult> averageGrades = [SELECT Grade__c.Class_Enrollment__r.Class__c, Grade__c.Class_Enrollment__r.Student__c, 
+                                                AVG(Grade__c) 
+                                                FROM Grade__c 
+                                                GROUP BY Grade__c.Class_Enrollment__r.Class__c, Grade__c.Class_Enrollment__r.Student__c 
+                                                ORDER BY Grade__c.Class_Enrollment__r.Student__c];
+
+        Map<Id, Map<Id, Double>> studentGrades = new Map<Id, Map<Id, Double>>();
+        Id currentStudent = averageGrades[0].get('Student__c').toString();
+        Map<Id, Double> classAverages = new Map<Id, Double>();
+
+        // create the studentGrades map by adding the average for each class 
+        // the student is enrolled in to the classAverages map then adding that as the value of the studentGrades map
+        for(AggregateResult ag: averageGrades)
+        {
+            Id student = ag.get('Student__c').toString();
+            Id clas = ag.get('Class__c').toString();
+            Decimal avgGrade = (Decimal)ag.get('expr0');
+            // when you get to the next student, add the classAverages map to the studentGrades map, 
+            // reset classAverages, and update the currentStudent
+            if(student!=currentStudent)
+            {
+                studentGrades.put(currentStudent, classAverages);
+                classAverages = new Map<Id, Double>();
+                currentStudent = student;
+            }
+            classAverages.put(clas, avgGrade);
+        }
+        // because it is only updating the value when the student changes
+        // the last student is not added, so you have to add it here
+        studentGrades.put(currentStudent, classAverages);
+
+        return studentGrades;
+    }
 }
+
