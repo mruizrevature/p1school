@@ -6,7 +6,7 @@ trigger DuplicateEnrollmentTrigger on ClassEnrollment__c (before insert, before 
 
     	for (ClassEnrollment__c a: Trigger.new) {
             if (currentEnrollment.Student__c == a.Student__c && currentEnrollment.Class__c == a.Class__c)
-                a.addError('DuplicateEnrollmentException');
+                throw new DuplicateEnrollmentException('Student is already enrolled in this class');
         }
     }
 
