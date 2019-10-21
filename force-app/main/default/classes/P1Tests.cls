@@ -1,4 +1,4 @@
-@isTest()
+@isTest
 public class P1Tests 
 {
 
@@ -40,6 +40,7 @@ public class P1Tests
         c.accountId = a.Id;
         c.MailingState = 'CO';
         insert c;
+
 
         schoolDataCreator.createData();
         schoolDataCreator.createClassEnrollments();
@@ -134,6 +135,5 @@ public class P1Tests
         System.assertEquals(65, studentGrades.get(ce[0].Student__c).get(ce[0].Class__c));
         System.assertEquals(90, studentGrades.get(ce[1].Student__c).get(ce[1].Class__c));
     }
-
-
 }
+

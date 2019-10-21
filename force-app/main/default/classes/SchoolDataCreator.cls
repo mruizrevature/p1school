@@ -1,3 +1,5 @@
+
+
 public class SchoolDataCreator {
     public static void createData() {
         deleteExistingSchoolData();
