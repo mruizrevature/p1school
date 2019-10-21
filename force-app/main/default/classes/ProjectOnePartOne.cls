@@ -50,6 +50,7 @@ public with sharing class ProjectOnePartOne {
         State compareState = null;
         List<Account> accounts = [SELECT Id , BillingAddress FROM Account];
         for (Account a: accounts) {
+            //we need to put the states in a usable form, unfortunately that means having to go through every one
             for(State stateEnum : states){
                if(a.BillingAddress.getState() == stateEnum.name()){
                    compareState = stateEnum;
@@ -83,12 +84,14 @@ public with sharing class ProjectOnePartOne {
 
     public static Map<Id, Map<Id, Double>> getClassGrades() {
         Map<Id, Map<Id, Double>> studentsClassGrades = new Map<Id, Map<Id, Double>>();
+        //the temp class is used for inserting the individual grades into
         Map<Id, Double> tempClassGrades = new Map<Id, Double>();
         Integer gradeNum = 0;
         Double gradeSum = 0.0;
         for(Student__c s: [SELECT Id FROM Student__c WHERE Id IN (
                            SELECT STUDENT__C FROM ClassEnrollment__c)]){
             for(ClassEnrollment__c ce : [SELECT Id, Class__c FROM ClassEnrollment__c WHERE Student__c = :s.Id]){
+                //grabbing the classes here is not superflous because we need it for assignment purposes
                 for(Class__C c : [SELECT Id FROM Class__c WHERE Id = :ce.Class__c]){
                     for(Grade__c g: [SELECT Grade__c FROM Grade__c WHERE Class_Enrollment__c =: ce.Id]){
                         gradeSum += g.Grade__c;
@@ -101,8 +104,8 @@ public with sharing class ProjectOnePartOne {
                     gradeSum = 0.0;
                 }       
             }
+            //if a students has no grade for a class then it's irrelevant
             if(tempClassGrades.size() > 0){
-                System.debug('for ' + s.name + ' we insert: ' + String.valueOf(tempClassGrades));
                 studentsClassGrades.put(s.Id,tempClassGrades.clone());
             }
             tempClassGrades.clear();
