@@ -58,16 +58,25 @@ public class P1 {
 
         return [SELECT Id, Name, (SELECT Id FROM Contacts WHERE MailingState =: s.Name()) FROM Account WHERE BillingState =: s.Name()];
         
-   }
+    }
     
     /**
      * For each student, get the grade for each of their classes.
      * */
-    public static Map<Id, Map<Id, Double>> getClassGrades() { // student id, class id, grade
-        // Get classes student is enrolled in
-        // get assessments for each class
-        // get grades for each assessment
-        // for each student, for each class, for each assessment, for each grade, if gradeCE.student = student.id && a.class == grade.ce.class
-        return [SELECT Id, (SELECT Id, AVG(grade)  from Assessment Group BY Id) FROM Student GROUP BY Id];
+    public static Map<Id, Map<Id, Double>> getClassGrades() { // student id, classenrollment id, avggrade
+        // for each student, for each class, for each assessment, for each grade, if gradeCE.student == student.id && a.class == grade.ce.class
+        List<AggregateResult> assessmentGrades = [SELECT Class_Enrollment__r.Id Id, AVG(Grade__c) averagedGrade FROM Grade__c GROUP BY Class_Enrollment__r.Id];
+        List<Student__c> studentIds = [SELECT Id FROM Student__c WHERE Status__c = 'Enrolled'];
+        Map<Id, Double> assessmentIdGrade = new Map<Id, Double>();
+        Map<Id, Map<Id, Double>> averagesByStudent = new Map<Id, Map<Id, Double>>();
+        Integer x = 0;
+        // populates both maps by casting values from above SOQL queries
+        for (AggregateResult a : assessmentGrades ){
+            assessmentIdGrade.put((ID)assessmentGrades[x].get('Id'), Double.valueOf(assessmentGrades[x].get('averagedGrade')));
+            averagesByStudent.put((ID)studentIds[x].get('Id'), assessmentIdGrade);
+            x++;
+        }
+
+        return averagesByStudent;
     }
 }
